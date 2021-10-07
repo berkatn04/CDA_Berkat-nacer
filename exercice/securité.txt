@@ -1,0 +1,8 @@
+protection code :
+
+-modifier noms de variable (varibales moins explicite, tranformateur de variables)
+- minimiser le code (tout mettre sur une ligne)
+
+protection données :
+
+- +eurs utilisateurs
