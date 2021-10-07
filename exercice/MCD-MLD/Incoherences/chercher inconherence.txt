@@ -1,13 +1,16 @@
-1 faux #codeLabo na pas sa place dans la table chercheur 
+1 faux modifier cardinalité 0-n -> 0,1 ou 1,1 
 2 faux #directeur nexiste pas 
 3 vrai 
 4 vrai
 5 vrai
-6 faux dateArrivé 
+6 faux dateArrivé differend de dateRetour
 7 vrai 
-8 faux
-9 faux
+8 faux estmembre ne devrait pas posseder de clé etrangere
+9 faux 
 10 vrai 
-11. faux
+11. faux 
 12. vrai
-13. faux
+13. faux effectue ne devrait pas avoir #idpjt
+
+
+

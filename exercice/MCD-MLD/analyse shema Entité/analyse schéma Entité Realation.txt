@@ -6,6 +6,7 @@
 6. non
 7. non
 8. non
-9. non
+9. oui
 10. oui
+11. laboratoire distribue 0 ou 1 seule medicament
 
