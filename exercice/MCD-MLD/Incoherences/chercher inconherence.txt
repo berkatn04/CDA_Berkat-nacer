@@ -1,0 +1,13 @@
+1 faux #codeLabo na pas sa place dans la table chercheur 
+2 faux #directeur nexiste pas 
+3 vrai 
+4 vrai
+5 vrai
+6 faux dateArrivé 
+7 vrai 
+8 faux
+9 faux
+10 vrai 
+11. faux
+12. vrai
+13. faux
