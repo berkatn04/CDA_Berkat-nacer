@@ -1,0 +1,25 @@
+No sql -> not only sql
+
+-Base de donnée non relationnellle 
+
+-4 types : 
+
+clé/valeur - les données sont stockées sous forme de paires clé / valeur. Ceci permet la prise en charge de larges volumes de données et de charges lourdes. 
+	     Les données sont entreposées dans un tableau de ” hash ” au sein duquel chaque clé est unique. La valeur peut être un JSON, un objet BLOB, une ligne de code ou autre.
+	     Ce type de base de données est le plus basique. Il permet au développeur de stocker plus facilement des données sans schéma. En guise d’exemples, on peut citer Redis ou Dynamo. 
+	     D’ailleurs, Amazon Dynamo est le modèle initial de cette catégorie de database.
+
+oreientée colonne - comme leur nom l’indique, repose sur des colonnes. Elles sont basées sur le modèle BigTable de Google. Chaque colonne est traitée séparément, et les valeurs sont stockées de façon contigüe.
+		    Cette catégorie de base de données offre de hautes performances pour les requêtes d’agrégation comme SUM, COUNT, AVG et MIN. Pour cause, les données sont déjà disponibles et prêtes dans une colonne. 
+		    En guise d’exemples, on peut citer HBase, Cassandra ou Hypertable.
+
+orientée graph - stockent les entités et les relations entre ces entités. L’entité est stockée sous forme de noeud, et les relations comme bordures. 
+		 Il est ainsi facile de visualiser les relations entre les noeuds. Chaque noeud et chaque bord ont un identifiant unique.
+		 Ce type de base de données est multirelationnel. On l’utilise principalement pour les réseaux sociaux, la logistique ou les données spatiales. 
+                 Parmi les exemples les plus populaires, on peut citer Neo4J, Infinite Graph, OrientDB et FlockDB.
+
+orientée document -  Les bases de données orientées document stockent et retrouvent elles aussi les données sous forme de paire clé-valeur. Toutefois, la valeur est stockée sous forme de document au format JSON ou XML. 
+		     La valeur est ainsi comprise par la base de données et peut être trouvée à l’aide d’une requête.
+		     Ce type de base de données offre donc une flexibilité accrue. Il est principalement utilisé pour les systèmes CMS, les plateformes de blogging, ou les applications de e-commerce. 
+		     En revanche, il ne convient pas pour les transactions complexes nécessitant des opérations ou des requêtes multiples sur des structures agrégées variables. Les exemples les plus connus dans cette catégorie sont Amazon SimpleDB, CouchDB, MongoDB, Riak, Lotus Notes et MongoDB.
+
