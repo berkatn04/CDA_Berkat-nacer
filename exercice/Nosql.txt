@@ -1,6 +1,8 @@
 No sql -> not only sql
 
--Base de donnée non relationnellle 
+- 
+
+- Base de donnée non relationnellle 
 
 -4 types : 
 
