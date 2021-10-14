@@ -1,0 +1,1 @@
+SELECT nom, LENGTH(nom) as longeurNom FROM employe
