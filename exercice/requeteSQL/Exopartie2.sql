@@ -96,6 +96,16 @@ GROUP BY titre
 SELECT dept.nom, COUNT(nom) FROM employe
 INNER JOIN dept ON employe.nodep = dept.nodept
 
+-- 19/ Rechercher les titres et la moyenne des salaires par titre dont la moyenne est supérieure à la moyenne des salaires des Représentants. 
+
+SELECT titre, AVG(salaire) FROM employe 
+WHERE AVG(salaire) > (SELECT AVG(salaire) FROM employe WHERE titre="représentant")
+GROUP BY titre
+
+-- 20/Rechercher le nombre de salaires renseignés et le nombre de taux de commission renseignés. 
+
+
+SELECT COUNT(DISCTINCT(salaire)), COUNT(DISTINCT(tauxcom)) FROM employe
 
 
 
