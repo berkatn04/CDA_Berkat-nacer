@@ -11,7 +11,8 @@ CREATE TABLE Enfants(
    adresseEnfant VARCHAR(200),
    sexe VARCHAR(10),
    voeu VARCHAR(100),
-   sagesse DECIMAL(15,2)
+   sagesse DECIMAL(15,2),
+   IdCadeau INT
    
 ) ENGINE=InnoDB;
 
@@ -68,12 +69,6 @@ CREATE TABLE Participe(
     
 ) ENGINE=InnoDB;
 
-CREATE TABLE Demande(
-   IdDemande INT AUTO_INCREMENT PRIMARY KEY,
-   IdEnfant INT,
-   IdCadeau INT
-
-) ENGINE=InnoDB;
 
 CREATE TABLE Transporte(
    IdTransporte INT AUTO_INCREMENT PRIMARY KEY,
@@ -92,10 +87,9 @@ ADD CONSTRAINT FK_Participe_Lutin  FOREIGN KEY(IdLutin) REFERENCES Lutins(IdLuti
 ADD CONSTRAINT FK_Participe_Traineau FOREIGN KEY(IdTraineau) REFERENCES Traineaux(IdTraineau),
 ADD CONSTRAINT FK_Participe_Tournee FOREIGN KEY(IdTournee) REFERENCES Tournees(IdTournee);
 
-ALTER TABLE Demande 
-ADD CONSTRAINT FK_Demande_Enfant  FOREIGN KEY(IdEnfant) REFERENCES Enfants(IdEnfant),
-ADD CONSTRAINT FK_Demande_Cadeau FOREIGN KEY(IdCadeau) REFERENCES Cadeaux(IdCadeau);
-
 ALTER TABLE Transporte 
 ADD CONSTRAINT FK_Transporte_Cadeau FOREIGN KEY(IdCadeau) REFERENCES Cadeaux(IdCadeau),
 ADD CONSTRAINT FK_Transporte_Traineau FOREIGN KEY(IdTraineau) REFERENCES Traineaux(IdTraineau);
+
+ALTER TABLE Enfants
+ADD CONSTRAINT FK_Enfants_Cadeaux FOREIGN KEY(IdCadeau) REFERENCES Cadeaux(IdCadeau);
