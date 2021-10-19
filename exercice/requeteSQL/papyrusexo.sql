@@ -68,4 +68,46 @@ INNER JOIN produit as P on P.nomfou=L.nomfou
 WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0
 GROUP BY numfou
 
+-- 13
 
+SELECT numcom, datcom, numfou FROM entcom as E
+WHERE  numfou = ( SELECT numfou FROM entcom WHERE numcom = 70210)
+
+-- 14 
+
+SELECT codart, prix1, libart FROM vente as V 
+INNER JOIN produit as P on P.codart=V.codart
+WHERE 
+
+
+--15
+
+SELECT L.codart, E.numfou FROM ligcom as L
+INNER JOIN entcom as E on E.numcom=L.numcom
+INNER JOIN produit as P on P.codart=L.codart
+WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0 AND stkphy <= ((150/100)*stkale)
+ORDER BY codart,numfou
+
+-- 16 
+
+SELECT L.codart, E.numfou FROM ligcom as L
+INNER JOIN entcom as E on E.numcom=L.numcom
+INNER JOIN produit as P on P.codart=L.codart
+INNER JOIN vente as V on V.codart=L.codart
+WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0 AND stkphy <= ((150/100)*stkale) AND delliv > 30
+ORDER BY codart,numfou
+
+-- 17
+
+SELECT E.numfou, SUM(P.stkphy) FROM ligcom as L
+INNER JOIN entcom as E on E.numcom=L.numcom
+INNER JOIN produit as P on P.codart=L.codart
+INNER JOIN vente as V on V.codart=L.codart
+GROUP BY numfou
+
+-- 18 
+
+SELECT L.codart FROM ligcom as L
+INNER JOIN entcom as E on E.numcom=L.numcom
+INNER JOIN produit as P on P.codart=L.codart
+WHERE qtecde > ((90/100)*qteann)
