@@ -44,7 +44,9 @@ ORDER BY somme DESC
 
 SELECT SUM(qtecde*priuni) AS "somme", numcom FROM ligcom
 WHERE priuni < 1000 
-HAVING SUM(qtecde*priuni) > 10000
+GROUP BY numcom
+HAVING somme > 10000
+
 
 -- 10. Lister les commandes par nom fournisseur(Afficher le nom du fournisseur, le numéro de commande et la date)
 
@@ -60,5 +62,10 @@ WHERE obscom = "Commande urgente"
 
 -- 12. Coder de 2 manières différentes la requête suivante : Lister le nom des fournisseurs susceptibles de livrer au moins un article
 
+SELECT numfou, nomfou FROM ligcom as L
+INNER JOIN entcom as E on E.numcom=L.numcom
+INNER JOIN produit as P on P.nomfou=L.nomfou
+WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0
+GROUP BY numfou
 
 
