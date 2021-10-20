@@ -75,9 +75,10 @@ WHERE  numfou = ( SELECT numfou FROM entcom WHERE numcom = 70210)
 
 -- 14 
 
-SELECT codart, prix1, libart FROM vente as V 
+SELECT V.prix1, P.libart FROM vente as V
 INNER JOIN produit as P on P.codart=V.codart
-WHERE 
+WHERE prix1 < (SELECT MIN(prix1) FROM vente as V INNER JOIN produit as P on P.codart=V.codart WHERE libart like "r%" )
+
 
 
 --15
@@ -111,3 +112,47 @@ SELECT L.codart FROM ligcom as L
 INNER JOIN entcom as E on E.numcom=L.numcom
 INNER JOIN produit as P on P.codart=L.codart
 WHERE qtecde > ((90/100)*qteann)
+
+-- 19 
+
+SELECT
+
+
+
+
+
+
+-- 1. 
+
+UPDATE vente
+SET prix1= prix1 * (4/100), prix2= prix2 * (2/100)
+WHERE numfou= 9180
+
+
+-- 2.
+
+UPDATE vente
+SET prix2= 120
+WHERE prix2= 0
+
+-- 3. 
+
+UPDATE entcom
+INNER JOIN fournis on entcom.numfou=fournis.numfou
+SET obscom= concat("****** ",obscom)
+WHERE satisf < 5 
+
+-- 4.
+
+DELETE FROM produit 
+WHERE codart = "I110"
+
+-- 5.
+
+DELETE FROM entcom
+WHERE obscom= ""
+
+
+
+
+
