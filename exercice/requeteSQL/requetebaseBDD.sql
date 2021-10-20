@@ -30,9 +30,10 @@ CREATE TABLE GRADE(
 )ENGINE=InnoDB;
 
 CREATE TABLE HISTOFONCTION(
-   noemp INT PRIMARY KEY,
+   noemp INT,
    date_nom DATE,
    Fonction VARCHAR(50)
+   PRIMARY KEY (nomep,date_nom)
    
 )ENGINE=InnoDB;
 
