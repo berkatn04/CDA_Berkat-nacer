@@ -46,7 +46,7 @@ CREATE TABLE `entcom` (
 
 LOCK TABLES `entcom` WRITE;
 /*!40000 ALTER TABLE `entcom` DISABLE KEYS */;
-INSERT INTO `entcom` VALUES (70011,'Commande urgente','2018-04-23 13:59:51',540),(70025,'Commande urgente','2021-10-18 22:00:00',9150),(70210,'Commande cadencée','2018-04-23 13:59:51',120),(70250,'****** Commande cadencée','2021-10-20 07:04:17',8700),(70629,'****** ','2021-12-20 08:04:17',9180);
+INSERT INTO `entcom` VALUES (70011,'Commande urgente','2018-04-23 13:59:51',540),(70025,'Commande urgente','2021-10-18 22:00:00',9150),(70210,'Commande cadencée','2018-04-23 13:59:51',120),(70250,'****** ****** Commande cadencée','2021-10-20 12:05:42',8700),(70629,'****** ****** ','2021-10-20 12:05:42',9180);
 /*!40000 ALTER TABLE `entcom` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -178,4 +178,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-20 12:20:01
+-- Dump completed on 2021-10-20 17:20:01

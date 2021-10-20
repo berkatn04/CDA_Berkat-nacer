@@ -150,7 +150,7 @@ WHERE codart = "I110"
 -- 5.
 
 DELETE FROM entcom
-WHERE obscom= ""
+WHERE obscom= ""+
 
 
 

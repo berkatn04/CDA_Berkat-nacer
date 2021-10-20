@@ -87,6 +87,7 @@ CREATE TABLE `commandes` (
   `idArticle` int(11) DEFAULT NULL,
   `dateCommande` date DEFAULT NULL,
   `quantiteCommande` int(11) DEFAULT NULL,
+  `cde_total` int(11) DEFAULT NULL,
   PRIMARY KEY (`idCommande`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -97,7 +98,7 @@ CREATE TABLE `commandes` (
 
 LOCK TABLES `commandes` WRITE;
 /*!40000 ALTER TABLE `commandes` DISABLE KEYS */;
-INSERT INTO `commandes` VALUES (1,2,6,'2014-07-07',9),(2,2,5,'2014-07-08',1),(3,3,1,'2014-07-09',12),(4,4,5,'2014-07-08',2),(5,5,1,'2014-07-07',5),(6,5,2,'2014-07-07',1);
+INSERT INTO `commandes` VALUES (1,2,6,'2014-07-07',9,18),(2,2,5,'2014-07-08',1,4),(3,3,1,'2014-07-09',12,72),(4,4,5,'2014-07-08',2,8),(5,5,1,'2014-07-07',5,30),(6,5,2,'2014-07-07',1,4);
 /*!40000 ALTER TABLE `commandes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -110,4 +111,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-10-20 12:20:01
+-- Dump completed on 2021-10-20 17:20:01

@@ -74,4 +74,9 @@ GROUP BY idClient
 
 -- p. Affichez les clients classés par ordre alphabétique de leur nom.
 
-SELECT 
+SELECT nomClient FROM clients
+ORDER BY nomClient
+
+-- q. Affichez les articles classés selon leur prix décroissant. 
+SELECT idArticle, descriptionArticle, prixArticle FROM articles
+ORDER BY prixArticle DESC
