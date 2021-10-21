@@ -14,18 +14,18 @@ SELECT COUNT(DISTINCT numfou) as nbreFou, COUNT(*) as "numfou" FROM entcom
 -- 4. Editer les produits ayant un stock inférieur ou égal au stock d'alerte et dont laquantité annuelle est inférieur est inférieure à 1000(informations à fournir : n° produit, libellé produit, stock, stock actuel d'alerte,quantité annuelle)
 
 SELECT codart, libart, stkale, stkphy, qteann FROM produit 
-WHERE stkphy < stkale
+WHERE stkphy < stkale AND qteann < 1000
 
 -- 5. Quels sont les fournisseurs situés dans les départements 75 78 92 77 ?L’affichage (département, nom fournisseur) sera effectué par départementdécroissant, puis par ordre alphabétique
 
-SELECT nomfou, posfou FROM fournis 
-WHERE substring(posfou,1,2)= "75" OR substring(posfou,1,2)= "78" OR substring(posfou,1,2)= "92" OR substring(posfou,1,2)= "77"
-ORDER BY posfou, nomfou 
+  SELECT nomfou AS "nomFournisseur",  SUBSTRING(posfou,1,2) AS "Département" FROM fournis 
+    WHERE SUBSTRING(posfou,1,2) IN ("75","78","92","77") 
+    ORDER BY "Département" DESC,nomfou
 
 -- 6. Quelles sont les commandes passées au mois de mars et avril ?
 
-SELECT numcom FROM ligcom
-WHERE (MONTH(derliv)) in (3,4)
+SELECT numcom FROM entcom
+WHERE (MONTH(datcom)) in (3,4)
 
 -- 7. Quelles sont les commandes du jour qui ont des observations particulières ? (Affichage numéro de commande, date de commande)
 
@@ -43,7 +43,7 @@ ORDER BY somme DESC
 -- 9. Lister les commandes dont le total est supérieur à 10 000€ ; on exclura dans lecalcul du total les articles commandés en quantité supérieure ou égale à 1000.(Affichage numéro de commande et total)
 
 SELECT SUM(qtecde*priuni) AS "somme", numcom FROM ligcom
-WHERE priuni < 1000 
+WHERE qtecde < 1000 
 GROUP BY numcom
 HAVING somme > 10000
 
@@ -58,62 +58,62 @@ GROUP BY numfou
 SELECT E.numcom, numfou, libart, (qtecde*priuni) AS "sousTotal", obscom FROM entcom as E
 INNER JOIN ligcom as L on E.numcom = L.numcom
 INNER JOIN produit as P on P.codart = L.codart
-WHERE obscom = "Commande urgente"
+WHERE obscom LIKE "%urgent%"
 
 -- 12. Coder de 2 manières différentes la requête suivante : Lister le nom des fournisseurs susceptibles de livrer au moins un article
 
-SELECT numfou, nomfou FROM ligcom as L
-INNER JOIN entcom as E on E.numcom=L.numcom
-INNER JOIN produit as P on P.nomfou=L.nomfou
-WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0
-GROUP BY numfou
+select distinct nomfou from fournis
+where numfou in(select numfou from vente)
 
--- 13
+SELECT nomfou 
+FROM fournis
+INNER JOIN vente ON fournis.numfou = vente.numfou
 
-SELECT numcom, datcom, numfou FROM entcom as E
-WHERE  numfou = ( SELECT numfou FROM entcom WHERE numcom = 70210)
+-- 13 Coder de 2 manières différentes la requête suivante : Lister les commandes (Numéro et date) dont le fournisseur est celui de la commande 70210
 
--- 14 
+SELECT numcom, datcom, numfou FROM entcom as E1
+WHERE  numfou = ( SELECT numfou FROM entcom as E2 WHERE numcom = 70210) AND E1.numfou != 70210
+
+-- 14 Dans les articles susceptibles d’être vendus, lister les articles moins chers (basés sur Prix1) que le moins cher des rubans (article dont le premier caractère commence par R. On affichera le libellé de l’article et prix1.
 
 SELECT V.prix1, P.libart FROM vente as V
 INNER JOIN produit as P on P.codart=V.codart
-WHERE stkphy>0 AND prix1 < (SELECT MIN(prix1) FROM vente as V INNER JOIN produit as P on P.codart=V.codart WHERE libart like "r%" )
+WHERE stkphy>0 AND prix1 < (SELECT MIN(prix1) FROM vente as V INNER JOIN produit as P on P.codart=V.codart WHERE P.libart like "r%" )
 
 
 
---15
+--15 Editer la liste des fournisseurs susceptibles de livrer les produits dont le stock est inférieur ou égal à 150 % du stock d'alerte. La liste est triée par produit puis fournisseur
+ 
+SELECT nomfou,vente.codart FROM vente 
+INNER JOIN produit ON vente.codart=produit.codart
+INNER JOIN fournis ON vente.numfou=fournis.numfou  
+WHERE stkphy<=1.5*stkale 
+ORDER BY codart,nomfou
 
-SELECT L.codart, E.numfou FROM ligcom as L
-INNER JOIN entcom as E on E.numcom=L.numcom
-INNER JOIN produit as P on P.codart=L.codart
-WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0 AND stkphy <= ((150/100)*stkale)
-ORDER BY codart,numfou
-
--- 16 
+-- 16 Éditer la liste des fournisseurs susceptibles de livrer les produits dont le stock est inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 jours. La liste est triée par fournisseur puis produit
 
 SELECT L.codart, E.numfou FROM ligcom as L
 INNER JOIN entcom as E on E.numcom=L.numcom
 INNER JOIN produit as P on P.codart=L.codart
 INNER JOIN vente as V on V.codart=L.codart
-WHERE (qtecde-qteliv) != 0 AND (qtecde-qteliv) > 0 AND stkphy <= ((150/100)*stkale) AND delliv > 30
+WHERE stkphy <= 1.5*stkale AND delliv > 30
 ORDER BY codart,numfou
 
--- 17
+-- 17 Avec le même type de sélection que ci-dessus, sortir un total de stock par fournisseur trié par total décroissant.
 
-SELECT E.numfou, SUM(P.stkphy) FROM ligcom as L
-INNER JOIN entcom as E on E.numcom=L.numcom
+SELECT numfou, SUM(P.stkphy) as "sommeSTKPHY" FROM ligcom as L
 INNER JOIN produit as P on P.codart=L.codart
 INNER JOIN vente as V on V.codart=L.codart
 GROUP BY numfou
 
--- 18 
+-- 18 En fin d'année, sortir la liste des produits dont la quantité annuelle prévue est inférieure d’au moins 10 % à la quantité réellement commandée.
 
 SELECT L.codart FROM ligcom as L
 INNER JOIN entcom as E on E.numcom=L.numcom
 INNER JOIN produit as P on P.codart=L.codart
 WHERE qtecde > ((90/100)*qteann) 
 
--- 19 
+-- 19 Calculer le chiffre d'affaire par fournisseur pour l'année 2014 sachant que les prix indiqués sont hors taxes et que le taux de TVA est 20,60%.
 
 SELECT
 
@@ -150,7 +150,7 @@ WHERE codart = "I110"
 -- 5.
 
 DELETE FROM entcom
-WHERE obscom= ""+
+WHERE obscom= ""
 
 
 

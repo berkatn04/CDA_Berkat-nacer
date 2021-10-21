@@ -19,11 +19,11 @@ SELECT DISTINCT fonction FROM EMPLOYE
 
 --6.
 
-SELECT nomemp, datemb, (datemb + INTERVAL 1 DAY) as datemb+1 FROM EMPLOYE 
+SELECT nomemp, datemb, (datemb + INTERVAL 1 DAY) as "datemb+1" FROM EMPLOYE 
 
 --7.
 
-SELECT CONCAT(nomemp,"",fonction) FROM EMPLOYE 
+SELECT CONCAT(nomemp," ",fonction) FROM EMPLOYE 
 
 -- B
 
@@ -35,7 +35,7 @@ WHERE nodep= 30
 --2.
 
 SELECT noemp, nomemp FROM EMPLOYE 
-WHERE fonction = "ouvriers"
+WHERE fonction = "ouvrier"
 
 --3.
 
@@ -50,27 +50,29 @@ WHERE comm > sala
 --5.
 
 SELECT nomemp, sala FROM EMPLOYE 
-WHERE sala > 1500 AND nodep= 30 AND fonction = "vendeurs"
+WHERE sala > 1500 AND nodep= 30 AND fonction = "vendeur"
+GROUP BY nomemp
 
 --6.
 
-SELECT nomemp, sala, fonctions FROM EMPLOYE
-WHERE fonction= "directeurs" OR fonction="presidents"
+SELECT nomemp, sala, fonction FROM EMPLOYE
+WHERE fonction= "directeur" OR fonction="president"
 
 --7.
 
 SELECT nomemp, fonction, sala FROM EMPLOYE
-WHERE fonction= "directeurs" OR salaire > 2500
+WHERE fonction= "directeur" OR sala > 2500
 
 --8.
 
 SELECT nomemp, noemp FROM EMPLOYE
 WHERE (fonction= "directeur" OR fonction="presidents") AND nodep= 10
+GROUP BY nomemp
 
 --9.
 
 SELECT nomemp, fonction, nodep FROM EMPLOYE
-WHERE fonction != "ouvriers" OR fonction != "directeurs" AND nodep=10 
+WHERE (fonction != "ouvriers" OR fonction != "directeurs") AND nodep=10 
 
 --10.
 
@@ -85,7 +87,7 @@ WHERE sala BETWEEN 1200 AND 1300
 --12.
 
 SELECT nomemp, nodep, fonction FROM EMPLOYE
-WHERE fonctions != "directeur"*
+WHERE fonction != "directeur"
 
 --13.
 
@@ -101,25 +103,31 @@ WHERE nomemp like "C%"
 
 SELECT nomemp FROM EMPLOYE
 WHERE comm = ""
+GROUP BY nomemp
 
 --16.
 
 SELECT nomemp FROM EMPLOYE
 WHERE nodep=30 OR nodep=20 AND comm != ""
+GROUP BY nomemp
 
 --C.
 
 --1.
 
 SELECT sala, fonction, nomemp FROM EMPLOYE
-WHERE fonction = 30 
+WHERE nodep = 30 
+GROUP BY nomemp
 ORDER BY sala ASC 
 
 --2.
 
 SELECT sala, fonction, nomemp FROM EMPLOYE
-WHERE fonction = 30 
+WHERE nodep = 30 
+GROUP BY nomemp
 ORDER BY sala DESC 
 
 --3.
 
+SELECT nomemp, fonction, sala FROM EMPLOYE
+ORDER BY fonction, sala DESC
