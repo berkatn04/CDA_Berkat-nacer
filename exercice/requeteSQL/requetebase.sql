@@ -130,4 +130,111 @@ ORDER BY sala DESC
 --3.
 
 SELECT nomemp, fonction, sala FROM EMPLOYE
-ORDER BY fonction, sala DESC
+ORDER BY fonction, sala DESC 
+
+--4.
+
+SELECT comm, sala, nomemp FROM test
+ORDER BY comm
+
+--5.
+
+SELECT comm, sala ,nomemp FROM test
+ORDER BY comm DESC 
+
+--D
+
+--1.
+
+SELECT nomemp, ville FROM test
+WHERE nomemp= "Costanza"
+
+--2.
+
+SELECT nomemp, fonction, nomdep, nodep FROM test
+WHERE nodep = 30 OR nodep= 40
+
+--3.
+
+SELECT 
+
+--4.
+
+SELECT nomemp, sala, noresp FROM test
+WHERE sala > (SELECT sala FROM test as t WHERE test.noresp = t.noemp)
+
+--5.
+
+SELECT nomemp, sala, fonction FROM test
+WHERE sala > (SELECT sala FROM test WHERE nomemp= "Perou")
+
+--E
+
+--1.
+
+SELECT nomemp, sala, comm, (sala+comm) as "revenu" FROM test
+
+--2.
+
+SELECT nomemp, sala, comm FROM test
+WHERE comm > 0.25*sala
+
+--3.
+
+SELECT nomemp, fonction FROM test 
+WHERE fonction = "Vendeur"
+ORDER BY (comm/sala) DESC
+
+--4.
+
+SELECT (sala*12+comm) as revenuAnnuel, fonction, nomemp FROM test
+WHERE fonction= "Vendeur" 
+
+--5.
+
+SELECT ROUND(sala/30) revenuQuotidien,fonction, nomemp FROM test
+WHERE fonction= "Vendeur"
+
+--6.
+
+SELECT AVG(sala), fonction FROM test
+WHERE fonction= "Ouvrier"
+
+--7.
+
+SELECT SUM(sala) SommeSalaire, SUM(comm) SommeCommission, fonction FROM test
+WHERE fonction= "Vendeur"
+
+--8.
+
+SELECT AVG(sala*12+comm) as revenuAnnuel, fonction, nomemp FROM test
+WHERE fonction= "Vendeur" 
+
+--9.
+
+SELECT MIN(sala) SalaireMIN, MAX(sala) SalireMAX, (MAX(sala)-MIN(sala)) Ecart FROM test
+
+--10.
+
+SELECT COUNT(noemp), nodep FROM test 
+WHERE nodep= 30
+
+--F
+
+--1.
+
+SELECT AVG(sala) SalaireMoyen, nodep FROM test
+GROUP BY nodep
+
+--2
+
+SELECT AVG(sala*12) as SalaireAnnuelMoyen, fonction, nodep FROM test
+WHERE fonction != "Directeur" AND fonction != "President" 
+GROUP BY nodep
+
+--3.
+
+SELECT COUNT(noemp) NombreEmploye, AVG(sala*12) as SalaireAnnuelMoyen
+
+
+
