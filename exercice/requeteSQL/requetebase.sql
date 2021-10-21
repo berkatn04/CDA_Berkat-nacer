@@ -234,7 +234,13 @@ GROUP BY nodep
 
 --3.
 
-SELECT COUNT(noemp) NombreEmploye, AVG(sala*12) as SalaireAnnuelMoyen
+SELECT COUNT(noemp) NombreEmploye, AVG(sala*12) as SalaireAnnuelMoyen, fonction, nodep FROM test
+GROUP BY fonction, nodep
+
+--4.
+
+SELECT AVG(sala*12) as SalaireAnnuelMoyen, fonction, 
+
 
 
 
