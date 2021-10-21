@@ -92,65 +92,66 @@ ORDER BY codart,nomfou
 
 -- 16 Éditer la liste des fournisseurs susceptibles de livrer les produits dont le stock est inférieur ou égal à 150 % du stock d'alerte et un délai de livraison d'au plus 30 jours. La liste est triée par fournisseur puis produit
 
-SELECT L.codart, E.numfou FROM ligcom as L
-INNER JOIN entcom as E on E.numcom=L.numcom
-INNER JOIN produit as P on P.codart=L.codart
-INNER JOIN vente as V on V.codart=L.codart
-WHERE stkphy <= 1.5*stkale AND delliv > 30
-ORDER BY codart,numfou
+SELECT nomfou,vente.codart FROM vente 
+INNER JOIN produit ON vente.codart=produit.codart
+INNER JOIN fournis ON vente.numfou=fournis.numfou  
+WHERE stkphy<=1.5*stkale 
+AND vente.delliv <= 30
+ORDER BY codart,nomfou
 
 -- 17 Avec le même type de sélection que ci-dessus, sortir un total de stock par fournisseur trié par total décroissant.
 
-SELECT numfou, SUM(P.stkphy) as "sommeSTKPHY" FROM ligcom as L
-INNER JOIN produit as P on P.codart=L.codart
-INNER JOIN vente as V on V.codart=L.codart
-GROUP BY numfou
+select nomfou, sum(stkphy) as stockTotal from fournis
+inner join vente on fournis.numfou=vente.numfou
+inner join produit on vente.codart=produit.codart
+group by fournis.numfou
+order by stockTotal DESC
 
 -- 18 En fin d'année, sortir la liste des produits dont la quantité annuelle prévue est inférieure d’au moins 10 % à la quantité réellement commandée.
 
-SELECT L.codart FROM ligcom as L
-INNER JOIN entcom as E on E.numcom=L.numcom
-INNER JOIN produit as P on P.codart=L.codart
-WHERE qtecde > ((90/100)*qteann) 
+SELECT produit.codart, SUM(qtecde) as "somme quantité commandée", qteann FROM ligcom 
+INNER JOIN produit ON ligcom.codart = produit.codart 
+GROUP BY codart 
+HAVING SUM(qtecde) > qteann*0.90
 
 -- 19 Calculer le chiffre d'affaire par fournisseur pour l'année 2014 sachant que les prix indiqués sont hors taxes et que le taux de TVA est 20,60%.
 
-SELECT
+SELECT nomfou, SUM((l.priuni*l.qteliv)*1.20) AS "Chiffre d'affaire par fournisseur pour l'année 93" FROM entcom AS e
+INNER JOIN fournis AS f ON e.numfou = f.numfou
+INNER JOIN ligcom AS l ON e.numcom = l.numcom
+WHERE YEAR(e.datcom) = '1993'
+GROUP BY e.numfou
 
 
-
-
-
-
--- 1. 
+-- 1 Application d'une augmentation de tarif de 4% pour le prix 1, 2% pour le prix2 pour le fournisseur 9180
 
 UPDATE vente
-SET prix1= prix1 * (4/100), prix2= prix2 * (2/100)
+SET prix1= prix1 * 1.04, prix2= prix2 * 1.02
 WHERE numfou= 9180
 
 
--- 2.
+-- 2 Dans la table vente, mettre à jour le prix2 des articles dont le prix2 est null, en affectant a valeur de prix.
+
 
 UPDATE vente
-SET prix2= 120
+SET prix2= prix1
 WHERE prix2= 0
 
--- 3. 
+-- 3 Mettre à jour le champ obscom en positionnant '*****' pour toutes les commandes dont le fournisseur a un indice de satisfaction <5
 
-UPDATE entcom
-INNER JOIN fournis on entcom.numfou=fournis.numfou
-SET obscom= concat("****** ",obscom)
-WHERE satisf < 5 
 
--- 4.
+UPDATE entcom 
+SET obscom="*****"
+WHERE numfou IN (SELECT numfou FROM fournis WHERE satisf<5);
+
+-- 4 Suppression du produit I110
 
 DELETE FROM produit 
 WHERE codart = "I110"
 
--- 5.
+-- 5 Suppression des entête de commande qui n'ont aucune ligne
 
-DELETE FROM entcom
-WHERE obscom= ""
+DELETE FROM entcom WHERE numcom not in (SELECT DISTINCT numcom FROM ligcom)
 
 
 
