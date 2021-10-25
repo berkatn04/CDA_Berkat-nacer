@@ -64,6 +64,7 @@ WHERE ville_population_2012 > 1500000
 UPDATE villes_france 
 SET ville_nom = REPLACE(ville_nom, "-", " ")
 
+
 --12.
 
 SELECT ville_nom, ville_surface FROM villes_france
@@ -80,7 +81,7 @@ ADD region_nbDepartement INT
 DELIMITER $$
 CREATE PROCEDURE MajRegion()
 UPDATE regions
-SET region_nbDepartement= 0 $$
+SET region_nbDepartement= region_nbDepartement + 1 $$
 DELIMITER ;
 
 --15.
