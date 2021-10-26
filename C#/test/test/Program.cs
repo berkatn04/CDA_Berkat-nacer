@@ -6,9 +6,13 @@ namespace test
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("eegrge");
-            Console.Read();
+            Console.WriteLine("Saisissez votre nom :");
+            affiche = Console.ReadLine();
+            Console.WriteLine(affiche);
+             
+
         }
+        Console.ReadLine();
     }
 }
+
