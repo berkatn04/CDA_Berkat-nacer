@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Exercice
 {
@@ -88,26 +89,251 @@ namespace Exercice
 
             *
 
-            int c = 0;
-            string str = "0123456789";
-            for(c in str);
+        char val2 = '1';
+        char val3 = '2';
+        char val4 = '3';
+        char val5 = '4';
+        char val6 = '5';
+        char val7 = '6';
+        char val8 = '7';
+        char val9 = '8';
+        char val10 = '9';
+
+        Console.WriteLine((int)val1);
+        Console.WriteLine((int)val2);
+        Console.WriteLine((int)val3);
+        Console.WriteLine((int)val4);
+        Console.WriteLine((int)val5);
+        Console.WriteLine((int)val6);
+        Console.WriteLine((int)val7);
+        Console.WriteLine((int)val8);
+        Console.WriteLine((int)val9);
+        Console.WriteLine((int)val10);
+
+
+            Exercice8:
+
+            Console.WriteLine("Saisissez le poids d'un carton : ");
+            float poidsUnitaire = float.Parse(Console.ReadLine());
+            Console.WriteLine("Saisissez la capacité du camion : ");
+            float poidsTotal = float.Parse(Console.ReadLine());
+            int nombreDeCartons = (int)(poidsTotal / poidsUnitaire);
+            Console.WriteLine("Vous pourrez placer " + nombreDeCartons + " cartons.");
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            PAGE 3:
+
+
+            exercice1:
+
+            int age;
+            Console.WriteLine("Saisissez votre age:");
+            age = (int.Parse(Console.ReadLine()));
+            if (age >= 18)
             {
-                Console.WriteLine();
-                Console.ReadLine();
-            } 
+                Console.Write("Vous etes majeur");
+            }
+            else
+            {
+                Console.Write("Vous etes mineur");
+            }
 
 
-            Exercice 3:
 
+            exercice2:
+
+            int a;
+            Console.Write("Saisissez une valeur:");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine(Math.Abs(a));
+            
+
+
+
+            exercice3:
+
+            int a;
+            Console.Write("Saisissez une note:");
+            a = int.Parse(Console.ReadLine());
+            if(a>=8 & a < 10)
+            {
+                Console.WriteLine("rattrapage");
+            }
+            if (a >=10)
+            {
+                Console.WriteLine("admis");
+            }
+            if (a < 8)
+            {
+                Console.WriteLine("ajournée");
+            }
+
+
+
+
+
+            exercice4:
+
+            float M;
+            Console.WriteLine("Saisissez le montant des dommages :");
+            M = float.Parse(Console.ReadLine());
+            float F = (10 / 100) * M;
+            if (F < 4000)
+            {
+                Console.WriteLine("La franchise est de" + F);
+            }
+           
+
+
+
+            exercice5:
+            
+            
+
+
+
+
+
+            
+            exercice6:
+            
+            int a;
+            int b;
+            int c;
+            Console.Write("Saisissez la premiere valeur :");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez la deuxieme valeur :");
+            b = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez la troisieme valeur :");
+            c = int.Parse(Console.ReadLine());
+            int[] tableau = { a, b, c };
+            Console.WriteLine("la valeur minimale entre les trois est:" + tableau.Min());
+            Console.WriteLine("la valeur maximale entre les trois est:" + tableau.Max());
+            Console.ReadLine();
+
+
+            
+
+            exercice7:
+            
+
+            int a;
+            int b;
+            char op;
+            Console.Write("Saisissez la premiere valeur :");
+            a = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez la deuxieme valeur :");
+            b = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez l'operateur :");
+            op = char.Parse(Console.ReadLine());
+            switch (op) {
+
+
+                case  '+':
+            
+                Console.WriteLine("Le resultat de l'operation a+b est :" + (a + b));
+                    break;
+                case '-':
+
+                    Console.WriteLine("Le resultat de l'operation a+b est :" + (a + b));
+                    break;
+                case '*':
+
+                    Console.WriteLine("Le resultat de l'operation a+b est :" + (a + b));
+                    break;
+                case '/':
+
+                    Console.WriteLine("Le resultat de l'operation a+b est :" + (a + b));
+                    break;
+
+                default:
+                    Console.WriteLine("L'operateur saisie n'est pas bon");
+                    break;
+            }
+
+
+            Console.ReadLine();
+
+
+            
+
+            exercice8:
+            
+            int i;
+            int j;
+            Console.Write("saisissez les coordonnées en x :");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y :");
+            j = int.Parse(Console.ReadLine());
+            if ((i + j) % 2 == 0)
+            {
+                Console.WriteLine("La couleur de la case est noir");
+            }
+            else
+            {
+                Console.WriteLine("La couleur de la case est blanche");
+            }
+
+
+            exercice9:
+            
+            int i;
+            int j;
+            int i2;
+            int j2;
+            Console.Write("saisissez les coordonnées en x :");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y :");
+            j = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en x2 :");
+            i2 = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y2 :");
+            j2 = int.Parse(Console.ReadLine());
+
+            if ((i2 == i+2 && (j2 == j+1 || j2 ==j-1)) || (i2 == i-2 && (j2 == j + 1 || j2 == j - 1)) || (j2 == j-2 && (i2 == i - 1 || i2 == i + 1)) || (j2 == j + 2 && (i2 == i - 1 || i2 == i + 1)))
+                    {
+                Console.WriteLine("Deplacement possible");
+            }
+
+
+            exercice10:
             */
 
-            double M;
-            double k;
-            Console.Write("Saisissez le poids de chaque carton:");
-            k = (double.Parse(Console.ReadLine()));
-            Console.Write("Saisissez le poids max du camion:");
-            M = (double.Parse(Console.ReadLine()));
-            Console.WriteLine("Le camion peut transporter :" + (M / k) + "cartons");
+            int i;
+            int j;
+            int i2;
+            int j2;
+            Console.Write("saisissez les coordonnées en x :");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y :");
+            j = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en x2 :");
+            i2 = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y2 :");
+            j2 = int.Parse(Console.ReadLine());
+
+            if (Math.Abs()==0)  (Math)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
