@@ -586,10 +586,11 @@ namespace Exercice
             int val1;
             int val2;
             int x;
+            bool boolean;
             Console.Write("Saisissez le premiere borne :");
-            val1 = int.Parse(Console.ReadLine());
+            boolean = int.TryParse(Console.ReadLine(), out val1);
             Console.Write("Saisissez la deuxieme borne :");
-            val2 = int.Parse(Console.ReadLine());
+            boolean = int.TryParse(Console.ReadLine(), out val2);
             Console.Write("Saisissez uen valeur :");
             x  = int.Parse(Console.ReadLine());
 
@@ -600,9 +601,45 @@ namespace Exercice
 
 
 
-            exercice14:
-            */
+            exercice15:
+            
+            int xhautgauche;
+            int yhautgauche;
+            int xbasdroit;
+            int ybasdroit;
+            int xpoint;
+            int ypoint;
+            bool boolean;
+            Console.Write("Saisissez la coordonnée x du premier point du rectangle :");
+            boolean = int.TryParse(Console.ReadLine(), out xhautgauche);
+            Console.Write("Saisissez la coordonnée y du premier point du rectangle:");
+            boolean = int.TryParse(Console.ReadLine(), out yhautgauche);
+            Console.Write("Saisissez la coordonnée x du deuxieme point du rectangle :");
+            boolean = int.TryParse(Console.ReadLine(), out xbasdroit);
+            Console.Write("Saisissez la coordonnée y du deuxieme point du rectangle :");
+            boolean = int.TryParse(Console.ReadLine(), out ybasdroit);
+            Console.Write("Saisissez la coordonnée x du point:");
+            boolean = int.TryParse(Console.ReadLine(), out xpoint);
+            Console.Write("Saisissez la coordonnée y du point:");
+            boolean = int.TryParse(Console.ReadLine(), out ypoint);
+            Console.WriteLine((xpoint >= xhautgauche && xpoint <= xbasdroit) && (ypoint >= ybasdroit && ypoint <= yhautgauche) ? "Votre point se trouve dans le rectangle" : "Votre point ne se trouve pas dans le rectangle");
+           
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+            PAGE4:
+
+
+
+            exercie 1 :
+
+            le programme affiche        1,2
+                                        
+                                        
+
+
+
+            exercice 2 :
 
 
 
