@@ -275,7 +275,7 @@ namespace Exercice
             }
 
 
-            exercice9:
+            exercice9-cavalier:
             
             int i;
             int j;
@@ -296,8 +296,8 @@ namespace Exercice
             }
 
 
-            exercice10:
-            */
+            exercice10-fou:
+            
 
             int i;
             int j;
@@ -312,23 +312,194 @@ namespace Exercice
             Console.Write("saisissez les coordonnées en y2 :");
             j2 = int.Parse(Console.ReadLine());
 
-            if (Math.Abs()==0)  (Math)
+            if ((Math.Abs(i-i2) == (Math.Abs(j-j2) ))){
+
+                Console.WriteLine("Deplacement possible");
+            }
+            else
+            {
+                Console.WriteLine("Deplacement impossible");
+            }
+
+            
+
+
+            exercice10-dame:
+            
+            int i;
+            int j;
+            int i2;
+            int j2;
+            int taille = 8;
+            Console.Write("saisissez les coordonnées en x :");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y :");
+            j = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en x2 :");
+            i2 = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y2 :");
+            j2 = int.Parse(Console.ReadLine());
+
+            
+            if ((Math.Abs(i-i2)==(Math.Abs(j-j2)))   ||   ((j2==j) || (i2==i)))
+            {
+                Console.WriteLine("Deplacement possible");
+
+            }
+            else
+            {
+                Console.WriteLine("Deplacement impossible");
+            }
+            Console.ReadLine();
+
+
+
+            exercice10-roi:
+            
+
+            int i;
+            int j;
+            int i2;
+            int j2;
+            int taille = 8;
+            Console.Write("saisissez les coordonnées en x :");
+            i = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y :");
+            j = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en x2 :");
+            i2 = int.Parse(Console.ReadLine());
+            Console.Write("saisissez les coordonnées en y2 :");
+            j2 = int.Parse(Console.ReadLine());
+
+            if ((Math.Abs(j2 - j) <= 1) && (Math.Abs(i2 - i) <= 1))
+            {
+                Console.WriteLine("Deplacement possible");
+                    }
+            else
+            {
+                Console.WriteLine("Deplacement impossible");
+            }
 
 
 
 
 
+            exercice10- switch:
+            
+            int i;
+            int j;
+            int i2;
+            int j2;
+            string piece;
+            int choix;
+            Console.WriteLine("Quelles piece souhaitez vous deplacer ?\n0=Cavalier\n1=Tour\n2=Fou\n3=Dame\n4=Roi ");
+            choix = int.Parse(Console.ReadLine());
+            switch (choix)
+            {
+
+
+                case 0:
+                    piece = "Cavalier";
+                    Console.Write("saisissez les coordonnées en x :");
+                    i = int.Parse(Console.ReadLine());
+                    Console.Write("saisissez les coordonnées en y :");
+                    j = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Coordonnées (i,j) de la position de depart :\ni=" + i + "\nj=" + j);
+                    Console.Write("saisissez les coordonnées en x2 :");
+                    i2 = int.Parse(Console.ReadLine());
+                    Console.Write("saisissez les coordonnées en y2 :");
+                    j2 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Coordonnées (i,j) de la position d'arrivée :\ni2=" + i2 + "\nj2=" + j2);
+                    if ((i2 == i + 2 && (j2 == j + 1 || j2 == j - 1)) || (i2 == i - 2 && (j2 == j + 1 || j2 == j - 1)) || (j2 == j - 2 && (i2 == i - 1 || i2 == i + 1)) || (j2 == j + 2 && (i2 == i - 1 || i2 == i + 1)))
+                    {
+                        Console.WriteLine("Deplacement du cavalier de" + i + "," + j + "vers" + i2 + "," + j2 + "correct");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Deplacement impossible");
+                    }
+
+
+                    break;
+            
+        
+                /*
+                case '1':
+                    piece = "Tour";
+
+                    break;
+                case '2':
+                    piece = "Fou";
+
+                    break;
+                case '3':
+                    piece = "Dame";
+
+                    break;
+        
+                case 4:
+                    piece = "Roi";
+                    Console.Write("saisissez les coordonnées en x :");
+                    i = int.Parse(Console.ReadLine());
+                    Console.Write("saisissez les coordonnées en y :");
+                    j = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Coordonnées (i,j) de la position de depart :\ni=" + i + "\nj=" + j);
+                    Console.Write("saisissez les coordonnées en x2 :");
+                    i2 = int.Parse(Console.ReadLine());
+                    Console.Write("saisissez les coordonnées en y2 :");
+                    j2 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Coordonnées (i,j) de la position d'arrivée :\ni2=" + i2 + "\nj2=" + j2);
+                    if ((Math.Abs(j2 - j) <= 1) && (Math.Abs(i2 - i) <= 1))
+                    {
+                        Console.WriteLine("Deplacement du roi de " + i + "," + j + " vers " + i2 + "," + j2 + " correct");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Deplacement impossible");
+                    }
+
+
+                    break;
+
+                     
+            }
+
+
+            
 
 
 
+            exercice11:
+            */
 
 
+            int HD;
+            int MD;
+            int HF;
+            int MF;
+            int min = 60;
+            Console.WriteLine("Saisissez l'heure de debut: ");
+            HD = int.Parse(Console.ReadLine());
+            Console.WriteLine("Saisissez la minute de debut: ");
+            MD = int.Parse(Console.ReadLine());
+            Console.WriteLine("Saisissez l'heure de fin: ");
+            HF = int.Parse(Console.ReadLine());
+            Console.WriteLine("Saisissez la minute de fin: ");
+            MF = int.Parse(Console.ReadLine());
+            int convert = (HD * 60) + MD;
+            while ( (HD<24 && HF<24 && MD < 60 && MF < 60){
+                if (HD > HF)
+                {
+                    Console.WriteLine("ERREUR");
+                }
 
+                if (HD==HF && MD > MF)
+                {
+                    Console.WriteLine("ERREUR");
+                }
 
-
-
-
-
+                
+            } 
 
 
 
