@@ -486,7 +486,6 @@ namespace Exercice
             HF = int.Parse(Console.ReadLine());
             Console.WriteLine("Saisissez la minute de fin: ");
             MF = int.Parse(Console.ReadLine());
-            int convert = (HD * 60) + MD;
             while ( (HD<24 && HF<24 && MD < 60 && MF < 60){
                 if (HD > HF)
                 {
@@ -497,7 +496,13 @@ namespace Exercice
                 {
                     Console.WriteLine("ERREUR");
                 }
-
+                if (HF > HD)
+                {
+                    if (MD > MF)
+                    {
+                        Console.WriteLine("Le temps ecoulé est de :" + ())
+                    }
+                }
                 
             } 
 
