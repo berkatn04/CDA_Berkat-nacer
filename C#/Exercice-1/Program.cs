@@ -7,6 +7,7 @@ namespace Exercice
     {
         private static object aleatoire;
         private static string boolean;
+        private static int a;
 
         static void Main(string[] args)
         {
@@ -674,6 +675,89 @@ namespace Exercice
 
 
             exercice6:
+            
+            int val1;            
+            Console.Write("Saisissez une valeur:");
+            val1 = int.Parse(Console.ReadLine());
+            for ( int i = 1; i<= 10; i++){
+                Console.WriteLine(val1 + " * " + i + " = " + (val1 * i));
+            }
+
+
+            exercice8:
+            
+
+            int val1;
+            int val2=1;
+            int exp;
+            Console.Write("Saisissez une valeur:");
+            val1 = int.Parse(Console.ReadLine());
+            Console.Write("Saisissez une valeur:");
+            exp = int.Parse(Console.ReadLine());
+            a = val1;
+            switch (exp)
+            {
+                case 0 :
+                    Console.WriteLine('1');
+                    break;
+                case 1:
+                    Console.WriteLine(val1);
+                    break;
+
+                default:
+                    for (int i = 1; i < exp; i++)
+                    {                      
+                            val2 = val1 * a;
+                            val1 = val2;                      
+                    }
+                    Console.WriteLine(val2);
+                    break;
+
+            }
+
+           
+
+
+
+            exercice9:
+            */
+
+            int n;         
+            Console.Write("Saisissez une valeur:");
+            n = int.Parse(Console.ReadLine());
+                for( int i=0; i<n;i++)
+            {
+                Console.WriteLine();
+                for (int j = 0; j < n; j++)
+                {
+                    Console.WriteLine("X ");
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -684,6 +768,7 @@ namespace Exercice
 
         }
 
+        
     }
 }         
 
