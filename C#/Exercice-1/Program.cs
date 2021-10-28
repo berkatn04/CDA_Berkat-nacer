@@ -633,32 +633,47 @@ namespace Exercice
 
             exercie 1 :
 
-            le programme affiche        1,2
-                                        
-                                        
-
-
+            le programme affiche  5,14 
+                                                    
+                                       
 
             exercice 2 :
+            
+            Le programme affiche 3,4,18,6
+        
+
+
+            exercice4:
+            
+            int val1;
+            Console.Write("Saisissez une valeur:");
+            val1 = int.Parse(Console.ReadLine());
+            while (val1 >= 0)
+            {
+                Console.WriteLine(val1--);
+            }
 
 
 
 
 
+            exercice5:
+            
+            int val1;
+            int val2 = 1;
+            Console.WriteLine("Saisissez une valeur:");
+            val1 = int.Parse(Console.ReadLine());
+            for ( int i = 1; i<= val1; i++)
+            {
+                val2 = val2 * i;
+            }
+
+            Console.Write("le factorielle de " + val1 + " est : " + val2);
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+            exercice6:
 
 
 
