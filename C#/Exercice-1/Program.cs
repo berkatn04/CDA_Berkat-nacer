@@ -457,7 +457,43 @@ namespace Exercice
             
                         exercice11:
 
+            int heureDebut;
+            int minuteDebut;
+            int heureFin;
+            int minuteFin;
+            int heureDEcart;
+            int minuteDEcart;
+            Console.WriteLine("heure de début :");
+            heureDebut = int.Parse(Console.ReadLine());
+            Console.WriteLine("minutes de début :");
+            minuteDebut = int.Parse(Console.ReadLine());
+            Console.WriteLine("heure de fin :");
+            heureFin = int.Parse(Console.ReadLine());
+            Console.WriteLine("minutes de fin :");
+            minuteFin = int.Parse(Console.ReadLine());
+            if (minuteDebut > minuteFin)
+            {
+                minuteDEcart = 60 - minuteDebut + minuteFin;
+                heureDEcart = -1;
+            }
+            else
+            {
+                minuteDEcart = minuteFin - minuteDebut;
+                heureDEcart = 0;
+            }
+            if (heureFin > heureDebut || (heureFin == heureDebut && heureDEcart == 0))
+            {
+                heureDEcart += heureFin - heureDebut;
+                Console.WriteLine("L'écart entre " + heureDebut + "h" + minuteDebut + " et " + heureFin + "h" + minuteFin + " est de " + heureDEcart + "h" + minuteDEcart);
+            }
+            else
+            {
+                Console.WriteLine("Erreur. L'heure de début est après celle de fin.");
+            }
+
+
             
+            ou:
 
 
             int HD;
@@ -623,7 +659,9 @@ namespace Exercice
             boolean = int.TryParse(Console.ReadLine(), out xpoint);
             Console.Write("Saisissez la coordonnée y du point:");
             boolean = int.TryParse(Console.ReadLine(), out ypoint);
-            Console.WriteLine((xpoint >= xhautgauche && xpoint <= xbasdroit) && (ypoint >= ybasdroit && ypoint <= yhautgauche) ? "Votre point se trouve dans le rectangle" : "Votre point ne se trouve pas dans le rectangle");
+            
+            
+            Console.WriteLine((xpoint > xhautgauche && xpoint < xbasdroit) && (ypoint > ybasdroit && ypoint < yhautgauche) ? "Votre point se trouve dans le rectangle" : "Votre point ne se trouve pas dans le rectangle");
            
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -724,19 +762,21 @@ namespace Exercice
 
             int n;         
             Console.Write("Saisissez une valeur:");
-            n = int.Parse(Console.ReadLine());
-                for( int i=0; i<n;i++)
-            {
-                Console.WriteLine();
+            n = int.Parse(Console.ReadLine());          
+            for ( int i=0; i<n;i++)
+            {               
                 for (int j = 0; j < n; j++)
                 {
-                    Console.WriteLine("X ");
+                    char[,] tab = new char[i, j];
+                    tab[i, j] = 'x';
+                    Console.WriteLine(tab);
                 }
+                
             }
 
 
 
-
+            /* exercice10:
 
 
 

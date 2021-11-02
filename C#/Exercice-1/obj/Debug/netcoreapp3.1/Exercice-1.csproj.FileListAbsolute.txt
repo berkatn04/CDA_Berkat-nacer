@@ -12,3 +12,17 @@ U:\59011-07-03\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.pdb
 U:\59011-07-03\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.dll
 U:\59011-07-03\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.pdb
 U:\59011-07-03\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.genruntimeconfig.cache
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.exe
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.deps.json
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.runtimeconfig.json
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.runtimeconfig.dev.json
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.dll
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\bin\Debug\netcoreapp3.1\Exercice-1.pdb
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.csproj.AssemblyReference.cache
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.AssemblyInfoInputs.cache
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.AssemblyInfo.cs
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.csproj.CoreCompileInputs.cache
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.dll
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.pdb
+C:\Users\Bille\OneDrive\Bureau\CDA\CDA_Berkat-nacer\C#\Exercice-1\obj\Debug\netcoreapp3.1\Exercice-1.genruntimeconfig.cache
