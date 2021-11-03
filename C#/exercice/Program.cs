@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
@@ -1198,7 +1199,159 @@ namespace Exercice
 
 
             exercice1:
+            
+            aRkJ bslk
+
+
+            exercice2:
+
+            1
+            3
+            6
+            10
+            15
+            21
+            28
+            36
+            45
+            55
+
+            exercice3:
+            1
+            4
+            9
+            16
+            25
+            36
+            49
+            64
+            81
+            100
+
+
+
+
+            exercice4:
+            
+            int[] T = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            for (int i=0; i<T.Length;i++)
+            Console.WriteLine(T[i]);
+            
+
+
+
+            exercice5:
+            
+            int[] k;
+            k = new int[10];
+            for (int i = 0; i < 10; i++)
+            {
+                k[i] += i+1;
+            }
+                foreach (int p in k) {
+                    Console.WriteLine(p);
+    
+                }
+
+
+
+
+
+          exercice6:
+            
+            int[] k;        
+            k = new int[10];
+            int somme = 0;
+            for (int i = 0; i < k.Length; i++)
+            {
+                k[i] += i + 1;
+                somme += k[i];
+
+            }
+            Console.WriteLine(somme);
+
+            
+
+
+
+
+
+            exercice7:
+            
+            Console.WriteLine("Saisir un entier");
+            int ent = int.Parse(Console.ReadLine());
+            int[] k;
+            k = new int[10];
+            for (int i = 0; i < k.Length; i++)
+            {
+                k[i] += i + 1;
+
+                if (i == ent)
+                {
+                    Console.WriteLine("Votre entier se trouve dans le tableau");
+                }                
+            }
+              
+
+
+
+
+
+            exercice8:
+            
+            int[] k =new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };            
+            int[] k2 = new int[10];
+            for (int index = 0; index < k.Length; index++)
+            {
+                if (index == 0)
+                {
+                    k2[0] = k[k.Length - 1];
+                }
+                else
+                {
+                    k2[index] = k[index - 1];
+
+                }
+
+            }
+                foreach (int p in k2)
+                {
+                    Console.WriteLine(p);
+
+                }
+
+          
+
+        exercice9:
             */
+            int[] k =new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int un = k[0];
+            for (int index = 0; index < k.Length; index++)
+            {
+                
+                if (index == 0)
+                {
+                    
+                    k[0] = k[k.Length - 1];
+
+                }
+                else
+                {
+                    for (int n = 9; n < 9; n--)
+                    {
+                        int a = k[k.Length - 1] - n;
+                        k[index] = a;
+                        
+                    } 
+
+                }
+
+            }
+                foreach (int p in k)
+                {
+                    Console.WriteLine(p);
+
+                }
 
 
 
@@ -1212,22 +1365,7 @@ namespace Exercice
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
 
 
 
