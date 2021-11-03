@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Text;
 
 namespace Exercice
 {
@@ -1083,22 +1084,12 @@ namespace Exercice
             Console.WriteLine("Saisissez un entier");
             i = int.Parse(Console.ReadLine());
             Console.WriteLine("Saisissez une entier");
-            j = int.Parse(Console.ReadLine());
-            for (int c = 0; c < t.Length; c++)
-            {
-                while (c >= i && c <= j)
-                {
-                    t1 += t[c];
-                    t2 = t.Insert(t.Length, ""+ t1);
-                    c++;
-                }
+            j = int.Parse(Console.ReadLine());                               
+            t1 = t1.Insert(0,t.Substring(i,j));                                            
+            Console.WriteLine(t1);
 
 
-            }
-            Console.WriteLine(t2);
-
-
-
+            
         exercice4;
             
             string t;
@@ -1107,9 +1098,9 @@ namespace Exercice
             string t1;
             Console.WriteLine("Saisissez une chaine");
             t = Console.ReadLine();
-            Console.WriteLine("Saisissez une chaine");
+            Console.WriteLine("Saisissez un caractere");
             a = Console.ReadLine();
-            Console.WriteLine("Saisissez une chaine");
+            Console.WriteLine("Saisissez un caractere");
             b = Console.ReadLine();
             t1=t.Replace(a, b);
             Console.WriteLine(t1);
@@ -1117,9 +1108,51 @@ namespace Exercice
 
 
             exercice5:
+            
+
+            string t, t2 = "";
+            string a;
+            string b;
+            
+            Console.WriteLine("Saisissez une chaine");
+            t = Console.ReadLine();
+            Console.WriteLine("Saisissez un caractere");
+            a = Console.ReadLine();
+            Console.WriteLine("Saisissez un caractere");
+            b = Console.ReadLine();
+            StringBuilder test = new StringBuilder(t);
+            
+            for(int c=0; c<t.Length;c++)
+            {
+                if(t.Substring(c,1)== a)
+                {
+                    t2 += b;
+                }
+                else
+                {
+                    t2 += t[c];
+                }
+                
+            }
+            Console.WriteLine(t2);
+
+
+
+
+            exercice6:
             */
-
-
+            string t = "";
+            string t2="";
+            string t3="";
+            Console.WriteLine("Saisissez une chaine");
+            t = Console.ReadLine();
+            
+            t2 = t.Substring(t.IndexOf(".") + 1);
+            t3 = t.Substring(0, t.IndexOf("."));
+             
+            Console.WriteLine(t3);
+            Console.WriteLine(t2);
+            Console.ReadLine();
 
 
 
@@ -1136,6 +1169,8 @@ namespace Exercice
 
 
         }
+
+        
     }
 }         
 
