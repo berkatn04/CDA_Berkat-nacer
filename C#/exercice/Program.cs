@@ -1325,24 +1325,24 @@ namespace Exercice
         exercice9:
             */
             int[] k =new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int un = k[0];
+            int stock=0;
+            int stock2 = 0;
             for (int index = 0; index < k.Length; index++)
             {
-                
+
                 if (index == 0)
                 {
-                    
+                     stock = k[0];
                     k[0] = k[k.Length - 1];
 
                 }
                 else
                 {
-                    for (int n = 9; n < 9; n--)
-                    {
-                        int a = k[k.Length - 1] - n;
-                        k[index] = a;
-                        
-                    } 
+                    stock2 = k[index];
+                    
+                    
+
+
 
                 }
 
