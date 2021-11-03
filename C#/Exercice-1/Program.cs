@@ -46,7 +46,7 @@ namespace Exercice
 
         static double calculSimple(double valeur1, char operateur, double valeur2)
         {
-            double resultat;
+            double resultat=valeur1;
             switch (operateur)
             {
                 case '+':
@@ -71,34 +71,29 @@ namespace Exercice
         }
 
 
-        static void calcul(int val, char op)
+        static double Calcul(double valeur, char operateur)
         {
+            double result;
+            result = valeur;
 
-                int valeur;
-                int fact = 1;
-                int i = 1;
-                Console.Write("Entrez une valeur entière positive : ");
-                valeur = Convert.ToInt32(Console.ReadLine());
-                switch (op)
-                {
-                    case '!':
-                        while (i <= val)
-                        {
-                            fact *= i++;
-                        }
-                        break;
+            switch (operateur)
+            {
+                case 'V':
+                    result = Math.Sqrt(valeur);
+                    break;
 
-                    case 'v':
-
-                        
-
-                        break;
-                }
-
+                case '!':                    
+                    for (int i = 1; i < valeur; i++)
+                    {
+                        result *= i;
+                    }
+                    break;
+            }
+            return result;
         }
 
 
-            static char DemanderOperateur()
+        static char DemanderOperateur()
             {
                 bool ok = true;
                 char op;
@@ -119,6 +114,17 @@ namespace Exercice
 
             static void Main(string[] args)
         {
+
+
+            double val1, val2;
+            char op;
+            val1 = Demanderdouble();
+
+
+
+
+
+
 
 
                 /*
