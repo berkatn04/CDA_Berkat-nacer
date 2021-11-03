@@ -1047,28 +1047,20 @@ namespace Exercice
 
         exercice2:
             
-            string t;
-            int i;
-            int j;
-            string t1 = "";
-            Console.WriteLine("Saisissez une chaine");
+            string t, t2 = "" ;
+            int ind1, ind2;
+            Console.WriteLine("Entrez une chaine de caractere : ");
             t = Console.ReadLine();
-            Console.WriteLine("Saisissez un entier");
-            i = int.Parse(Console.ReadLine());
-            Console.WriteLine("Saisissez une entier");
-            j = int.Parse(Console.ReadLine());
-            for (int c = 0; c < t.Length; c++)
+            Console.WriteLine("Entrez le premier indice : ");
+            ind1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Entrez le second indice : ");
+            ind2 = int.Parse(Console.ReadLine());
+            for (int i = ind1; i < ind2; i++)
             {
-                while (c >= i && c <= j)
-                {
-
-                    t1 += t[c];
-                    c++;
-                }
-
-                
+                t2 = t2 + t[i];
             }
-            Console.WriteLine(t1);
+            Console.WriteLine(t);
+            Console.WriteLine(t2);
 
 
 
@@ -1079,6 +1071,7 @@ namespace Exercice
             int j;
             string t1 = "";
             string t2 = "";
+
             Console.WriteLine("Saisissez une chaine");
             t = Console.ReadLine();
             Console.WriteLine("Saisissez un entier");
@@ -1140,7 +1133,7 @@ namespace Exercice
 
 
             exercice6:
-            */
+            
             string t = "";
             string t2 = "";
             string t3 = "";
@@ -1148,12 +1141,81 @@ namespace Exercice
             t = Console.ReadLine();
 
             t3 = t.Substring(t.LastIndexOf(".") + 1);
-            t2 = t.Substring(1, t.LastIndexOf("."));
+            t2 = t.Substring(1, t.IndexOf("."));
 
 
-            Console.WriteLine(t2);
             Console.WriteLine(t3);
+            Console.WriteLine(t2);
+          
             Console.ReadLine();
+
+
+
+
+
+
+
+            exercice7:
+            
+            string t = "";
+            int count1=0;
+            int count2=0;
+            Console.WriteLine("Saisisez une expression arithmetique");
+            t= Console.ReadLine();
+            for(int i=0; i < t.Length; i++)
+            {
+                if(t.Substring(i, 1) == "(")
+                {
+                    count1++;
+                }
+                if (t.Substring(i, 1) == ")")
+                {
+                    count2++;
+                }
+                
+            }
+            if (count1 > count2)
+            {
+                Console.WriteLine("expression pas correcteemnt parenthésée, il manque " + (count1-count2) + " )");
+            }
+            if (count1 < count2)
+            {
+                Console.WriteLine("expression pas correcteemnt parenthésée, il manque " + (count2 - count1) + " (");
+            }
+            if (count1 == count2)
+            {
+                Console.WriteLine("expression correcteemnt parenthésée");
+            }
+            
+            Console.ReadLine();
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+            PAGE 6:
+
+
+
+
+
+            exercice1:
+            */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

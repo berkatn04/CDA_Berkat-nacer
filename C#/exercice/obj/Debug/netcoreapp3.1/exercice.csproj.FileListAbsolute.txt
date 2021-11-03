@@ -12,3 +12,17 @@ C:\Users\59011-07-03\Desktop\exercice\obj\Debug\netcoreapp3.1\exercice.csproj.Co
 C:\Users\59011-07-03\Desktop\exercice\obj\Debug\netcoreapp3.1\exercice.dll
 C:\Users\59011-07-03\Desktop\exercice\obj\Debug\netcoreapp3.1\exercice.pdb
 C:\Users\59011-07-03\Desktop\exercice\obj\Debug\netcoreapp3.1\exercice.genruntimeconfig.cache
+U:\59011-07-03\C#\exercice\bin\Debug\netcoreapp3.1\exercice.exe
+U:\59011-07-03\C#\exercice\bin\Debug\netcoreapp3.1\exercice.deps.json
+U:\59011-07-03\C#\exercice\bin\Debug\netcoreapp3.1\exercice.runtimeconfig.json
+U:\59011-07-03\C#\exercice\bin\Debug\netcoreapp3.1\exercice.runtimeconfig.dev.json
+U:\59011-07-03\C#\exercice\bin\Debug\netcoreapp3.1\exercice.dll
+U:\59011-07-03\C#\exercice\bin\Debug\netcoreapp3.1\exercice.pdb
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.csproj.AssemblyReference.cache
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.AssemblyInfoInputs.cache
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.AssemblyInfo.cs
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.csproj.CoreCompileInputs.cache
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.dll
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.pdb
+U:\59011-07-03\C#\exercice\obj\Debug\netcoreapp3.1\exercice.genruntimeconfig.cache
