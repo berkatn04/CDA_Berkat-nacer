@@ -727,14 +727,18 @@ namespace Exercice
             n = int.Parse(Console.ReadLine());
                 for( int i=0; i<n;i++)
             {
+                /*
                 Console.WriteLine();
                 for (int j = 0; j < n; j++)
                 {
+                */
                     Console.WriteLine("X ");
-                }
+             
+            }
+                /*
             }
 
-
+*/
 
 
 
