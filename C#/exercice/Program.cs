@@ -943,23 +943,18 @@ namespace Exercice
                             exercice9:
 
         int n;         
-        Console.Write("Saisissez une valeur:");
-        n = int.Parse(Console.ReadLine());
-        for (int i = 0; i < n; i++)
-        {
+                            Console.Write("Saisissez une valeur:");
+                            n = int.Parse(Console.ReadLine());          
+                            for ( int j=0; j<n;j++)
+                            {
+                                Console.WriteLine();
 
-            Console.WriteLine();
-            for (int j = 0; j < n; j++)
-            {
+                                for (int i = 0; i < n; i++)
+                                {
+                                    Console.Write("X ");
+                                }
 
-                Console.WriteLine("X ");
-
-            }
-
-
-
-
-        }  
+                            }
 
 
 
@@ -1327,67 +1322,56 @@ namespace Exercice
 
         exercice9:
             
-            int[] k =new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            int stock=0;
-            int stock2 = 0;
-            for (int index = 0; index < k.Length; index++)
+            int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int stock;
+            stock = k[k.Length - 1];
+                          
+            for (int index = k.Length-2; index>=0 ; index--)
             {
-
-                if (index == 0)
-                {
-                     stock = k[0];
-                    k[0] = k[k.Length - 1];
-
-                }
-                else
-                {
-                    stock2 = k[index];
-                    k[index] = stock;
-                    stock = stock2;
-                    
-
-                }
+                k[index + 1] = k[index];                                        
 
             }
-                foreach (int p in k)
-                {
-                    Console.WriteLine(p);
-
-                }
-
-
-
-                        ou
-
-
-            int[] tableau = new int[10];
-            int[] tableauCirculezYaRienAVoir = new int[10];
-            for (int i = 0; i < tableau .Length; i++)
-                tableau [i] = i + 1;
-            for (int i = 0; i < tableau .Length; i++)
-                tableauCirculezYaRienAVoir[(i + 1) % tableau .Length] = tableau [i];
-            foreach (int p in tableauCirculezYaRienAVoir)
+            k[0] = stock;
+            foreach (int p in k)
+            {
                 Console.WriteLine(p);
 
+            }
+                     
 
             exercice10:
             
            
 
             int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            for (int i = 0; i < k.Length/2 ; i++)
+            int val;
+            for (int i = 0; i < k.Length / 2; i++)
             {
-                int jsp = k[i];
-                k[i] = k[k.Length - i - 1];
-                k[k.Length - i - 1] = jsp;
-            }
+            val = k[i];
+            k[i] = k[k.Length - i - 1];
+            k[k.Length - i - 1] = val;
+        }
             foreach (int p in k)
-            {
+                {
                 Console.WriteLine(p);
 
             }
-            /*
+            
             exercice11;
+
+
+
+            int[] t = new int[10];
+            Array.Resize(ref t, t.Length + 10);
+            for (int i = 0; i < t.Length; i++)
+            {
+                t[i] = (i*i)%17;
+                Console.WriteLine(t[i]);
+            }
+
+
+
+
 
             exercice12;
             
@@ -1395,6 +1379,24 @@ namespace Exercice
             Console.WriteLine("la valeur minimale du tableau est : " + k.Min());
             Console.WriteLine("la valeur maximale du tableau est : " + k.Max());
             Console.ReadLine();
+
+                            ou 
+
+            int min = 0, max = 0;
+            int[] tab = new int[10] { 5, 58, 7, 4, 5, 6, 0, 8, 5, 10 };
+            for (int i = 0; i < tab.Length; i++)
+            {
+                if (tab[i] > max)
+                {
+                    max = tab[i];
+                }
+                else if (tab[i] < min)
+                {
+                    min = tab[i];
+                }
+            }
+            Console.WriteLine("La valeur la plus petite est " + min + " et la plus grande est " + max);
+
 
 
             exercice13:
@@ -1410,10 +1412,36 @@ namespace Exercice
                     Console.WriteLine(i);
                 }
             }
+                            ou 
+
+             int[] t = new int[10] { 42, 59, 75, 62, 14, 1, 32, 5, 689, 32 };
+            int value;
+            bool apparition = false;
+
+            Console.Write("Saisissez une valeur numérique : ");
+            while (!int.TryParse(Console.ReadLine(), out value)) ;
+
+            for (int i = 0; i < t.Length; i++)
+            {
+                if (t[i] == value)
+                {
+                    Console.WriteLine("La valeur apparait a l'indice " + i + " du tableau.");
+                    apparition = true;
+                }
+            }
+
+            if (!apparition)
+            {
+                Console.WriteLine("La valeur n'apparait pas dans le tableau.");
+            }
+
+
+
+
 
             
             exercice14:           
-
+            */
             int valeur;
             int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int[] q = new int[10] ;
@@ -1435,7 +1463,7 @@ namespace Exercice
 
             }
 
-
+            /*
             exercice15:
             
             double[] piece = new double[8] {2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01 };
@@ -1449,6 +1477,7 @@ namespace Exercice
                 while (prix >= piece[i] )
                 {
                     prix -= piece[i];
+                    prix = Math.Round(prix, 2);
                     nbre[i]++;
                     
                 }
@@ -1461,37 +1490,55 @@ namespace Exercice
 
             }
 
-            
+         
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
            
             PAGE 7:
 
-
+            
             exercice;
-            */
+            
+
             int n;
             Console.Write("Saisissez une valeur:");
             n = int.Parse(Console.ReadLine());
-            for (int i = 0; i < n; i++)
+            for (int j = 0; j < n; j++)
             {
+                
+                    Console.WriteLine();
 
-                Console.WriteLine();
-                for (int j = 0; j < n; j++)
+                for (int i = 0; i < n; i++)
                 {
-                    if(j==0 || i==n)
-                    Console.WriteLine("* ");
-
+                    if (i == 0 || j == n - 1 || j == 0 || i == n-1)
+                        Console.Write("* ");
+                    else
+                        Console.Write("  ");
                 }
 
-
-
-
+            }
+            Console.WriteLine();
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine();
+            
+            for (int i = 0; i < n; i++)
+            {
+                    if ((i == n/2 && (j == 0 || j == n - 1)) || (j == n / 2 && (i == 0 || i == n - 1)))
+                    {
+                        Console.Write("* ");
+                    }
+                    else
+                    {
+                        
+                        Console.Write("  ");
+                    }
             }
 
+        }
 
 
-
+*/
 
 
 
@@ -1500,6 +1547,7 @@ namespace Exercice
 
         }
 
-
     }
 }
+
+
