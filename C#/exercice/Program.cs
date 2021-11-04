@@ -1104,51 +1104,38 @@ namespace Exercice
             exercice5:
             
 
-            string t, t2 = "";
-            string a;
-            string b;
-            
-            Console.WriteLine("Saisissez une chaine");
-            t = Console.ReadLine();
-            Console.WriteLine("Saisissez un caractere");
-            a = Console.ReadLine();
-            Console.WriteLine("Saisissez un caractere");
-            b = Console.ReadLine();
-            StringBuilder test = new StringBuilder(t);
-            
-            for(int c=0; c<t.Length;c++)
+            StringBuilder t;
+            char a, b;
+
+            Console.Write("Entrez la valeur  t : ");
+            t = new StringBuilder(Console.ReadLine());
+            Console.Write("Entrez la valeur a : ");
+            a = Char.Parse(Console.ReadLine());
+            Console.Write("Entrez la valeur b : ");
+            b = Char.Parse(Console.ReadLine());
+
+
+
+            for (int i = 0; i < t.Length; i++)
             {
-                if(t.Substring(c,1)== a)
+                if (t[i] == a)
                 {
-                    t2 += b;
+                    t[i]= b ;
                 }
-                else
-                {
-                    t2 += t[c];
-                }
+              
+
                 
             }
-            Console.WriteLine(t2);
+            Console.Write(t);
 
 
 
 
             exercice6:
             
-            string t = "";
-            string t2 = "";
-            string t3 = "";
-            Console.WriteLine("Saisissez une chaine");
-            t = Console.ReadLine();
-
-            t3 = t.Substring(t.LastIndexOf(".") + 1);
-            t2 = t.Substring(1, t.IndexOf("."));
-
-
-            Console.WriteLine(t3);
-            Console.WriteLine(t2);
-          
-            Console.ReadLine();
+             Console.Write("Entrez le nom du fichier : ");
+            string nomFichier = Console.ReadLine();
+            Console.WriteLine("Le nom du fichier est : '" + nomFichier.Substring(0, nomFichier.LastIndexOf(".")) + "' et son extention est : '" + nomFichier.Substring(nomFichier.LastIndexOf(".")) + "'");
 
 
 
@@ -1169,7 +1156,7 @@ namespace Exercice
                 {
                     count1++;
                 }
-                if (t.Substring(i, 1) == ")")
+                else if (t.Substring(i, 1) == ")")
                 {
                     count2++;
                 }
@@ -1323,7 +1310,7 @@ namespace Exercice
           
 
         exercice9:
-            */
+            
             int[] k =new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int stock=0;
             int stock2 = 0;
@@ -1339,7 +1326,8 @@ namespace Exercice
                 else
                 {
                     stock2 = k[index];
-                    
+                    k[index] = stock;
+                    stock = stock2;
                     
 
 
@@ -1353,19 +1341,93 @@ namespace Exercice
 
                 }
 
+            
 
 
+            exercice10:
+            
 
 
+            int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            for (int i = 0; i < k.Length / 2; i++)
+            {
+                int tmp = k[i];
+                k[i] = k[k.Length - i - 1];
+                k[k.Length - i - 1] = tmp;
+            }
+            foreach (int p in k)
+            {
+                Console.WriteLine(p);
+
+            }
+
+            exercice11;
+
+            exercice12;
+            
+            int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Console.WriteLine("la valeur minimale du tableau est : " + k.Min());
+            Console.WriteLine("la valeur maximale du tableau est : " + k.Max());
+            Console.ReadLine();
 
 
-
-
-
-
-
+            exercice13:
+            
+            int valeur;
+            int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            Console.Write("Saisissez une valeur : ");
+            valeur = int.Parse(Console.ReadLine());
+            for( int i=0; i < k.Length; i++)
+            {
+                if(k[i]== valeur)
+                {
+                    Console.WriteLine(i);
+                }
+            }
 
             
+            exercice14:           
+
+            int valeur;
+            int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int[] q = new int[10] ;
+            List<int> liste = new List<int>();
+            Console.Write("Saisissez une valeur : ");
+            valeur = int.Parse(Console.ReadLine());
+            for (int i = 0; i < k.Length; i++)
+            {
+                if (k[i] == valeur)
+                {
+                    liste.Add(i);
+                    q = liste.ToArray();
+                    
+                }
+            }
+            foreach (int p in q)
+            {
+                Console.WriteLine(p);
+
+            }
+
+
+            exercice15:
+            */
+            int valeur;
+            int[] k = new int[10] {  };
+            int[] q = new int[10];
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
