@@ -29,6 +29,12 @@ namespace POO
 
         }
 
+        public override string ToString()
+        {
+            return " nom : " + this.nom + "\n prenom : " + this.prenom + "\n age : " + this.age + "\n adresse : " + this.adresse;
+        }
 
+
+        
     }
 }
