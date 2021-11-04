@@ -1214,8 +1214,6 @@ namespace Exercice
             100
 
 
-
-
             exercice4:
             
             int[] T = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -1257,27 +1255,47 @@ namespace Exercice
 
             
 
-
+            
 
 
 
             exercice7:
             
-            Console.WriteLine("Saisir un entier");
-            int ent = int.Parse(Console.ReadLine());
-            int[] k;
-            k = new int[10];
-            for (int i = 0; i < k.Length; i++)
-            {
-                k[i] += i + 1;
+            int[] t = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int cpt = 0;
 
-                if (i == ent)
-                {
-                    Console.WriteLine("Votre entier se trouve dans le tableau");
-                }                
+            Console.WriteLine("Donner un chiffre :");
+            int value = int.Parse(Console.ReadLine());
+
+            while (cpt < t.Length && t[cpt] != value)
+            {
+                cpt++;
+            }
+
+            if (cpt < t.Length)
+            {
+                Console.WriteLine("Bien joué !");
+            }
+            else
+            {
+                Console.WriteLine("Le chiffre n'est pas dans le tableau.");
             }
               
 
+
+                            ou 
+
+
+
+            int[] T = new int[10];
+            for (int i = 0; i < T.Length; i++)
+            {
+                T[i] = i + 1;
+            }
+            Console.WriteLine("Donnez une valeur");
+            int t=int.Parse(Console.ReadLine());
+
+            Console.WriteLine(Array.Exists(T, elt=> elt==t));
 
 
 
@@ -1328,8 +1346,6 @@ namespace Exercice
                     stock = stock2;
                     
 
-
-
                 }
 
             }
@@ -1339,26 +1355,38 @@ namespace Exercice
 
                 }
 
-            
+
+
+                        ou
+
+
+            int[] tableau = new int[10];
+            int[] tableauCirculezYaRienAVoir = new int[10];
+            for (int i = 0; i < tableau .Length; i++)
+                tableau [i] = i + 1;
+            for (int i = 0; i < tableau .Length; i++)
+                tableauCirculezYaRienAVoir[(i + 1) % tableau .Length] = tableau [i];
+            foreach (int p in tableauCirculezYaRienAVoir)
+                Console.WriteLine(p);
 
 
             exercice10:
             
-
+           
 
             int[] k = new int[10] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            for (int i = 0; i < k.Length / 2; i++)
+            for (int i = 0; i < k.Length/2 ; i++)
             {
-                int tmp = k[i];
+                int jsp = k[i];
                 k[i] = k[k.Length - i - 1];
-                k[k.Length - i - 1] = tmp;
+                k[k.Length - i - 1] = jsp;
             }
             foreach (int p in k)
             {
                 Console.WriteLine(p);
 
             }
-
+            /*
             exercice11;
 
             exercice12;
@@ -1409,10 +1437,35 @@ namespace Exercice
 
 
             exercice15:
+            
+            double[] piece = new double[8] {2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01 };
+            int[] nbre = new int[8];
+            double prix;
+            int i = 0;
+            Console.WriteLine("Saisissez un prix : ");
+            prix = double.Parse(Console.ReadLine());
+            for(i=0; i< piece.Length; i++)
+            {
+                while (prix >= piece[i] )
+                {
+                    prix -= piece[i];
+                    nbre[i]++;
+                    
+                }
+                                   
+            }
+
+            foreach (int p in nbre)
+            {
+                Console.WriteLine(p +" ");
+
+            }
+
+            
+
+
+            exercice16;
             */
-
-
-
 
 
 
