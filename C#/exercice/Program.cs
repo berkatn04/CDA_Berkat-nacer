@@ -1145,37 +1145,35 @@ namespace Exercice
 
             exercice7:
             
-            string t = "";
-            int count1=0;
-            int count2=0;
-            Console.WriteLine("Saisisez une expression arithmetique");
-            t= Console.ReadLine();
-            for(int i=0; i < t.Length; i++)
+            string calcul;
+            int cptOuv = 0;
+            int cptFer = 0;
+            int cpt = 0;
+
+            Console.WriteLine("Entrez votre calcul");
+            calcul = Console.ReadLine();
+
+            while (cptOuv >= cptFer && cpt < calcul.Length - 1)
             {
-                if(t.Substring(i, 1) == "(")
+                if (calcul[cpt] == '(')
                 {
-                    count1++;
-                }
-                else if (t.Substring(i, 1) == ")")
+                    cptOuv++;
+                } else if (calcul[cpt] == ')')
                 {
-                    count2++;
+                    cptFer++;
                 }
                 
+                cpt++;
             }
-            if (count1 > count2)
+
+            if (cptOuv == cptFer)
             {
-                Console.WriteLine("expression pas correcteemnt parenthésée, il manque " + (count1-count2) + " )");
+                Console.WriteLine("expression correctement parenthesée.");
             }
-            if (count1 < count2)
+            else
             {
-                Console.WriteLine("expression pas correcteemnt parenthésée, il manque " + (count2 - count1) + " (");
+                Console.WriteLine("expression mal parenthesée.");
             }
-            if (count1 == count2)
-            {
-                Console.WriteLine("expression correcteemnt parenthésée");
-            }
-            
-            Console.ReadLine();
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -1412,11 +1410,6 @@ namespace Exercice
 
             exercice15:
             */
-            int valeur;
-            int[] k = new int[10] {  };
-            int[] q = new int[10];
-
-
 
 
 
