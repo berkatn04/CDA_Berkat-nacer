@@ -20,20 +20,12 @@ namespace Compte
             prenom = Console.ReadLine();
             Console.WriteLine("Donner le Tel : ");
             tel = double.Parse(Console.ReadLine());
-
-
-
-
-
-
-
-
-
             Clients C = new Clients(CIN, nom, prenom, tel);
             Compte Co = new Compte(0, 1, C);
             Console.WriteLine("****************************");
             Console.WriteLine(C);
-           
+            Console.WriteLine("****************************");
+
 
 
 

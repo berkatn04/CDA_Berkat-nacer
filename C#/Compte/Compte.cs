@@ -19,9 +19,13 @@ namespace Compte
             this.proprietaire = proprietaire;
         }
 
-        public void Crediter(int somme)
+        public void Crediter()
         {
+            int somme;
+            Console.WriteLine("Donner le montant a deposer : ");
+            somme = int.Parse(Console.ReadLine());
             this.solde += somme;
+            Console.WriteLine("Donner le montant a deposer : ");
         }
 
         public void Crediter(int somme, Compte compte)
