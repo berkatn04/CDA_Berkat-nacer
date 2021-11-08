@@ -7,15 +7,19 @@ using System.Threading.Tasks;
 namespace Compte
 {
     class Compte
-    {        
+    {
+        
         public  int solde { get; set; }
         public int code { get; set; }
         public Clients proprietaire { get; set; }
 
+        public static int codeincrement;
+
         public Compte(int solde, int code, Clients proprietaire)
         {
             this.solde = solde;
-            this.code = code;
+            codeincrement++;
+            codeincrement = code;            
             this.proprietaire = proprietaire;
         }
 
@@ -24,13 +28,13 @@ namespace Compte
             int somme;
             Console.WriteLine("Donner le montant a deposer : ");
             somme = int.Parse(Console.ReadLine());
-            this.solde += somme;
+            solde += somme;
             Console.WriteLine("Donner le montant a deposer : ");
         }
 
         public void Crediter(int somme, Compte compte)
         {
-            this.solde += somme;
+            solde += somme;
             compte.solde -= somme;
         }
 
@@ -50,6 +54,7 @@ namespace Compte
             return  "Numero de compte : " + this.code + "\nSolde de compte : " + this.solde + this.proprietaire.ToString();
         }
 
+        
 
     }
 }

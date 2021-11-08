@@ -6,8 +6,8 @@ namespace Compte
     {
         static void Main(string[] args)
         {
-            int montant;
-            int retrait;
+            
+
             string CIN;
             string nom;
             string prenom;
@@ -19,13 +19,18 @@ namespace Compte
             Console.WriteLine("Donner le Prenom : ");
             prenom = Console.ReadLine();
             Console.WriteLine("Donner le Tel : ");
+
+
             tel = double.Parse(Console.ReadLine());
             Clients C = new Clients(CIN, nom, prenom, tel);
             Compte Co = new Compte(0, 1, C);
+            
+
+            Console.WriteLine("Compte n°"+ Compte.codeincrement);
             Console.WriteLine("****************************");
             Console.WriteLine(C);
             Console.WriteLine("****************************");
-
+            Compte.Crediter();
 
 
 
