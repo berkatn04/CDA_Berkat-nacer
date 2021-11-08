@@ -8,7 +8,7 @@ namespace Employe
 {
     class Employe
     {
-
+        internal object priority;
 
         public string nom { get; set; }
         public string prenom { get; set; }
@@ -46,8 +46,8 @@ namespace Employe
             Console.WriteLine("L'employé est dans l'entreprise depuis : " + (DateTime.Today.Year - this.dateEmbauche.Year)+ " ans");
             
             }
-            
-            public void Prime()
+
+        public void Prime()
         {
             double prime = (this.salaire * 0.05) + (this.salaire * 0.02 * (DateTime.Today.Year - this.dateEmbauche.Year));
             Console.WriteLine("Votre prime est de : " + prime);
@@ -58,11 +58,17 @@ namespace Employe
             }
             else
                 Console.WriteLine("Nous ne somme pas encore le 30/11");
+
+
         }
 
+        public override string ToString()
+        {
+            return this.nom +" "+ this.prenom +" "+ this.dateEmbauche +" "+ this.salaire +" "+ this.service; 
 
-        
-    }   }   
+        }
+
+}   }   
           
    
 
