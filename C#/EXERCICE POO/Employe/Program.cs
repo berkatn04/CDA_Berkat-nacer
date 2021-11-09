@@ -8,25 +8,57 @@ namespace Employe
     {
         static void Main(string[] args)
         {
+            DateTime today = DateTime.Today;
             DateTime dt = new DateTime(2015, 3, 9);
             DateTime dt1 = new DateTime(2000, 3, 9);
-            DateTime dt2 = new DateTime(2008, 3, 9);
+            DateTime dt2 = new DateTime(2020, 3, 9);
 
+            Agences a1 = new Agences("A1", "14 rue jsp", 62300, "Lens", "Ticket Restaurant");
+            Agences a2 = new Agences("A2", "13 rue jsp", 62300, "Lens", "Restaurant d'entreprise");
             //Employe emp1 = new Employe();
-            Employe emp2 = new Employe("DUCOND", "bernard", dt, 3500, "comptabilité");
-            Employe emp3 = new Employe("DUPOND", "bernard", dt1, 3500, "comptabilité");
-            Employe emp4 = new Employe("DUROND", "bernard", dt2, 3500, "comptabilité");
+            Employes emp2 = new Employes("DUROND", "Bernard", dt, 22500, "comptabilité", a1);
+            Employes emp3 = new Employes("DUPOND", "fernand", dt1, 19500, "marketing", a2);
+            Employes emp4 = new Employes("DUCOND", "martin", dt2, 32500, "informatique", a1);
 
-            List<Employe> employes = new List<Employe>();  
-            //employes.Add(emp1);
+
+            //  4.
+            List<Employes> employes = new List<Employes>();  
+         //   employes.Add(emp1);
             employes.Add(emp2);
             employes.Add(emp3);
             employes.Add(emp4);
-            foreach(Employe i in employes)           
-            Console.WriteLine(i);
+            //   employes.Sort(Employes.ComparerToNomPrenom);
+            //   employes.Sort(Employes.ComparerServiceToNomPrenom);
 
-          
+
+           
+            //    double montant=0;
+            // 
+            //   foreach (Employes i in employes)
+            //   {
+            //       montant += i.Salaire;
+            //       montant += (i.Salaire * 0.05) + i.Salaire*0.02*(today.Year - emp3.DateEmbauche.Year);
+
+            //  }
+
+            //  Console.WriteLine(montant);
+
+
+
+            // 6.
+          //  foreach (Employes i in employes)
+          //  {
+          //      Console.WriteLine(i.Agence.ModeRestauration);
+
+          //  }
+            
+
+
+
+
         }
+
+
         
     }
 }
