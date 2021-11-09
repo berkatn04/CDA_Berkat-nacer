@@ -9,16 +9,19 @@ namespace Employe
         static void Main(string[] args)
         {
             DateTime today = DateTime.Today;
-            DateTime dt = new DateTime(2015, 3, 9);
-            DateTime dt1 = new DateTime(2000, 3, 9);
-            DateTime dt2 = new DateTime(2020, 3, 9);
+            
+            Dictionary<string, int> e1 = new Dictionary<string, int>();           
+                e1.Add("J", 5);
+                e1.Add("B", 11);
+                e1.Add("G", 17);
+
 
             Agences a1 = new Agences("A1", "14 rue jsp", 62300, "Lens", "Ticket Restaurant");
             Agences a2 = new Agences("A2", "13 rue jsp", 62300, "Lens", "Restaurant d'entreprise");
             //Employe emp1 = new Employe();
-            Employes emp2 = new Employes("DUROND", "Bernard", dt, 22500, "comptabilité", a1);
-            Employes emp3 = new Employes("DUPOND", "fernand", dt1, 19500, "marketing", a2);
-            Employes emp4 = new Employes("DUCOND", "martin", dt2, 32500, "informatique", a1);
+            Employes emp2 = new Employes("DUROND", "Bernard", new DateTime(2015, 3, 9), 22500, "comptabilité", a1, e1);
+            Employes emp3 = new Employes("DUPOND", "fernand", new DateTime(2000, 3, 9), 19500, "marketing", a2);
+            Employes emp4 = new Employes("DUCOND", "martin", new DateTime(2021, 3, 9), 32500, "informatique", a1);
 
 
             //  4.
@@ -31,7 +34,7 @@ namespace Employe
             //   employes.Sort(Employes.ComparerServiceToNomPrenom);
 
 
-           
+
             //    double montant=0;
             // 
             //   foreach (Employes i in employes)
@@ -46,14 +49,18 @@ namespace Employe
 
 
             // 6.
-          //  foreach (Employes i in employes)
-          //  {
-          //      Console.WriteLine(i.Agence.ModeRestauration);
+            //  foreach (Employes i in employes)
+            //  {
+            //      Console.WriteLine(i.Agence.ModeRestauration);
 
-          //  }
-            
+            //  }
 
 
+            //7
+            // Employes.Vacances(emp4);
+
+            //8
+            Employes.Noel(emp2);
 
 
         }

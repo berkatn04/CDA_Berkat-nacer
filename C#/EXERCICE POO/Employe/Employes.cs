@@ -8,15 +8,14 @@ namespace Employe
 {
     class Employes
     {
-       
+
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public DateTime DateEmbauche { get; set; }
         public double Salaire { get; set; }
         public string Service { get; set; }
         public Agences Agence { get; set; }
-        
-
+        public IDictionary<string,int> Enfants { get; set; }
 
         public Employes()
         {
@@ -51,6 +50,17 @@ namespace Employe
             this.Salaire = salaire;
             this.Service = service;
             
+        }
+
+        public Employes(string nom, string prenom, DateTime dateEmbauche, double salaire, string service, Agences agence, IDictionary<string, int> enfants)
+        {
+            this.Nom = nom;
+            this.Prenom = prenom;
+            this.DateEmbauche = dateEmbauche;
+            this.Salaire = salaire;
+            this.Service = service;
+            this.Agence = agence;
+            this.Enfants = enfants;
         }
         public void Temps()
         {
@@ -115,21 +125,41 @@ namespace Employe
 
         }
 
-        public static string Vacances(Employes E1)
+        public static void Vacances(Employes E1)
         {
             if ((DateTime.Today.Year - E1.DateEmbauche.Year) >= 1)
             {
-                return "Vous etes eligible aux cheques vacance";
+                
+                Console.WriteLine("Vous etes eligible aux cheques vacance");
             }
             else
             {
-                return "Vous etes eligible aux cheques vacance";
+                Console.WriteLine("Vous n'etes pas eligible aux cheques vacance");
             }
 
         }
 
+        public static void Noel(Employes E1)
+        {
+            int valeur=0;
+            foreach (KeyValuePair<string, int> i in E1.Enfants)
+            {
+                if (i.Value > 0 && i.Value <= 10)
+                    valeur += 20;
+
+                else if (i.Value > 11 && i.Value <= 15)
+                    valeur += 30;
+                else if (i.Value > 16 && i.Value <= 18)
+                    valeur += 50;
+                else
+                    valeur += 0;
+
+            }
+            Console.WriteLine(valeur);
+        }
+
+
+
+
     }
 }
-          
-   
-
