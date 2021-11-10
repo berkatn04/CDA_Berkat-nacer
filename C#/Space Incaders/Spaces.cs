@@ -19,24 +19,58 @@ namespace Space_Incaders
         {
             NbLignes = nbLignes;
             NbColonnes = nbColonnes;
-            this.grille = new char[nbLignes, nbColonnes];
-            for (int j = 0; j < NbColonnes; j++)
+            Grille();
+        }   
+            
+           
+             public void Grille()
             {
-
-                Console.WriteLine();
-
-                for (int i = 0; i < NbLignes; i++)
+                this.grille = new char[NbLignes, NbColonnes];
+                for (int j = 0; j < NbColonnes; j++)
                 {
-                    if (i == 1) return (Invaders.Invaders());
-                    if (i == 0 || j == NbColonnes - 1 || j == 0 || i == NbLignes - 1) Console.Write("- ");
+
+                    Console.WriteLine();
+
+                    for (int i = 0; i < NbLignes; i++)
+                    {
+
+                    if (j == NbColonnes - 1 || i == 0 || i == NbLignes - 1 || j == 0)
+                    {
+                        Console.Write("- ");
+
+                    }
+                    else Console.Write("  ");
+                        
+
+                    }
+                    
+
+                }
+                
+              }
+
+            public void GrilleEtInvaders()
+            {
+            Grille();
+            for (int j = 1; j < NbColonnes-1; j++)
+            {               
+               for (int i = 1; i < NbLignes-1; i++)
+                {
+
+                    if (j == 1) Console.Write("# ");
                     else Console.Write("  ");
 
 
                 }
 
+
             }
 
+        }
 
-        } 
+
+
+
+        
     }
 }

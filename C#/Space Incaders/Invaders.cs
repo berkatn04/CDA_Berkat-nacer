@@ -26,7 +26,10 @@ namespace Space_Incaders
             return "#";
         }
 
+        public string AfficheInvaders() {
 
+            return "#";
+        }
 
 
 
