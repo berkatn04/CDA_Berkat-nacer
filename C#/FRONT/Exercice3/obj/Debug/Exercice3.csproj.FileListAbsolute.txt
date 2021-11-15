@@ -1,0 +1,2 @@
+U:\59011-07-03\C#\FRONT\Exercice3\obj\Debug\App.g.cs
+U:\59011-07-03\C#\FRONT\Exercice3\obj\Debug\Exercice3_MarkupCompile.cache
