@@ -6,6 +6,7 @@
     <Application.Resources>
 
         <SolidColorBrush x:Key="fond" Color="#FFDDDDDD"/>
+        <SolidColorBrush x:Key="Operateur" Color="#FF0B7AD6"/>
 
     </Application.Resources>
 </Application>

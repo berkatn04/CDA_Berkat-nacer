@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Exercice"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="{DynamicResource fond}">
+    <Grid Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="3*"/>
@@ -33,23 +33,23 @@
             <ColumnDefinition Width="0.3*"/>
             <ColumnDefinition Width="0.9*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="4" Grid.Row="5" Grid.Column="1"  FontSize="15" FontWeight="Bold" />
-        <Button Content="5" Grid.Row="5" Grid.Column="3" Margin="0,1,0,0" FontSize="15" FontWeight="Bold"/>
-        <Button Content="6" Grid.Row="5" Grid.Column="5" Margin="0,1,0,0" FontSize="15" FontWeight="Bold"/>
-        <Button Content="+" Grid.Row="5" Grid.Column="7" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource fond}"/>
-        <Button Content="7" Grid.Row="7" Grid.Column="1" Margin="0,1,0,0" FontSize="15" FontWeight="Bold"/>
-        <Button Content="0" Grid.Row="9" Grid.Column="1" Margin="0,0,0,1" FontSize="15" FontWeight="Bold"/>
-        <Button Content="8" Grid.Row="7" Grid.Column="3" Margin="0,0,0,1" FontSize="15" FontWeight="Bold"/>
-        <Button Content="9" Grid.Row="7" Grid.Column="5" Margin="0,1,0,0" FontSize="15" FontWeight="Bold"/>
-        <Button Content="-" Grid.Row="7" Grid.Column="7" Margin="0,1,0,0" FontSize="15" FontWeight="Bold"/>
-        <Button Content="," Grid.Row="9" Grid.Column="3" Margin="0,1,0,0" FontSize="15" FontWeight="Bold"/>
-        <Button Content="/" Grid.Row="9" Grid.Column="5" Margin="0,0,0,1" FontSize="15" FontWeight="Bold"/>
-        <Button Content="x" Grid.Row="9" Grid.Column="7" Margin="0,0,0,1" FontSize="15" FontWeight="Bold"/>
-        <Button Content="=" Grid.Row="11" Grid.Column="1" Margin="0,0,0,1" Grid.ColumnSpan="7" FontSize="15" FontWeight="Bold"/>
-        <Button Content="1" Grid.Row="3" Grid.Column="1" Margin="0,0,0,1"  FontSize="15" FontWeight="Bold"/>
-        <Button Content="2" Grid.Row="3" Grid.Column="3" Margin="0,0,0,1" FontSize="15" FontWeight="Bold"/>
-        <Button Content="3" Grid.Row="3" Grid.Column="5" Margin="0,1,0,0"  FontSize="15" FontWeight="Bold"/>
-        <Button Content="CE" Grid.Row="3" Grid.Column="7" Margin="0,0,0,1"  FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="btn4" Content="4" Grid.Row="5" Grid.Column="1"  FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" />
+        <Button x:Name="btn5" Content="5" Grid.Row="5" Grid.Column="3" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btn6" Content="6" Grid.Row="5" Grid.Column="5" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btnPlus" Content="+" Grid.Row="5" Grid.Column="7" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource Operateur}"/>
+        <Button x:Name="btn1" Content="1" Grid.Row="7" Grid.Column="1" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btn0" Content="0" Grid.Row="9" Grid.Column="1" Margin="0,0,0,1" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" Click="Button_Click_3"/>
+        <Button x:Name="btn2" Content="2" Grid.Row="7" Grid.Column="3" Margin="0,0,0,1" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btn3" Content="3" Grid.Row="7" Grid.Column="5" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btnMoins" Content="-" Grid.Row="7" Grid.Column="7" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="{DynamicResource Operateur}"/>
+        <Button x:Name="btnVirgule" Content="," Grid.Row="9" Grid.Column="3" Margin="0,1,0,0" FontSize="15" FontWeight="Bold" Background="#FFBFBFBF"/>
+        <Button x:Name="btnDiviser" Content="/" Grid.Row="9" Grid.Column="5" Margin="0,0,0,1" FontSize="15" FontWeight="Bold" Background="{DynamicResource Operateur}"/>
+        <Button x:Name="btnMultiplier" Content="x" Grid.Row="9" Grid.Column="7" Margin="0,0,0,1" FontSize="15" FontWeight="Bold" Background="{DynamicResource Operateur}"/>
+        <Button x:Name="btnEgale" Content="=" Grid.Row="11" Grid.Column="1" Margin="0,0,0,1" Grid.ColumnSpan="7" FontSize="15" FontWeight="Bold" Background="#FF9C0000"/>
+        <Button x:Name="btn7" Content="7" Grid.Row="3" Grid.Column="1" Margin="0,0,0,1"  FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btn8" Content="8" Grid.Row="3" Grid.Column="3" Margin="0,0,0,1" FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btn9" Content="9" Grid.Row="3" Grid.Column="5" Margin="0,1,0,0"  FontSize="15" FontWeight="Bold" Background="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}"/>
+        <Button x:Name="btnCE" Content="CE" Grid.Row="3" Grid.Column="7" Margin="0,0,0,1"  FontSize="15" FontWeight="Bold" Background="#FF328900"/>
         <TextBox x:Name="textBox"  Grid.Column="1"   Grid.Row="1"  Grid.ColumnSpan="7" HorizontalContentAlignment="Right" VerticalContentAlignment="Center" Text="425,58" FontSize="15" Background="{DynamicResource fond}" />
 
     </Grid>
