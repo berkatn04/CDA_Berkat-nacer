@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace gestion_de_produits
+namespace operation
 {
     /// <summary>
     /// Logique d'interaction pour MainWindow.xaml
@@ -23,11 +23,6 @@ namespace gestion_de_produits
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

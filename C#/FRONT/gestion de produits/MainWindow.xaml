@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:gestion_de_produits"
         mc:Ignorable="d"
         Title="MainWindow" Height="494.834" Width="1211.808">
-    <Grid Margin="10,0,0,-2">
+    <Grid Margin="10,0,0,-2" Background="#FFCADAA0">
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="2*"/>
@@ -18,11 +18,42 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="4*"/>
-            <ColumnDefinition Width="2*"/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
-            
+
+        <Button Content="Ajouter" Grid.Column="1" Grid.Row="1" Background="{DynamicResource buttion}" />
+        <Button Content="Modifier" Grid.Column="3" Grid.Row="1" Background="{DynamicResource buttion}" />
+        <Button Content="Supprimer" Grid.Column="5" Grid.Row="1" Background="{DynamicResource buttion}" />
+        <Button Content="Duppliquer" Grid.Column="7" Grid.Row="1" Background="{DynamicResource buttion}" />
+        <Button Content="Vider" Grid.Column="9" Grid.Row="1" Background="{DynamicResource buttion}" />
+        <Button Content="Liste des catégories" Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="4" Foreground="Black" Background="{DynamicResource buttion}"/>
+        <Button Content="Liste des rayons" Grid.Column="6" Grid.Row="5" Grid.ColumnSpan="4" Background="{DynamicResource buttion}"/>
+        <DataGrid VerticalScrollBarVisibility="Visible" Grid.Column="1"  Grid.Row="3" Grid.ColumnSpan="9" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch">
+            <DataGrid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF8F8F8F" Offset="0"/>
+                    <GradientStop Color="White" Offset="0.925"/>
+                </LinearGradientBrush>
+            </DataGrid.Background>
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="IdProduit" Width="1*"/>
+                <DataGridTextColumn Header="LibelleProduit" Width="4*"/>
+                <DataGridTextColumn Header="Categories" Width="2*"/>
+                <DataGridTextColumn Header="Rayons" Width="2*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+
+
     </Grid>
 </Window>

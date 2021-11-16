@@ -1,0 +1,15 @@
+U:\59011-07-03\C#\operation\bin\Debug\operation.exe.config
+U:\59011-07-03\C#\operation\bin\Debug\operation.exe
+U:\59011-07-03\C#\operation\bin\Debug\operation.pdb
+U:\59011-07-03\C#\operation\obj\Debug\operation.csproj.AssemblyReference.cache
+U:\59011-07-03\C#\operation\obj\Debug\MainWindow.g.cs
+U:\59011-07-03\C#\operation\obj\Debug\App.g.cs
+U:\59011-07-03\C#\operation\obj\Debug\operation_MarkupCompile.cache
+U:\59011-07-03\C#\operation\obj\Debug\operation_MarkupCompile.lref
+U:\59011-07-03\C#\operation\obj\Debug\MainWindow.baml
+U:\59011-07-03\C#\operation\obj\Debug\operation.g.resources
+U:\59011-07-03\C#\operation\obj\Debug\operation.Properties.Resources.resources
+U:\59011-07-03\C#\operation\obj\Debug\operation.csproj.GenerateResource.cache
+U:\59011-07-03\C#\operation\obj\Debug\operation.csproj.CoreCompileInputs.cache
+U:\59011-07-03\C#\operation\obj\Debug\operation.exe
+U:\59011-07-03\C#\operation\obj\Debug\operation.pdb
