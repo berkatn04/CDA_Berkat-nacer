@@ -206,7 +206,7 @@
                             <ComboBox Grid.Row="2" Grid.Column="4" />
                         </Grid>
                     </GroupBox>
-                
+                </Grid>
 
             </TabItem>
             <TabItem Header="Engin"/>
@@ -256,7 +256,7 @@
             </StackPanel>
         </Grid>
 
-    </Grid>
+
 
     </Grid>
 
