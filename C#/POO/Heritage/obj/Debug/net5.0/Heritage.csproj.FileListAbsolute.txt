@@ -1,0 +1,16 @@
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\Heritage.exe
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\Heritage.deps.json
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\Heritage.runtimeconfig.json
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\Heritage.runtimeconfig.dev.json
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\Heritage.dll
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\ref\Heritage.dll
+U:\59011-07-03\C#\POO\Heritage\bin\Debug\net5.0\Heritage.pdb
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.csproj.AssemblyReference.cache
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.AssemblyInfoInputs.cache
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.AssemblyInfo.cs
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.csproj.CoreCompileInputs.cache
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.dll
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\ref\Heritage.dll
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.pdb
+U:\59011-07-03\C#\POO\Heritage\obj\Debug\net5.0\Heritage.genruntimeconfig.cache
