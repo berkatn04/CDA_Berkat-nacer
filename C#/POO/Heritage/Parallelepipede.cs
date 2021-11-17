@@ -8,17 +8,25 @@ namespace Heritage
 {
     class Parallelepipede : Rectangle
     {
-        public Parallelepipede(int longueur, int largeur) : base(longueur, largeur)
+        public int Hauteur { get; set; }
+
+        public Parallelepipede(int longueur, int largeur, int hauteur ) : base(longueur, largeur)
         {
+            this.Hauteur = hauteur;
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return "Perimetre : " + this.Perimetre2() + "\nVolume : " + this.Volume() ;
         }
 
-        public double Perimetre()
+        public double Perimetre2()
         {
+            return (2 * this.Perimetre()) + (4 * this.Hauteur);
+        }
+        public double Volume()
+        {
+            return this.Aire() * this.Hauteur;
 
         }
     }

@@ -31,7 +31,7 @@ namespace Heritage
 
         public double Perimetre()
         {
-            return (this.Base+this.Hauteur+(Math.Sqrt(Math.Pow(this.Base,2) + Math.Pow(this.Hauteur, 2)));
+            return (this.Base+this.Hauteur+(Math.Sqrt(Math.Pow(this.Base,2) + Math.Pow(this.Hauteur, 2))));
         }
 
         public int Aire()
