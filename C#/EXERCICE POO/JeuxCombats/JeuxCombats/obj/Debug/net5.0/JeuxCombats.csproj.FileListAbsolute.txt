@@ -1,0 +1,16 @@
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.csproj.AssemblyReference.cache
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.AssemblyInfoInputs.cache
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.AssemblyInfo.cs
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.csproj.CoreCompileInputs.cache
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\JeuxCombats.exe
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\JeuxCombats.deps.json
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\JeuxCombats.runtimeconfig.json
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\JeuxCombats.runtimeconfig.dev.json
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\JeuxCombats.dll
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\ref\JeuxCombats.dll
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\bin\Debug\net5.0\JeuxCombats.pdb
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.dll
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\ref\JeuxCombats.dll
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.pdb
+U:\59011-07-10\csharp\POO\JeuxCombats\JeuxCombats\obj\Debug\net5.0\JeuxCombats.genruntimeconfig.cache
