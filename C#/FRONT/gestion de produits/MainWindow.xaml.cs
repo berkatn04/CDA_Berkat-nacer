@@ -22,14 +22,15 @@ namespace gestion_de_produits
     public partial class MainWindow : Window
     {
         List<Produits> liste;
-        string path = @"../../../Produits.json";
+        string path = @"../../Produits.json";
         public MainWindow()
         {
             InitializeComponent();
-            liste = CreerListe();
+           // liste = CreerListe();
             liste = TransformeJson();
             RemplirGrid();
             CreerFichier();
+
         }
 
         public void RemplirGrid()
@@ -80,7 +81,16 @@ namespace gestion_de_produits
             return liste;
         }
 
-
+        private void Enregistrer_Click(object sender, RoutedEventArgs e)
+        {
+            Enregistrement enreg = new Enregistrement(idProduit.Text, Produit.Text);
+            enreg.Ajout();
+            ChargerFichier();
+        }
+        private void ChargerFichier()
+        {
+            ContenuFichier.ItemsSource = Enregistrement.ListeEnreg();
+        }
 
     }
 }
