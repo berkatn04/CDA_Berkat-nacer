@@ -8,7 +8,7 @@ namespace gestion_de_produits
 {
     public class Enregistrement
     {
-        static string path = @"../../Produits.txt";
+        static string path = @"../../Produits.json";
         public string IdProduit { get; set; }
         public string LibelleProduit { get; set; }
         public string Categorie { get; set; }

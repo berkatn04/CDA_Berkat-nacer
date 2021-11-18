@@ -22,11 +22,11 @@ namespace gestion_de_produits
     public partial class MainWindow : Window
     {
         List<Produits> liste;
-        string path = @"../../Produits.txt";
+        string path = @"../../Produits.json";
         public MainWindow()
         {
             InitializeComponent();
-           // liste = CreerListe();
+           //liste = CreerListe();
             liste = TransformeJson();
             RemplirGrid();
             CreerFichier();
