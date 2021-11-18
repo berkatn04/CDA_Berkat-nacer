@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace gestion_de_produits
 {
-    class Enregistrement
+    public class Enregistrement
     {
-        static string path = @"../../Produit.txt";
-        public int IdProduit { get; set; }
+        static string path = @"../../Produits.txt";
+        public string IdProduit { get; set; }
         public string LibelleProduit { get; set; }
-        public string Categories { get; set; }
-        public int Rayons { get; set; }
+        public string Categorie { get; set; }
+        public string Rayon { get; set; }
 
 
         public Enregistrement() { }
-        public Enregistrement(int idProduit, string libelleProduit, string categories, int rayons)
+        public Enregistrement(string idProduit, string libelleProduit, string categories, string rayons)
         {
             IdProduit = idProduit;
             LibelleProduit = libelleProduit;
-            Categories = categories;
-            Rayons = rayons;
+            Categorie = categories;
+            Rayon = rayons;
         }
 
         public void Ajout()
@@ -40,9 +40,9 @@ namespace gestion_de_produits
 
         public override string ToString() // Méthode toString transforme un objet en chaîne de caractère
         {
-            return IdProduit + ";" + LibelleProduit + ";" + Categories + ";" + Rayons;
+            return IdProduit + ";" + LibelleProduit + ";" + Categorie + ";" + Rayon;
         }
-
+        
         static public List<Enregistrement> ListeEnreg()
         //Ajoute un nouveau enregistrement à une liste selon le niveau choisi
         {
@@ -57,15 +57,16 @@ namespace gestion_de_produits
             for (i = 0; i < tab.Length; i++)
             {
                 r = new Enregistrement();
-                ligne = tab[i].Split(';');
+                ligne = tab[i].Split(';');                 
                 r.IdProduit = ligne[0]; // prend les 2 premiers caractères à partir de la position 0
                 r.LibelleProduit = ligne[1]; // prend 5 caractères à partir de la position 2
-                r.Categories = ligne[2];
-                r.Rayons = ligne[3];
+                r.Categorie = ligne[2];
+                r.Rayon = ligne[3];
                 liste.Add(r);
             }
 
-
+            return liste;
         }
+        
     }
 }

@@ -22,7 +22,7 @@ namespace gestion_de_produits
     public partial class MainWindow : Window
     {
         List<Produits> liste;
-        string path = @"../../Produits.json";
+        string path = @"../../Produits.txt";
         public MainWindow()
         {
             InitializeComponent();
@@ -81,16 +81,15 @@ namespace gestion_de_produits
             return liste;
         }
 
-        private void Enregistrer_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Enregistrement enreg = new Enregistrement(idProduit.Text, Produit.Text);
-            enreg.Ajout();
-            ChargerFichier();
+            var win2 = new Window1();
+            win2.ShowDialog();
+           
         }
-        private void ChargerFichier()
-        {
-            ContenuFichier.ItemsSource = Enregistrement.ListeEnreg();
-        }
+       
+
+
 
     }
 }

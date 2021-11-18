@@ -30,7 +30,7 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Content="Ajouter" Grid.Column="1" Grid.Row="1" Background="{DynamicResource buttion}" />
+        <Button Content="Ajouter" Grid.Column="1" Grid.Row="1" Background="{DynamicResource buttion}" Click="Button_Click" />
         <Button Content="Modifier" Grid.Column="3" Grid.Row="1" Background="{DynamicResource buttion}" />
         <Button Content="Supprimer" Grid.Column="5" Grid.Row="1" Background="{DynamicResource buttion}" />
         <Button Content="Duppliquer" Grid.Column="7" Grid.Row="1" Background="{DynamicResource buttion}" />
@@ -45,10 +45,10 @@
                 </LinearGradientBrush>
             </DataGrid.Background>
             <DataGrid.Columns >
-                <DataGridTextColumn Header="IdProduit" Width="1*" Binding="{Binding IdProduit}"/>
-                <DataGridTextColumn Header="LibelleProduit" Width="4*" Binding="{Binding LibelleProduit}"/>
-                <DataGridTextColumn Header="Categories" Width="2*" Binding="{Binding Categories}"/>
-                <DataGridTextColumn Header="Rayons" Width="2*" Binding="{Binding Rayons}"/>
+                <DataGridTextColumn Header="IdProduit" Width="1*" Binding="{Binding IdProduit}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="LibelleProduit" Width="4*" Binding="{Binding LibelleProduit}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Categories" Width="2*" Binding="{Binding Categorie}" IsReadOnly="True"/>
+                <DataGridTextColumn Header="Rayons" Width="2*" Binding="{Binding Rayon}" IsReadOnly="True"/>
             </DataGrid.Columns>
         </DataGrid>
 
