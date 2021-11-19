@@ -1,0 +1,112 @@
+﻿<Window x:Class="Maquettage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Maquettage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="900" Width="1000">
+
+    <Grid>
+        <DataGrid HorizontalAlignment="Left" Height="280" Margin="37,153,0,0" VerticalAlignment="Top" Width="928">
+            <DataGrid.Columns >
+                <DataGridTextColumn Header="IdIntervention"/>
+                <DataGridTextColumn Header="NomPrestataire" Width="1*"/>
+                <DataGridTextColumn Header="Code UEM" Width="1*"/>
+                <DataGridTextColumn Header="Type de travail" Width="1*"/>
+                <DataGridTextColumn Header="Point de KM" Width="1*"/>
+                <DataGridTextColumn Header="Volume" Width="1*"/>
+                <DataGridTextColumn Header="Prix Unitaire" Width="1*"/>
+                <DataGridTextColumn Header="Date de reception" Width="1*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="168" Margin="439,112,0,0" SelectionChanged="ComboBox_SelectionChanged" Height="31" />
+        <Label Content="Afficher les interventions du :" HorizontalAlignment="Left" Margin="213,112,0,0" VerticalAlignment="Top" Width="202"/>
+        <Button Content="Ajout" HorizontalAlignment="Left" Margin="213,32,0,0" VerticalAlignment="Top" Width="120" Height="56" Click="Button_Click_1"/>
+        <Button Content="Modifier" HorizontalAlignment="Left" Margin="371,32,0,0" VerticalAlignment="Top" Width="112" Height="56"/>
+        <Button Content="Sauvegarde" HorizontalAlignment="Left" Margin="516,32,0,0" VerticalAlignment="Top" Width="117" Height="56" Click="Button_Click_2" RenderTransformOrigin="-0.021,0.65"/>
+        <Button Content="Supprimer" HorizontalAlignment="Left" Margin="673,32,0,0" VerticalAlignment="Top" Width="120" Height="56" Click="Button_Click_3"/>
+        <Button Content="Impression" HorizontalAlignment="Left" Margin="829,32,0,0" VerticalAlignment="Top" Width="136" Height="56"/>
+        <Button Content="Ajout" HorizontalAlignment="Left" Margin="61,32,0,0" VerticalAlignment="Top" Width="120" Height="56" Click="Button_Click_1"/>
+        <Expander Header="Details" HorizontalAlignment="Left" Height="406" Margin="37,454,0,0" VerticalAlignment="Top" Width="928" IsExpanded="True">
+            <Grid>
+                <GroupBox Header="UEM" HorizontalAlignment="Left" Margin="36,9,0,177" Width="354" RenderTransformOrigin="0.5,0.5">
+                    <GroupBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.313"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="1.795"/>
+                        </TransformGroup>
+                    </GroupBox.RenderTransform>
+                    <Label Content="Acces :" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="57"/>
+
+                </GroupBox>
+                <GroupBox Header="Realisations" HorizontalAlignment="Left" Height="168" Margin="37,206,0,0" VerticalAlignment="Top" Width="867"/>
+                <GroupBox Header="Previsions" HorizontalAlignment="Left" Height="187" Margin="413,17,0,0" VerticalAlignment="Top" Width="491" RenderTransformOrigin="0.5,0.5">
+                    <GroupBox.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="-0.064"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </GroupBox.RenderTransform>
+                    <Label Content="total" HorizontalAlignment="Left" Margin="277,89,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.439,-0.498"/>
+                </GroupBox>
+                <RadioButton Content="Tous" HorizontalAlignment="Left" Margin="104,41,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1" RenderTransformOrigin="0.602,-0.033"/>
+                <RadioButton Content="Canal" HorizontalAlignment="Left" Margin="152,41,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1" RenderTransformOrigin="0.508,-0.349"/>
+                <Label Content="Code UEM :" HorizontalAlignment="Left" Margin="47,73,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.017,0.727"/>
+                <TextBox HorizontalAlignment="Left" Margin="124,77,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="127"/>
+                <Label Content="Type de canal" HorizontalAlignment="Left" Margin="47,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.448,0.539"/>
+                <Label Content="canal" HorizontalAlignment="Left" Margin="47,159,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.448,0.539"/>
+            </Grid>
+        </Expander>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="597,515,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="azerty"/>
+        <Label Content="Type d'entretien" HorizontalAlignment="Left" Margin="488,543,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.448,1.32" Width="119"/>
+        <TextBlock HorizontalAlignment="Left" Margin="596,548,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="77">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.225"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <Label Content="Montant :" HorizontalAlignment="Left" Margin="763,507,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Quantitié" HorizontalAlignment="Left" Margin="717,538,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="804,538,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="804,568,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Prix unitaire" HorizontalAlignment="Left" Margin="717,568,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="804,599,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Type de travail" HorizontalAlignment="Left" Margin="497,512,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Point de KM :" HorizontalAlignment="Left" Margin="533,590,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Debut" HorizontalAlignment="Left" Margin="495,624,0,0" VerticalAlignment="Top" Width="48" RenderTransformOrigin="1.6,1.156"/>
+        <Label Content="Fin" HorizontalAlignment="Left" Margin="495,650,0,0" VerticalAlignment="Top" Width="51"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="578,654,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="69"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="578,628,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="69"/>
+        <Label Content="Prix unitaire" HorizontalAlignment="Left" Margin="717,712,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="804,712,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Quantitié" HorizontalAlignment="Left" Margin="731,760,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="804,760,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Montant" HorizontalAlignment="Left" Margin="731,803,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="804,803,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Date de MAJ :" HorizontalAlignment="Left" Margin="578,725,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.864,2.617"/>
+        <Label Content="Observations eventuelles" HorizontalAlignment="Left" Margin="95,821,0,0" VerticalAlignment="Top" Width="148" RenderTransformOrigin="1.368,0.523"/>
+        <Label Content="Type de travail" HorizontalAlignment="Left" Margin="81,720,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Type d'entretien" HorizontalAlignment="Left" Margin="81,765,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.448,1.32" Width="119"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="181,720,0,0" SelectionChanged="ComboBox_SelectionChanged" Height="31" />
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="181,765,0,0" SelectionChanged="ComboBox_SelectionChanged" Height="31" />
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="425,720,0,0" SelectionChanged="ComboBox_SelectionChanged" Height="31" />
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="425,765,0,0" SelectionChanged="ComboBox_SelectionChanged" Height="31" />
+        <Label Content="Partie concerné" HorizontalAlignment="Left" Margin="315,720,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Partie concerné" HorizontalAlignment="Left" Margin="315,765,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="280,825,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="398"/>
+        <DatePicker HorizontalAlignment="Left" Margin="578,762,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Nature defectuosité" HorizontalAlignment="Left" Margin="693,636,0,0" VerticalAlignment="Top" Width="112"/>
+        <TextBlock HorizontalAlignment="Left" Height="23" Margin="829,641,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+    </Grid>
+
+</Window>
