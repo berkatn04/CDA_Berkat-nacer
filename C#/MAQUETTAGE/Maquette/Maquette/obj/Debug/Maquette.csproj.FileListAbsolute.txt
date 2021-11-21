@@ -1,0 +1,16 @@
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\bin\Debug\Maquette.exe.config
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\bin\Debug\Maquette.exe
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\bin\Debug\Maquette.pdb
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.csproj.AssemblyReference.cache
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\MainWindow.g.cs
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\App.g.cs
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette_MarkupCompile.cache
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette_MarkupCompile.lref
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\MainWindow.baml
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.g.resources
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.Properties.Resources.resources
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.csproj.GenerateResource.cache
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.csproj.CoreCompileInputs.cache
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.exe
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\Maquette.pdb
+C:\Users\Bille\OneDrive\Bureau\Maquette\Maquette\obj\Debug\App.baml
