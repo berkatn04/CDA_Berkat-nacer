@@ -6,7 +6,124 @@
         xmlns:local="clr-namespace:MaquetteEcran"
         mc:Ignorable="d"
         Title="MainWindow" Height="942" Width="1134">
-    <Grid>
-
+    <Grid Background="#FF90B0AC">
+        <Label Content="AJOUTER UN NOUVEAU PRODUIT" HorizontalAlignment="Left" Margin="400,10,0,0" VerticalAlignment="Top" Height="46" Width="348" FontSize="20" RenderTransformOrigin="0.632,0.543"/>
+        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="35" Margin="18,140,0,0" TextWrapping="Wrap" Text="KOORUI Ecran PC Gaming" VerticalAlignment="Top" Width="448" FontSize="15" Background="{DynamicResource fond}" HorizontalAlignment="Left"/>
+        <GroupBox Header="Descriptif du Produit" HorizontalAlignment="Left" Height="644" Margin="18,206,0,0" VerticalAlignment="Top" Width="505">
+            <Grid HorizontalAlignment="Left" Height="634" VerticalAlignment="Top" Width="495" Margin="0,0,-2,-13">
+                <Label Content="Marque : " HorizontalAlignment="Left" Margin="26,31,0,0" VerticalAlignment="Top" Width="88"/>
+                <Label Content="Séries :  " HorizontalAlignment="Left" Margin="26,72,0,0" VerticalAlignment="Top" Width="88"/>
+                <Label Content="Couleur : " HorizontalAlignment="Left" Margin="26,116,0,0" VerticalAlignment="Top" Width="88"/>
+                <Label Content="Type d'écran : " HorizontalAlignment="Left" Margin="26,157,0,0" VerticalAlignment="Top" Width="88"/>
+                <Label Content="Taille de l'écran  : " HorizontalAlignment="Left" Margin="26,201,0,0" VerticalAlignment="Top" Width="100"/>
+                <Label Content="Résolution de l'écran : " HorizontalAlignment="Left" Margin="26,241,0,0" VerticalAlignment="Top" Width="130"/>
+                <Label Content="Résolution : " HorizontalAlignment="Left" Margin="26,281,0,0" VerticalAlignment="Top" Width="88"/>
+                <Label Content="Interface du matériel informatique : " HorizontalAlignment="Left" Margin="26,327,0,0" VerticalAlignment="Top" Width="200"/>
+                <Label Content="Type de connecteur : " HorizontalAlignment="Left" Margin="26,372,0,0" VerticalAlignment="Top" Width="130"/>
+                <Label Content="Dimensions de l'article : " HorizontalAlignment="Left" Margin="26,412,0,0" VerticalAlignment="Top" Width="145"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,35,0,0" TextWrapping="Wrap" Text="koorui" VerticalAlignment="Top" Width="179" TextChanged="TextBox_TextChanged_2" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,76,0,0" TextWrapping="Wrap" Text="27e1" VerticalAlignment="Top" Width="179" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Text="noir" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,157,0,0" TextWrapping="Wrap" Text="IPS" VerticalAlignment="Top" Width="179" TextChanged="TextBox_TextChanged_3" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,201,0,0" TextWrapping="Wrap" Text="27 pouces" VerticalAlignment="Top" Width="179" TextChanged="TextBox_TextChanged_4" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,245,0,0" TextWrapping="Wrap" Text="1920X1080" VerticalAlignment="Top" Width="179" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,285,0,0" TextWrapping="Wrap" Text="1080p FULL HD pixels" VerticalAlignment="Top" Width="179" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,327,0,0" TextWrapping="Wrap" Text="USB" VerticalAlignment="Top" Width="179" TextChanged="TextBox_TextChanged_5" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="179" Text="‎HDMI 1.4, DisplayPort 1.2 " Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,415,0,0" TextWrapping="Wrap" Text="‎61.3 x 54.4 x 23.3 centimètres" VerticalAlignment="Top" Width="179" TextChanged="TextBox_TextChanged_6" Background="{DynamicResource fond}"/>
+                <Label Content="Quantité : " HorizontalAlignment="Left" Margin="26,451,0,0" VerticalAlignment="Top" Width="145"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,454,0,0" TextWrapping="Wrap" Text="300" VerticalAlignment="Top" Width="179" Background="{DynamicResource fond}"/>
+                <Label Content="Statuts : " HorizontalAlignment="Left" Margin="26,490,0,0" VerticalAlignment="Top" Width="145"/>
+                <Label Content="Usages spécifique : " HorizontalAlignment="Left" Margin="26,528,0,0" VerticalAlignment="Top" Width="145"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,494,0,0" TextWrapping="Wrap" Text="En stock" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.503,1.609" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,532,0,0" TextWrapping="Wrap" Text="Professionels" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.503,1.609" Background="{DynamicResource fond}"/>
+                <Label Content="Technologie d'affichage : " HorizontalAlignment="Left" Margin="26,568,0,0" VerticalAlignment="Top" Width="145"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="306,572,0,0" TextWrapping="Wrap" Text="IPS" VerticalAlignment="Top" Width="179" RenderTransformOrigin="0.503,1.609" Background="{DynamicResource fond}"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="FERMER" HorizontalAlignment="Left" Margin="1015,855,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.5,0.5" Height="40" Foreground="Red">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.534"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="ANNULER" HorizontalAlignment="Left" Margin="1015,765,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.5,0.5" Height="40">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.534"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="AJOUTER" HorizontalAlignment="Left" Margin="1015,710,0,0" VerticalAlignment="Top" Width="95" RenderTransformOrigin="0.53,-0.374" Height="40" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.534"/>
+                    <TranslateTransform X="-0.328" Y="-0.027"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Label Content="Catégorie : " HorizontalAlignment="Left" Margin="55,75,0,0" VerticalAlignment="Top" Width="90" FontSize="15"/>
+        <Label Content="Type : " HorizontalAlignment="Left" Margin="310,75,0,0" VerticalAlignment="Top" Width="90" FontSize="15"/>
+        <GroupBox Header="Paiements&#xD;&#xA;" HorizontalAlignment="Left" Height="155" Margin="540,490,0,0" VerticalAlignment="Top" Width="285" RenderTransformOrigin="0.5,0.5">
+            <GroupBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.682"/>
+                    <RotateTransform Angle="0.469"/>
+                    <TranslateTransform Y="-1.488"/>
+                </TransformGroup>
+            </GroupBox.RenderTransform>
+            <Grid HorizontalAlignment="Left" Height="150" Margin="0,-27,-2,-7" VerticalAlignment="Top" Width="275">
+                <Label Content="Prix : " HorizontalAlignment="Left" Margin="10,18,0,0" VerticalAlignment="Top" Width="48"/>
+                <Label Content="Moyen de paiement acceptés : " HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="179"/>
+            </Grid>
+        </GroupBox>
+        <Label Content="A PROPOS : " HorizontalAlignment="Left" Margin="765,72,0,0" VerticalAlignment="Top" Height="33" Width="110" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="354" Margin="540,116,0,0" TextWrapping="Wrap" Text=" Dalle IPS de 27 pouces avec Résolution FHD (1920 x 1080 px) et DCI-P3 90% de gamme de couleurs; Format d'image : 16 : 9. Écran pc avec HDR10, Taux de rafraîchissement de 165 Hz et Temps de réponse de 1 ms; écran pc 27 compris les technologies de faible lumière bleue et sans scintillement, angle de vision large de 178°, luminosité/contraste : 300 cd/m²
+【KOORUI ecran pc 27 pouces vous emmène dans les mondes du jeu immersif】 Le écrans pc utilise le mode de jeu unique - un positionnement précis améliore les taux de tir et de réussite et augmente ainsi vos chances de gagner le jeu. ecran pc 27 pouces avec taux de rafraîchissement de 165 Hz garantit que le jeu fonctionne sans bégaiement gênant. La technologie Adaptive Freesync garantit que les images sont affichées en douceur et que les retards d'image n'ont aucune chance.
+【90% DCI-P3 de gamme de couleurs offre une expérience comme au cinéma】L'ecran 165hz avec la nouvelle génération de panneaux FAST IPS pour une expérience de visionnage incomparable. L'ecran pc 27 pouces avec une couverture de couleur professionnelle DCI-P3 à 90 % pour des tons et des transitions de couleurs plus intenses et expressifs; Dalle ips avec Angle de vision large de 178 degrés, de sorte que tous les angles de couleur semblent plus réalistes, délicats et cohérents.
+【Design Unique Avec Trou Noir】Gaming ecran combine un savoir-faire exquis avec les dernières technologies et apporte un design de boîtier ultra-mince. L'aspect noir mat élégant avec garniture bleue vous plonge dans la haute technologie de KOORUI. Design ergonomique avec inclinaison de -5° ~ +15° ; rotation de +30 °~ -30 ° ; pivotement de +90° ~ -90° et réglage de la hauteur de 0 ~ 110 mm. Le moniteur de jeu 27 pouces est compatible VESA et vous permet plus d'espace dans votre environnement.
+【Les connexions de diversification vous offrent des possibilités illimitées】 L'ecran pc 165hz offre un matériel de connexion utile. Il permet une connectivité transparente avec votre PC et votre Play Station avec DisplayPort, Type-c (15W) et HDMI et est donc le partenaire idéal pour le travail et les loisirs." VerticalAlignment="Top" Width="560" TextChanged="TextBox_TextChanged_1" Background="{DynamicResource fond}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="145,80,0,0" TextWrapping="Wrap" Text="PC" VerticalAlignment="Top" Height="18" Width="35" RenderTransformOrigin="0.759,0.833" FontSize="15" Background="{DynamicResource textblock}"/>
+        <DatePicker HorizontalAlignment="Left" Margin="730,856,0,0" VerticalAlignment="Top" Height="30" Width="175"/>
+        <Label Content="Date d'ajout du produit : " HorizontalAlignment="Left" Margin="565,855,0,0" VerticalAlignment="Top" Width="145"/>
+        <Button Content="Upload IMG" HorizontalAlignment="Left" Margin="585,730,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="0.667,0.004" Height="25" Background="{DynamicResource fond}">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.238"/>
+                    <TranslateTransform X="-0.052" Y="-0.104"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="370,80,0,0" TextWrapping="Wrap" Text="Ecrans" VerticalAlignment="Top" Height="18" Width="55" RenderTransformOrigin="0.494,0.556" FontSize="15" Background="{DynamicResource textblock}"/>
+        <Image Margin="730,670,151,91" Source="ecran.jpg"/>
+        <GroupBox Header="Livraisons&#xA;" HorizontalAlignment="Left" Height="155" Margin="835,490,0,0" VerticalAlignment="Top" Width="265">
+            <Grid HorizontalAlignment="Left" Height="150" Margin="0,-30,-2,-4" VerticalAlignment="Top" Width="255">
+                <CheckBox Content="Domicile" HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_2"/>
+                <CheckBox Content="Point relais" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_2"/>
+                <CheckBox Content="Livraison gratuite" HorizontalAlignment="Left" Margin="129,87,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_2"/>
+                <CheckBox Content="Livraison accélérée" HorizontalAlignment="Left" Margin="129,117,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_2"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="109,22,0,0" TextWrapping="Wrap" Text="Amazon" VerticalAlignment="Top" Width="120" Background="{DynamicResource fond}"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="109,50,0,0" TextWrapping="Wrap" Text="Fleuriring Store" VerticalAlignment="Top" Width="120" TextChanged="TextBox_TextChanged_7" Background="{DynamicResource fond}"/>
+            </Grid>
+        </GroupBox>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="600,515,0,0" TextWrapping="Wrap" Text="299,99" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5" Background="{DynamicResource fond}"/>
+        <CheckBox Content="Carte bancaire" HorizontalAlignment="Left" Margin="565,585,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Mensualité" HorizontalAlignment="Left" Margin="685,585,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
+        <CheckBox Content="Paypal" HorizontalAlignment="Left" Margin="565,610,0,0" VerticalAlignment="Top"/>
+        <CheckBox Content="Carte cadeaux" HorizontalAlignment="Left" Margin="685,610,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked_1"/>
+        <Label Content="Expedié par : " HorizontalAlignment="Left" Margin="855,511,0,0" VerticalAlignment="Top"/>
+        <Label Content="Vendu par : " HorizontalAlignment="Left" Margin="855,537,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
