@@ -97,5 +97,14 @@
   <ItemGroup>
     <Resource Include="ecran.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ecran1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ecran2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ecran3.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
