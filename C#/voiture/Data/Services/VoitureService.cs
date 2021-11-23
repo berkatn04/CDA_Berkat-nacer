@@ -7,5 +7,11 @@ namespace voiture.Data.Services
 {
     public class VoitureService
     {
+        private readonly MyDbContext _context;
+
+        public VoitureService(MyDbContext context)
+        {
+            _context = context;
+        }
     }
 }

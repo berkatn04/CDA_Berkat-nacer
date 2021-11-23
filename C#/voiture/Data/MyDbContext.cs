@@ -10,7 +10,7 @@ namespace voiture.Data
     public class MyDbContext : DbContext
 
     {
-        public DbSet<Voiture> Personnes { get; set; }
+        public DbSet<Voiture> Voitures { get; set; }
 
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
@@ -18,3 +18,4 @@ namespace voiture.Data
         }
     }
 }
+

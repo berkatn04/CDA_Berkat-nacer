@@ -1,0 +1,7 @@
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.csproj.AssemblyReference.cache
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.GeneratedMSBuildEditorConfig.editorconfig
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.AssemblyInfoInputs.cache
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.AssemblyInfo.cs
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.csproj.CoreCompileInputs.cache
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.MvcApplicationPartsAssemblyInfo.cs
+U:\59011-07-03\C#\voiture\obj\Debug\net5.0\voiture.MvcApplicationPartsAssemblyInfo.cache

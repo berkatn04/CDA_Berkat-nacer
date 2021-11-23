@@ -10,7 +10,13 @@ namespace voiture.Data.Profiles
 {
     public class VoitureProfile : Profile
     {
-        CreateMap<Voiture, VoitureDTO>();
-        CreateMap<VoitureDTO, Voiture>();
+
+        public VoitureProfile()
+        {
+            CreateMap<Voiture, VoitureDTO>();
+            CreateMap<VoitureDTO, Voiture>();
+
+        }
+
     }
 }

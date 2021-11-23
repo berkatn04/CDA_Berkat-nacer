@@ -17,6 +17,21 @@ namespace voiture.Controllers
 
     public class VoitureController : ControllerBase
     {
+        private readonly VoitureService _service;
+        private readonly IMapper _mapper;
+
+        public VoitureController(VoitureService service, IMapper mapper)
+        {
+            _service = service;
+            _mapper = mapper;
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<Voiture>> GetAllPersonnes()
+        {
+            IEnumerable<Voiture> listePersonnes = _service.GetAllVoiture();
+            return Ok(_mapper.Map<IEnumerable<VoitureDTO>>(listePersonnes));
+        }
 
     }
 }
