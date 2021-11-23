@@ -31,10 +31,11 @@ DROP TABLE IF EXISTS `personnes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `personnes` (
-  `IdPersonnes` int(32) NOT NULL,
+  `IdPersonnes` int(32) NOT NULL AUTO_INCREMENT,
   `nom` varchar(250) NOT NULL,
-  `prenom` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `prenom` varchar(250) NOT NULL,
+  PRIMARY KEY (`IdPersonnes`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,6 +44,7 @@ CREATE TABLE `personnes` (
 
 LOCK TABLES `personnes` WRITE;
 /*!40000 ALTER TABLE `personnes` DISABLE KEYS */;
+INSERT INTO `personnes` VALUES (1,'ehqeh','eqthqeth'),(2,'erhqh','qehheh'),(3,'qeheth','qehqehhee'),(4,'test','toto'),(5,'jsp','jspeee');
 /*!40000 ALTER TABLE `personnes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -55,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-23 10:45:01
+-- Dump completed on 2021-11-23 17:20:01

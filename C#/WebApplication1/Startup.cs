@@ -12,6 +12,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebApplication1.Data.Services;
+using Newtonsoft.Json.Serialization;
+using WebApplication1.Data;
 
 namespace WebApplication1
 {
@@ -28,7 +31,9 @@ namespace WebApplication1
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<MyDbContext>(options => options.UseMySQL(Configuration.GetConnectionString("Default")));
-
+            services.AddTransient<PersonnesServices>();
+           // services.AddControllers().AddNewtonsoftJson(s => { s.SerializerSettings.ContratResolver = new CamelCasePropertyNamesContractResolver(); });
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

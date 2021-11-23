@@ -45,3 +45,6 @@ U:\59011-07-03\C#\WebApplication1\obj\Debug\net5.0\WebApplication1.dll
 U:\59011-07-03\C#\WebApplication1\obj\Debug\net5.0\ref\WebApplication1.dll
 U:\59011-07-03\C#\WebApplication1\obj\Debug\net5.0\WebApplication1.pdb
 U:\59011-07-03\C#\WebApplication1\obj\Debug\net5.0\WebApplication1.genruntimeconfig.cache
+U:\59011-07-03\C#\WebApplication1\bin\Debug\net5.0\AutoMapper.dll
+U:\59011-07-03\C#\WebApplication1\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+U:\59011-07-03\C#\WebApplication1\bin\Debug\net5.0\Newtonsoft.Json.dll
