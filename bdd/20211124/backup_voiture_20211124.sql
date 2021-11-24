@@ -35,7 +35,7 @@ CREATE TABLE `voitures` (
   `Marque` varchar(250) NOT NULL,
   `Modele` varchar(250) NOT NULL,
   PRIMARY KEY (`IdVoiture`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -57,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-24 10:45:02
+-- Dump completed on 2021-11-24 12:20:01
