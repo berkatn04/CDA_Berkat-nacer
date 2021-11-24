@@ -37,7 +37,7 @@ namespace WebApplication1.Data.Services
         
         public Personne  GetPersonneById(int id)
         {
-            return _context.Personnes.FirstOrDefault(p => p.IdPersonne == id);
+            return _context.Personnes.FirstOrDefault(p => p.IdPersonnes == id);
         }
 
         public void UpdatePersonne(Personne p)

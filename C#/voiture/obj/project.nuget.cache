@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "fjKGnEAhCxg/ZkqeVToRKB5+aoaBmNCKeaR6k73y/rUAQ5d2xnGkOEjqbMaTOspd1nJZUHtMAmPxTnL1/Zm+bQ==",
+  "dgSpecHash": "cfAS0jzUaIzwJHLWtoEudBbjP9gz3Wx5g5AXW8Y/9R7FqDRiZaGygExzP76Wh+t8C4/yzVn7iT0KoIGuT1WK4w==",
   "success": true,
   "projectFilePath": "U:\\59011-07-03\\C#\\voiture\\voiture.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59011-07-03\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\59011-07-03\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\59011-07-03\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\59011-07-03\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\59011-07-03\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

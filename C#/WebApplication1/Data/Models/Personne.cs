@@ -9,7 +9,7 @@ namespace WebApplication1.Data.Models
     public partial class Personne
     {
         [Key]
-        public int IdPersonne { get; set; }
+        public int IdPersonnes { get; set; }
 
 
         public string Nom { get; set; }

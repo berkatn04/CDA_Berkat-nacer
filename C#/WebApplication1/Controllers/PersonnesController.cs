@@ -57,7 +57,7 @@ namespace WebApplication1.Controllers
             return CreatedAtRoute(nameof(GetPersonneById), new
             {
                 Id =
-                    personne.IdPersonne
+                    personne.IdPersonnes
                     }, personne);
         }
 

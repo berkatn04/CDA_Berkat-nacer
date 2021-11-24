@@ -25,13 +25,14 @@ namespace voiture.Controllers
             _service = service;
             _mapper = mapper;
         }
-
+        
         [HttpGet]
-        public ActionResult<IEnumerable<Voiture>> GetAllPersonnes()
+        public ActionResult<IEnumerable<Voiture>> GetAllVoiture()
         {
-            IEnumerable<Voiture> listePersonnes = _service.GetAllVoiture();
-            return Ok(_mapper.Map<IEnumerable<VoitureDTO>>(listePersonnes));
-        }
 
+            IEnumerable<Voiture> listeVoitures = _service.GetAllVoiture();
+            return Ok(_mapper.Map<IEnumerable<VoitureDTO>>(listeVoitures));
+        }
+        
     }
 }

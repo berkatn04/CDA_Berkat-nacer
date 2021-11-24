@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+
+#nullable disable
 
 namespace voiture.Data.Models
 {
-    public class Voiture
+    public partial class Voiture
     {
         [Key]
-        public int IdVehicule { get; set; }
+        public int IdVoiture { get; set; }
 
         public string Marque { get; set; }
         public string Modele { get; set; }
