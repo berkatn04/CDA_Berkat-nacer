@@ -13,7 +13,7 @@
         <Button Content="SAUVGARDER" HorizontalAlignment="Left" Margin="26,290,0,0" VerticalAlignment="Top" Width="92" Height="48" RenderTransformOrigin="0.487,-0.16"/>
         <Button Content="SUPPRIMER" HorizontalAlignment="Left" Margin="26,387,0,0" VerticalAlignment="Top" Width="92" Height="48" RenderTransformOrigin="0.526,-0.227"/>
         <Button Content="IMPRESSION" HorizontalAlignment="Left" Margin="26,482,0,0" VerticalAlignment="Top" Width="92" Height="48" RenderTransformOrigin="0.79,1.979"/>
-        <DataGrid HorizontalAlignment="Left" Height="587" Margin="141,101,0,0" VerticalAlignment="Top" Width="684" Background="{DynamicResource back}">
+        <DataGrid HorizontalAlignment="Left" Height="587" Margin="141,101,0,0" VerticalAlignment="Top" Width="684" Background="{DynamicResource back}" SelectionChanged="DataGrid_SelectionChanged">
             <DataGrid.Columns >
                 <DataGridTextColumn Header="IdIntervention"/>
                 <DataGridTextColumn Header="NomPrestataire" Width="1.3*"/>

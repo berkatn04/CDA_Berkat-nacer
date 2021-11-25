@@ -1,0 +1,16 @@
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\bin\Debug\EVAL_Maquette.exe.config
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\bin\Debug\EVAL_Maquette.exe
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\bin\Debug\EVAL_Maquette.pdb
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.csproj.AssemblyReference.cache
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\MainWindow.g.cs
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\App.g.cs
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette_MarkupCompile.cache
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette_MarkupCompile.lref
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\MainWindow.baml
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.g.resources
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.Properties.Resources.resources
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.csproj.GenerateResource.cache
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.csproj.CoreCompileInputs.cache
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.exe
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\EVAL_Maquette.pdb
+U:\59011-07-03\EVAL\EVAL_Maquette_Nacer\EVAL_Maquette\obj\Debug\App.baml

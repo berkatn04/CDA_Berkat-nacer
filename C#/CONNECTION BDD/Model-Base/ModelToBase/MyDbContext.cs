@@ -21,7 +21,7 @@ namespace ModelToBase
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Personnes>(e => e.Property(o =>
            o.Age).HasColumnType("tinyint(1)").HasConversion<short>());
-        }
 
+
+        }
     }
-}

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Fx7IlWEEy5VBXFvFB3Pl3/yD+OaraAPq7t7CElSyxmLX7nvj047NLFI08l6sPgRMTDu3epB6rXBtzCX18L1xvw==",
+  "dgSpecHash": "APEDdM6GzYpRsA/JpUqesCmLoZKNTOvTERkWji3NLJIjy97kOznC3V8W/4mlswmktgwIYxePZEqWVvxzwfru4A==",
   "success": true,
-  "projectFilePath": "U:\\59011-07-03\\C#\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "U:\\59011-07-03\\C#\\CONNECTION BDD\\Base-Model\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\59011-07-03\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\59011-07-03\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

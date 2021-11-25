@@ -8,15 +8,19 @@ namespace ModelToBase.Data
 {
     public class Personnes
     {
+        [Key]
         public int Id { get; set; }
 
 
         [MaxLength(50)]
         public string Prenom { get; set; }
 
+        [Required]
         [MaxLength(50)]
         public string Nom { get; set; }
 
         public int Age { get; set; }
+
+        public List<Comptes> ListeComptes  { get; set; }
     }
 }
