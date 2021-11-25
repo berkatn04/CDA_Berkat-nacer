@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EVAL_Maquette"
         mc:Ignorable="d"
-        Title="MainWindow" Height="656.613" Width="1004">
-    <Grid RenderTransformOrigin="0.5,0.5">
+        Title="MainWindow" Height="792" Width="1449">
+    <Grid RenderTransformOrigin="0.5,0.5" Background="#FF8DA093">
         <Grid.RenderTransform>
             <TransformGroup>
                 <ScaleTransform/>
@@ -16,41 +16,41 @@
             </TransformGroup>
         </Grid.RenderTransform>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="3*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="2.7*"/>
+            <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="10*"/>
-            <RowDefinition Height="60*"/>
-            <RowDefinition Height="50*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="4*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="30*"/>
-            <RowDefinition Height="2*"/>
+            <RowDefinition Height="9*"/>
+            <RowDefinition Height="41*"/>
+            <RowDefinition Height="82*"/>
+            <RowDefinition Height="82*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="16*"/>
+            <RowDefinition Height="187*"/>
+            <RowDefinition Height="116*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="16*"/>
         </Grid.RowDefinitions>
-        <DataGrid Grid.ColumnSpan="6" Grid.Row="2" Grid.Column="1" SelectionChanged="DataGrid_SelectionChanged" VerticalScrollBarVisibility="Visible">
+        <DataGrid Grid.ColumnSpan="6" Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" SelectionChanged="DataGrid_SelectionChanged" VerticalScrollBarVisibility="Visible">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Width="1*"/>
                 <DataGridTextColumn Header="Nom" Width="1*"/>
                 <DataGridTextColumn Header="Prenom" Width="1*"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Label Grid.Column="1" Grid.Row="1" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="6" >
-            <TextBlock TextWrapping="Wrap" Text="TextBlock"/>
-        </Label>
-        <GroupBox Grid.Column="1" Grid.Row="4" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.ColumnSpan="6" >
+
+        <GroupBox Header="Informations Personnels" Grid.Column="1" Grid.Row="4" Grid.RowSpan="4" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.ColumnSpan="6" >
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
@@ -115,36 +115,118 @@
                 <Label Content="Montant" Grid.Row="13" Grid.Column="1" />
                 <TextBlock Grid.Column="3"  Grid.Row="1" Text="TIKDAM" Background="{DynamicResource BLOCK}"/>
                 <TextBlock Grid.Column="3"  Grid.Row="3" Text="Ahmed" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="3"  Grid.Row="5" Text="M" Background="{DynamicResource BLOCK}" />
+                <ComboBox Grid.Column="3"  Grid.Row="5" Text="M" Background="{DynamicResource BLOCK}" IsEditable="True" IsReadOnly="True" SelectionChanged="ComboBox_SelectionChanged"/>
                 <TextBlock Grid.Column="3"  Grid.Row="7" Text="01/10/1981" Background="{DynamicResource BLOCK}"/>
                 <TextBlock Grid.Column="3"  Grid.Row="9" Text="01/01/2021" Background="{DynamicResource BLOCK}" />
-                <TextBlock Grid.Column="3"  Grid.Row="11" Text="5%" Background="{DynamicResource BLOCK}" />
+                <ComboBox Grid.Column="3"  Grid.Row="11" Text="5%" Background="{DynamicResource BLOCK}" IsEditable="True" IsReadOnly="True"/>
                 <TextBlock Grid.Column="3"  Grid.Row="13" Text="20e/mois" Background="{DynamicResource BLOCK}" />
-                <TextBlock Grid.Column="7"  Grid.Row="1" Text="Celibataire" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="7"  Grid.Row="3" Text="0" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="7"  Grid.Row="5" Text="Comptable" Background="{DynamicResource BLOCK}"/>
+                <ComboBox Grid.Column="7"  Grid.Row="1" Text="Celibataire" Background="{DynamicResource BLOCK}" IsEditable="True" IsReadOnly="True" />
+                <ComboBox Grid.Column="7"  Grid.Row="3" Text="0" Background="{DynamicResource BLOCK}"  IsEditable="True" IsReadOnly="True"/>
+                <ComboBox IsEditable="True" IsReadOnly="True" Grid.Column="7"  Grid.Row="5" Text="Comptable" Background="{DynamicResource BLOCK}"/>
                 <TextBlock Grid.Column="7"  Grid.Row="7" Text="653123" Background="{DynamicResource BLOCK}"/>
                 <TextBlock Grid.Column="7"  Grid.Row="9" Text="856325" Background="{DynamicResource BLOCK}"/>
                 <TextBlock Grid.Column="7"  Grid.Row="11" Text="4.48" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="11"  Grid.Row="1" Text="Administratif" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="11"  Grid.Row="3" Text="Comptabilité" Background="{DynamicResource BLOCK}" />
+                <ComboBox IsEditable="True" IsReadOnly="True" Grid.Column="11"  Grid.Row="1" Text="Administratif" Background="{DynamicResource BLOCK}"/>
+                <ComboBox IsEditable="True" IsReadOnly="True" Grid.Column="11"  Grid.Row="3" Text="Comptabilité" Background="{DynamicResource BLOCK}" />
                 <TextBlock Grid.Column="11"  Grid.Row="5" Text="326543" Background="{DynamicResource BLOCK}" />
                 <TextBlock Grid.Column="11"  Grid.Row="7" Text="698543" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="11"  Grid.Row="9" Text="Mensuel" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="11"  Grid.Row="11" Text="CNSS" Background="{DynamicResource BLOCK}" />
+                <ComboBox  IsEditable="True" IsReadOnly="True" Grid.Column="11"  Grid.Row="9" Text="Mensuel" Background="{DynamicResource BLOCK}"/>
+                <ComboBox  IsEditable="True" IsReadOnly="True" Grid.Column="11"  Grid.Row="11" Text="CNSS" Background="{DynamicResource BLOCK}" />
                 <TextBlock Grid.Column="15"  Grid.Row="3" Text="36.65" Background="{DynamicResource BLOCK}" />
                 <TextBlock Grid.Column="15"  Grid.Row="5" Text="500" Background="{DynamicResource BLOCK}" />
                 <TextBlock Grid.Column="15"  Grid.Row="7" Text="215 BLD Ch de Gaulle 95000 Paris" Background="{DynamicResource BLOCK}"/>
-                <TextBlock Grid.Column="15"  Grid.Row="9" Text=">2ans" Background="{DynamicResource BLOCK}" />
-                <TextBlock Grid.Column="15"  Grid.Row="11" Text="si contracté" Background="{DynamicResource BLOCK}" />
-                <TextBlock Grid.Column="15"  Grid.Row="1" Text="VIrement" Background="{DynamicResource BLOCK}"  />
+                <ComboBox IsEditable="True" IsReadOnly="True" Grid.Column="15"  Grid.Row="9" Text=">2ans" Background="{DynamicResource BLOCK}" />
+                <ComboBox IsEditable="True" IsReadOnly="True"  Grid.Column="15"  Grid.Row="11" Text="si contracté" Background="{DynamicResource BLOCK}" />
+                <ComboBox IsEditable="True" IsReadOnly="True" Grid.Column="15"  Grid.Row="1" Text="Virement" Background="{DynamicResource BLOCK}"  />
 
             </Grid>
         </GroupBox>
-        <Label Content="Selectionner un mois : " Grid.Row="8" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.ColumnSpan="2" Margin="0,29,10,175"/>
-        <ComboBox Grid.Row="8" Grid.Column="2" Text="Fevrier" Margin="0,10,0,194"/>
-        <Label Content="Temps de travail : " Grid.Column="4" Grid.Row="8" VerticalContentAlignment="Top" HorizontalContentAlignment="Center" />
-        <TextBlock Grid.Column="5" Grid.Row="8" TextAlignment="Center" Text="191 H" Grid.ColumnSpan="2" Margin="10,16,241,188"/>
+        <Label Content="Temps de travail : " Grid.Column="4" Grid.Row="8" VerticalContentAlignment="Top" HorizontalContentAlignment="Center"  Grid.RowSpan="2" />
+        <Button Content="Modifier" Grid.Column="7" Grid.Row="5" Click="Button_Click" Foreground="#FF0046FF" />
+        <Button Content="Enregistrer" Grid.Column="7" Grid.Row="6" Click="Button_Click_2" Foreground="#FF0046FF"/>
+        <Button Content="Selectionner" Grid.Column="7" Grid.Row="3" Foreground="#FF0046FF" />
+        <Label  Content="Liste Employes : " Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="7" FontWeight="Bold"/>
+        <GroupBox Header="Fiche de Paie : " Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="6" Grid.RowSpan="3">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="3*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0"/>
+                    <RowDefinition/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+                <Label Content="Selectionner le mois : " Grid.Column="1" RenderTransformOrigin="1.435,1.241"  Grid.Row="1" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+                <Label Content="Heure de travail : " Grid.Column="3" Grid.Row="1" HorizontalContentAlignment="Center" Grid.RowSpan="2"/>
+
+                <Label Content="Selectionner le mois : "  Grid.Row="4" Grid.Column="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Stretch" />
+                <Label Content="Prime Anciennete : "  Grid.Row="5" Grid.Column="1" HorizontalContentAlignment="Right" VerticalContentAlignment="Stretch" />
+                <Label Content="Salaire Brut : "  Grid.Row="6" Grid.Column="1" HorizontalAlignment="Right" />
+                <Label Content="Cotisation CNSS : "  Grid.Row="7" Grid.Column="1" HorizontalAlignment="Right" />
+                <Label Content="AMO : "  Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right"/>
+                <Label Content="IGR : "  Grid.Row="9" Grid.Column="1" HorizontalAlignment="Right" />
+                <Label Content="Mutuelle : "  Grid.Row="10" Grid.Column="1" HorizontalAlignment="Right"/>
+                <Label Content="Net a Payer : "  Grid.Row="11" Grid.Column="1" HorizontalAlignment="Right"/>
+                <Label Content="Base" Grid.Column="2" Grid.Row="3" BorderThickness="1" />
+                <Label Content="Taux" Grid.Column="3"  Grid.Row="3"/>
+                <Label Content="A retenir" Grid.Column="5"  Grid.Row="3" />
+                <Label Content="A Payer" Grid.Column="4"  Grid.Row="3" />
+                <TextBlock Grid.Column="2" Grid.Row="4" Text="191" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="2" Grid.Row="5" Text="700" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="2" Grid.Row="7" Text="7000" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="2" Grid.Row="6" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="2" Grid.Row="8" Background="{DynamicResource BLOCK}" Text="7000"/>
+                <TextBlock Grid.Column="2" Grid.Row="9" Text="7000" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="2" Grid.Row="10" Text="20" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="2" Grid.Row="11" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="3" Grid.Row="4" Text="36.65" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="4" Grid.Row="4" Text="7000" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="4" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="5" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="5" Grid.Row="6" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="7" Text="313.60" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="8" Text="158.20" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="9" Text="1400.00" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="10" Text="20" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="5" Grid.Row="11" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="4" Grid.Row="11" Text="5808.20" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="3" Grid.Row="11" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="3" Grid.Row="9" Text="20%" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="3" Grid.Row="8" Text="2.26%" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="3" Grid.Row="7" Background="{DynamicResource BLOCK}" Text="4.48%"/>
+                <TextBlock Grid.Column="4" Grid.Row="7" Background="{DynamicResource BLOCK}"  />
+                <TextBlock Grid.Column="3" Grid.Row="6" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="3" Grid.Row="5" Text="10%" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="4" Grid.Row="5" Text="700" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="3" Grid.Row="10" Text="1" Background="{DynamicResource BLOCK}" />
+                <TextBlock Grid.Column="4" Grid.Row="6" Text="7700" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="4" Grid.Row="8" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="4" Grid.Row="10" Background="{DynamicResource BLOCK}"/>
+                <TextBlock Grid.Column="4" Grid.Row="9" Background="{DynamicResource BLOCK}"/>
+                <ComboBox Grid.Column="2"  Grid.Row="1" IsEditable="True" IsReadOnly="True" Text="Janvier"/>
+                <TextBlock Grid.Column="4" Grid.Row="1" Background="{DynamicResource BLOCK}" Text="191h"/>
+            </Grid>
+        </GroupBox>
+        <Button Content="Annuler" Grid.Column="7" Grid.Row="7" Click="Button_Click_1" Foreground="#FFFF4600"/>
+        <Button Content="Quitter" Grid.Column="7" Grid.Row="12" Click="Button_Click_1" Foreground="Red"/>
+
+
 
     </Grid>
 </Window>
