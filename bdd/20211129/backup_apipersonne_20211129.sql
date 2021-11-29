@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.31, for Win64 (x86_64)
 --
--- Host: localhost    Database: modeltobase
+-- Host: localhost    Database: apipersonne
 -- ------------------------------------------------------
 -- Server version	5.7.31
 
@@ -16,36 +16,12 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `modeltobase`
+-- Current Database: `apipersonne`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `modeltobase` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `apipersonne` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `modeltobase`;
-
---
--- Table structure for table `__efmigrationshistory`
---
-
-DROP TABLE IF EXISTS `__efmigrationshistory`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `__efmigrationshistory` (
-  `MigrationId` varchar(150) NOT NULL,
-  `ProductVersion` varchar(32) NOT NULL,
-  PRIMARY KEY (`MigrationId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `__efmigrationshistory`
---
-
-LOCK TABLES `__efmigrationshistory` WRITE;
-/*!40000 ALTER TABLE `__efmigrationshistory` DISABLE KEYS */;
-INSERT INTO `__efmigrationshistory` VALUES ('20211124112351_Initiale','5.0.12');
-/*!40000 ALTER TABLE `__efmigrationshistory` ENABLE KEYS */;
-UNLOCK TABLES;
+USE `apipersonne`;
 
 --
 -- Table structure for table `personnes`
@@ -55,12 +31,11 @@ DROP TABLE IF EXISTS `personnes`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `personnes` (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `Prenom` varchar(50) DEFAULT NULL,
-  `Nom` varchar(50) DEFAULT NULL,
-  `Age` tinyint(1) NOT NULL,
-  PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `IdPersonnes` int(32) NOT NULL AUTO_INCREMENT,
+  `nom` varchar(250) NOT NULL,
+  `prenom` varchar(250) NOT NULL,
+  PRIMARY KEY (`IdPersonnes`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,6 +44,7 @@ CREATE TABLE `personnes` (
 
 LOCK TABLES `personnes` WRITE;
 /*!40000 ALTER TABLE `personnes` DISABLE KEYS */;
+INSERT INTO `personnes` VALUES (1,'ehqeh','eqthqeth'),(2,'erhqh','qehheh'),(3,'qeheth','qehqehhee'),(4,'test','toto'),(5,'jsp','jspeee');
 /*!40000 ALTER TABLE `personnes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -81,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26 17:20:02
+-- Dump completed on 2021-11-29 10:45:01

@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.31, for Win64 (x86_64)
 --
--- Host: localhost    Database: basetomodel
+-- Host: localhost    Database: voiture
 -- ------------------------------------------------------
 -- Server version	5.7.31
 
@@ -16,37 +16,36 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `basetomodel`
+-- Current Database: `voiture`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `basetomodel` /*!40100 DEFAULT CHARACTER SET utf8 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `voiture` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `basetomodel`;
+USE `voiture`;
 
 --
--- Table structure for table `clients`
+-- Table structure for table `voitures`
 --
 
-DROP TABLE IF EXISTS `clients`;
+DROP TABLE IF EXISTS `voitures`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `clients` (
-  `IdClient` int(32) NOT NULL AUTO_INCREMENT,
-  `nom` varchar(250) NOT NULL,
-  `prenom` varchar(250) NOT NULL,
-  `age` int(32) NOT NULL,
-  PRIMARY KEY (`IdClient`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+CREATE TABLE `voitures` (
+  `IdVoiture` int(32) NOT NULL AUTO_INCREMENT,
+  `Marque` varchar(250) NOT NULL,
+  `Modele` varchar(250) NOT NULL,
+  PRIMARY KEY (`IdVoiture`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `clients`
+-- Dumping data for table `voitures`
 --
 
-LOCK TABLES `clients` WRITE;
-/*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (1,'DUPONT','TOTO',22),(2,'DUCON','JEAN',22);
-/*!40000 ALTER TABLE `clients` ENABLE KEYS */;
+LOCK TABLES `voitures` WRITE;
+/*!40000 ALTER TABLE `voitures` DISABLE KEYS */;
+INSERT INTO `voitures` VALUES (1,'Citroen','C4'),(2,'Peugeot','206');
+/*!40000 ALTER TABLE `voitures` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -58,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26 17:20:01
+-- Dump completed on 2021-11-29 10:45:02

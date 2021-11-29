@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.31, for Win64 (x86_64)
 --
--- Host: localhost    Database: modeltobase
+-- Host: localhost    Database: efmodeltobase
 -- ------------------------------------------------------
 -- Server version	5.7.31
 
@@ -16,45 +16,21 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `modeltobase`
+-- Current Database: `efmodeltobase`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `modeltobase` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `efmodeltobase` /*!40100 DEFAULT CHARACTER SET latin1 */;
 
-USE `modeltobase`;
+USE `efmodeltobase`;
 
 --
--- Table structure for table `__efmigrationshistory`
+-- Table structure for table `personne`
 --
 
-DROP TABLE IF EXISTS `__efmigrationshistory`;
+DROP TABLE IF EXISTS `personne`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `__efmigrationshistory` (
-  `MigrationId` varchar(150) NOT NULL,
-  `ProductVersion` varchar(32) NOT NULL,
-  PRIMARY KEY (`MigrationId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `__efmigrationshistory`
---
-
-LOCK TABLES `__efmigrationshistory` WRITE;
-/*!40000 ALTER TABLE `__efmigrationshistory` DISABLE KEYS */;
-INSERT INTO `__efmigrationshistory` VALUES ('20211124112351_Initiale','5.0.12');
-/*!40000 ALTER TABLE `__efmigrationshistory` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `personnes`
---
-
-DROP TABLE IF EXISTS `personnes`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `personnes` (
+CREATE TABLE `personne` (
   `Id` int(11) NOT NULL AUTO_INCREMENT,
   `Prenom` varchar(50) DEFAULT NULL,
   `Nom` varchar(50) DEFAULT NULL,
@@ -64,12 +40,38 @@ CREATE TABLE `personnes` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `personnes`
+-- Dumping data for table `personne`
 --
 
-LOCK TABLES `personnes` WRITE;
-/*!40000 ALTER TABLE `personnes` DISABLE KEYS */;
-/*!40000 ALTER TABLE `personnes` ENABLE KEYS */;
+LOCK TABLES `personne` WRITE;
+/*!40000 ALTER TABLE `personne` DISABLE KEYS */;
+/*!40000 ALTER TABLE `personne` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `voiture`
+--
+
+DROP TABLE IF EXISTS `voiture`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `voiture` (
+  `IdVoiture` int(11) NOT NULL AUTO_INCREMENT,
+  `Marque` varchar(50) DEFAULT NULL,
+  `Modele` varchar(50) DEFAULT NULL,
+  `PersonnesId` int(11) DEFAULT NULL,
+  PRIMARY KEY (`IdVoiture`),
+  KEY `IX_Voiture_PersonnesId` (`PersonnesId`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `voiture`
+--
+
+LOCK TABLES `voiture` WRITE;
+/*!40000 ALTER TABLE `voiture` DISABLE KEYS */;
+/*!40000 ALTER TABLE `voiture` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -81,4 +83,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26 17:20:02
+-- Dump completed on 2021-11-27 17:20:01

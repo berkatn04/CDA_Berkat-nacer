@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.31, for Win64 (x86_64)
 --
--- Host: localhost    Database: modeltobase
+-- Host: localhost    Database: app1
 -- ------------------------------------------------------
 -- Server version	5.7.31
 
@@ -16,60 +16,61 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `modeltobase`
+-- Current Database: `app1`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `modeltobase` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `app1` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
-USE `modeltobase`;
+USE `app1`;
 
 --
--- Table structure for table `__efmigrationshistory`
+-- Table structure for table `entite1`
 --
 
-DROP TABLE IF EXISTS `__efmigrationshistory`;
+DROP TABLE IF EXISTS `entite1`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `__efmigrationshistory` (
-  `MigrationId` varchar(150) NOT NULL,
-  `ProductVersion` varchar(32) NOT NULL,
-  PRIMARY KEY (`MigrationId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `entite1` (
+  `IdEntite1` int(32) NOT NULL AUTO_INCREMENT,
+  `NomEntite1` varchar(250) NOT NULL,
+  `IdEntite2` int(32) NOT NULL,
+  PRIMARY KEY (`IdEntite1`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `__efmigrationshistory`
+-- Dumping data for table `entite1`
 --
 
-LOCK TABLES `__efmigrationshistory` WRITE;
-/*!40000 ALTER TABLE `__efmigrationshistory` DISABLE KEYS */;
-INSERT INTO `__efmigrationshistory` VALUES ('20211124112351_Initiale','5.0.12');
-/*!40000 ALTER TABLE `__efmigrationshistory` ENABLE KEYS */;
+LOCK TABLES `entite1` WRITE;
+/*!40000 ALTER TABLE `entite1` DISABLE KEYS */;
+INSERT INTO `entite1` VALUES (1,'a',1),(2,'az',1);
+/*!40000 ALTER TABLE `entite1` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `personnes`
+-- Table structure for table `entite2`
 --
 
-DROP TABLE IF EXISTS `personnes`;
+DROP TABLE IF EXISTS `entite2`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `personnes` (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `Prenom` varchar(50) DEFAULT NULL,
-  `Nom` varchar(50) DEFAULT NULL,
-  `Age` tinyint(1) NOT NULL,
-  PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `entite2` (
+  `IdEntite2` int(32) NOT NULL AUTO_INCREMENT,
+  `NomEntite2` varchar(250) NOT NULL,
+  `PrenomEntité2` varchar(250) NOT NULL,
+  PRIMARY KEY (`IdEntite2`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `personnes`
+-- Dumping data for table `entite2`
 --
 
-LOCK TABLES `personnes` WRITE;
-/*!40000 ALTER TABLE `personnes` DISABLE KEYS */;
-/*!40000 ALTER TABLE `personnes` ENABLE KEYS */;
+LOCK TABLES `entite2` WRITE;
+/*!40000 ALTER TABLE `entite2` DISABLE KEYS */;
+INSERT INTO `entite2` VALUES (1,'azerty','poiuyt'),(2,'azertyuiop','poiuytreza');
+/*!40000 ALTER TABLE `entite2` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -81,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-26 17:20:02
+-- Dump completed on 2021-11-29 10:45:01
