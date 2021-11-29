@@ -30,7 +30,13 @@ namespace TableLiée.Controllers
             IEnumerable<Departements> listeDepartement = _service.GetAllDepartement();
             return Ok(_mapper.Map<IEnumerable<DepartementDTO>>(listeDepartement));
         }
-
-
+        /*
+        [HttpGet("{id}", Name = "GetEntite1ById")]
+        public ActionResult<DepartementDTO> GetEntite1ById(int id)
+        {
+            Departements ent = _service.GetDepartementById(id);
+            return Ok(_mapper.Map<DepartementDTO>(ent));
+        }
+        */
     }
 }

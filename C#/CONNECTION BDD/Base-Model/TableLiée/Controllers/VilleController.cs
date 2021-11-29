@@ -27,8 +27,8 @@ namespace TableLiée.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<VilleDTO>> GetAllEntite2()
         {
-            IEnumerable<Villes> listeEntite2 = _service.GetAllVille();
-            return Ok(_mapper.Map<IEnumerable<VilleDTO>>(listeEntite2));
+            IEnumerable<Villes> listeVille = _service.GetAllVille();
+            return Ok(_mapper.Map<IEnumerable<VilleDTO>>(listeVille));
         }
     }
 }

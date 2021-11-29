@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.7.31, for Win64 (x86_64)
 --
--- Host: localhost    Database: efmodeltobase
+-- Host: localhost    Database: app
 -- ------------------------------------------------------
 -- Server version	5.7.31
 
@@ -16,62 +16,60 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Current Database: `efmodeltobase`
+-- Current Database: `app`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `efmodeltobase` /*!40100 DEFAULT CHARACTER SET latin1 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `app` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
 
-USE `efmodeltobase`;
+USE `app`;
 
 --
--- Table structure for table `personne`
+-- Table structure for table `departement`
 --
 
-DROP TABLE IF EXISTS `personne`;
+DROP TABLE IF EXISTS `departement`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `personne` (
-  `Id` int(11) NOT NULL AUTO_INCREMENT,
-  `Prenom` varchar(50) DEFAULT NULL,
-  `Nom` varchar(50) DEFAULT NULL,
-  `Age` tinyint(1) NOT NULL,
-  PRIMARY KEY (`Id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `departement` (
+  `IdDepartement` int(32) NOT NULL AUTO_INCREMENT,
+  `NomDepartement` varchar(250) NOT NULL,
+  PRIMARY KEY (`IdDepartement`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `personne`
+-- Dumping data for table `departement`
 --
 
-LOCK TABLES `personne` WRITE;
-/*!40000 ALTER TABLE `personne` DISABLE KEYS */;
-/*!40000 ALTER TABLE `personne` ENABLE KEYS */;
+LOCK TABLES `departement` WRITE;
+/*!40000 ALTER TABLE `departement` DISABLE KEYS */;
+INSERT INTO `departement` VALUES (1,'Pas-de-Calais'),(2,'Nord');
+/*!40000 ALTER TABLE `departement` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `voiture`
+-- Table structure for table `ville`
 --
 
-DROP TABLE IF EXISTS `voiture`;
+DROP TABLE IF EXISTS `ville`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `voiture` (
-  `IdVoiture` int(11) NOT NULL AUTO_INCREMENT,
-  `Marque` varchar(50) DEFAULT NULL,
-  `Modele` varchar(50) DEFAULT NULL,
-  `PersonnesId` int(11) DEFAULT NULL,
-  PRIMARY KEY (`IdVoiture`),
-  KEY `IX_Voiture_PersonnesId` (`PersonnesId`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+CREATE TABLE `ville` (
+  `IdVille` int(32) NOT NULL AUTO_INCREMENT,
+  `NomVille` varchar(250) NOT NULL,
+  `IdDepartement` int(32) NOT NULL,
+  PRIMARY KEY (`IdVille`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `voiture`
+-- Dumping data for table `ville`
 --
 
-LOCK TABLES `voiture` WRITE;
-/*!40000 ALTER TABLE `voiture` DISABLE KEYS */;
-/*!40000 ALTER TABLE `voiture` ENABLE KEYS */;
+LOCK TABLES `ville` WRITE;
+/*!40000 ALTER TABLE `ville` DISABLE KEYS */;
+INSERT INTO `ville` VALUES (1,'Lens',1),(2,'Lille',2),(3,'loison ',1);
+/*!40000 ALTER TABLE `ville` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -83,4 +81,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-29 17:20:02
+-- Dump completed on 2021-11-29 17:20:01

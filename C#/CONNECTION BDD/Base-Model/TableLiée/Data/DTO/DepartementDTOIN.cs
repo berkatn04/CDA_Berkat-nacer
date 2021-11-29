@@ -5,10 +5,9 @@ using System.Threading.Tasks;
 
 namespace TableLiée.Data.DTO
 {
-    public class DepartementDTO
+    public class DepartementDTOIN
     {
         public string NomDepartement { get; set; }
-
-        public VilleDTO ville { get; set;  }
+        public int IdVille{ get; set; }
     }
 }

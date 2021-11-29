@@ -14,5 +14,7 @@ namespace TableLiée.Data.Models
 
         public string NomVille { get; set; }
 
+        public int IdDepartement { get; set; }
+        public Departements Departement { get; set; }
     }
 }

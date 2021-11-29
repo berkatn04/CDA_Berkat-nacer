@@ -16,7 +16,10 @@ namespace TableLiée
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {;
+            modelBuilder.Entity<Villes>().HasOne<Departements>(s => s.Departement).WithMany(g => g.LesVilles).HasForeignKey(s => s.IdDepartement);
+        }
 
-        
     }
 }
