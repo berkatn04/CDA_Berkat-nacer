@@ -8,6 +8,6 @@ namespace TableLiée.Data.DTO
     public class VilleDTO
     {
         public string NomVille { get; set; }
-        public int IdDepartement { get; set; }
+       
     }
 }

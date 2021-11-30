@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -20,18 +21,9 @@ namespace TableLiée.Data.Services
 
         public IEnumerable<Departements> GetAllDepartement()
         {
-            var liste = (from e1 in _context.Ville
-                         join e2 in _context.Departement
-                         on e1.IdDepartement equals e2.IdDepartement
-                         select new Departements
-                         {
-                             IdDepartement = e1.IdDepartement,
-                             NomDepartement = e2.NomDepartement,
-                             LesVilles = _context.Ville.Where(v => v.IdDepartement == e2.IdDepartement).ToList()
-                         }).ToList();
-            return liste;
+            return _context.Departement.Include("Ville").ToList();
         }
-        /*
+        
         public Departements GetDepartementById(int id)
         {
             var ent = (from e1 in _context.Departement
@@ -42,11 +34,11 @@ namespace TableLiée.Data.Services
                            IdDepartement = e1.IdDepartement,
                            NomDepartement = e1.NomDepartement,
                            IdVille = e2.IdVille,
-                           villeDTO = e2
+                           LesVilles = _context.Ville.Where(v => v.IdDepartement == e2.IdDepartement).ToList()
                        }).FirstOrDefault(e => e.IdDepartement == id);
             return ent;
         }
-        */
+        
         public void AddDepartement(DepartementDTOIN ent)
         {
             if (ent == null)
@@ -56,7 +48,7 @@ namespace TableLiée.Data.Services
             var entite = new Departements()
             {
                 NomDepartement = ent.NomDepartement,
-                IdVille = ent.IdVille,
+
             };
             _context.Add(ent);
             _context.SaveChanges();

@@ -7,7 +7,9 @@ namespace TableLiée.Data.DTO
 {
     public class DepartementDTOIN
     {
+
+        public int IdDepartement { get; set; }
         public string NomDepartement { get; set; }
-        public int IdVille{ get; set; }
+        
     }
 }
