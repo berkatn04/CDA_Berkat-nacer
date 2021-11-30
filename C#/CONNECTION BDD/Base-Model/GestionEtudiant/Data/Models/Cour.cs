@@ -10,5 +10,7 @@ namespace GestionEtudiant.Data.Models
         public int IdCours { get; set; }
         public string NomCours { get; set; }
         public string Description { get; set; }
+
+        public virtual ICollection<Participation> StudentsCourses { get; set; }
     }
 }

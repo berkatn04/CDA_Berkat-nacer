@@ -10,5 +10,8 @@ namespace GestionEtudiant.Data.Models
         public int IdParticipation { get; set; }
         public int? IdEtudiant { get; set; }
         public int? IdCours { get; set; }
+
+        public virtual Cour Cour { get; set; }
+        public virtual Etudiant Etudiant { get; set; }
     }
 }

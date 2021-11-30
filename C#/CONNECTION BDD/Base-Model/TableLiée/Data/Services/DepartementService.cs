@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -21,7 +20,16 @@ namespace TableLiée.Data.Services
 
         public IEnumerable<Departements> GetAllDepartement()
         {
-            return _context.Departement.Include("Ville").ToList();
+            var liste = (from e1 in _context.Ville
+                         join e2 in _context.Departement
+                         on e1.IdDepartement equals e2.IdDepartement
+                         select new Departements
+                         {
+                             IdDepartement = e1.IdDepartement,
+                             NomDepartement = e2.NomDepartement,
+                             LesVilles = _context.Ville.Where(v => v.IdDepartement == e2.IdDepartement).ToList()
+                         }).ToList();
+            return liste;
         }
         
         public Departements GetDepartementById(int id)

@@ -35,7 +35,7 @@ CREATE TABLE `cours` (
   `NomCours` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   `Description` varchar(50) COLLATE utf8_bin DEFAULT NULL,
   PRIMARY KEY (`IdCours`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -44,6 +44,7 @@ CREATE TABLE `cours` (
 
 LOCK TABLES `cours` WRITE;
 /*!40000 ALTER TABLE `cours` DISABLE KEYS */;
+INSERT INTO `cours` VALUES (1,'Francais','Cours de Francais'),(2,'Maths','Cours de Mathematique');
 /*!40000 ALTER TABLE `cours` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -70,6 +71,30 @@ CREATE TABLE `etudiant` (
 LOCK TABLES `etudiant` WRITE;
 /*!40000 ALTER TABLE `etudiant` DISABLE KEYS */;
 /*!40000 ALTER TABLE `etudiant` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `grade`
+--
+
+DROP TABLE IF EXISTS `grade`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `grade` (
+  `IdGrade` int(32) NOT NULL AUTO_INCREMENT,
+  `NomGrade` varchar(250) COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`IdGrade`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `grade`
+--
+
+LOCK TABLES `grade` WRITE;
+/*!40000 ALTER TABLE `grade` DISABLE KEYS */;
+INSERT INTO `grade` VALUES (1,'Seconde'),(2,'Premiere'),(3,'Terminale');
+/*!40000 ALTER TABLE `grade` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -107,4 +132,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-30 10:45:02
+-- Dump completed on 2021-11-30 12:20:02

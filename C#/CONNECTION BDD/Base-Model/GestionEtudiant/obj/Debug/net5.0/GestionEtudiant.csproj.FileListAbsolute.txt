@@ -47,7 +47,6 @@ U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\sta
 U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\staticwebassets\GestionEtudiant.StaticWebAssets.xml
 U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\scopedcss\bundle\GestionEtudiant.styles.css
 U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\GestionEtudiant.RazorTargetAssemblyInfo.cache
-U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\GestionEtudiant.csproj.CopyComplete
 U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\GestionEtudiant.dll
 U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\ref\GestionEtudiant.dll
 U:\59011-07-03\C#\CONNECTION BDD\Base-Model\GestionEtudiant\obj\Debug\net5.0\GestionEtudiant.pdb

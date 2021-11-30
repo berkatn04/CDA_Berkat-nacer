@@ -19,13 +19,14 @@ namespace GestionEtudiant.Data.Models
 
         public virtual DbSet<Cour> Cours { get; set; }
         public virtual DbSet<Etudiant> Etudiants { get; set; }
+        public virtual DbSet<Grade> Grades { get; set; }
         public virtual DbSet<Participation> Participations { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseMySQL("Name=default");
+                optionsBuilder.UseMySQL("Name=def");
             }
         }
 
@@ -59,6 +60,20 @@ namespace GestionEtudiant.Data.Models
                 entity.Property(e => e.IdGrade).HasColumnType("int(11)");
 
                 entity.Property(e => e.Nom).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<Grade>(entity =>
+            {
+                entity.HasKey(e => e.IdGrade)
+                    .HasName("PRIMARY");
+
+                entity.ToTable("grade");
+
+                entity.Property(e => e.IdGrade).HasColumnType("int(32)");
+
+                entity.Property(e => e.NomGrade)
+                    .IsRequired()
+                    .HasMaxLength(250);
             });
 
             modelBuilder.Entity<Participation>(entity =>

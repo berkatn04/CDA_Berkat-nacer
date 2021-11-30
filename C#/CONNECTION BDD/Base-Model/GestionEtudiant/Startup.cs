@@ -1,4 +1,5 @@
 using GestionEtudiant.Data.Models;
+using GestionEtudiant.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,8 +29,12 @@ namespace GestionEtudiant
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
-            services.AddDbContext<etudiantContext>(options => options.UseMySQL(Configuration.GetConnectionString("default")));
+            services.AddDbContext<etudiantContext>(options => options.UseMySQL(Configuration.GetConnectionString("def")));
+            services.AddTransient<EtudiantsService>();
+            services.AddTransient<GradesService>();
+            services.AddTransient<CoursService>();
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddControllers();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
