@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Test.Data.Models;
 
 namespace  GestionEtudiant.Data.Services
     
@@ -40,12 +41,12 @@ namespace  GestionEtudiant.Data.Services
 
         public IEnumerable<Grade> GetAllGrade()
         {
-            return _context.Grades.Include("Students").ToList();
+            return _context.Grades.Include("Etudiants").ToList();
         }
 
         public Grade GetGradeById(int id)
         {
-            return _context.Grades.Include("Students").FirstOrDefault(obj => obj.IdGrade == id);
+            return _context.Grades.Include("Etudiants").FirstOrDefault(obj => obj.IdGrade == id);
         }
 
         public void UpdateGrade(Grade obj)

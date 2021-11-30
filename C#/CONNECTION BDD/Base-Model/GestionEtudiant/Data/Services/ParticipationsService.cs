@@ -8,47 +8,47 @@ using Test.Data.Models;
 
 namespace GestionEtudiant.Data.Services
 {
-    public class EtudiantsService
+    public class ParticipationsService
     {
 
         private readonly etudiantContext _context;
 
-        public EtudiantsService(etudiantContext context)
+        public ParticipationsService(etudiantContext context)
         {
             _context = context;
         }
 
-        public void AddEtudiant(Etudiant obj)
+        public void AddParticipation(Participation obj)
         {
             if (obj == null)
             {
                 throw new ArgumentNullException(nameof(obj));
             }
-            _context.Etudiants.Add(obj);
+            _context.Participations.Add(obj);
             _context.SaveChanges();
         }
 
-        public void DeleteEtudiant(Etudiant obj)
+        public void DeleteParticipation(Participation obj)
         {
             if (obj == null)
             {
                 throw new ArgumentNullException(nameof(obj));
             }
-            _context.Etudiants.Remove(obj);
+            _context.Participations.Remove(obj);
             _context.SaveChanges();
         }
 
-        public IEnumerable<Etudiant> GetAllEtudiants()
+        public IEnumerable<Participation> GetAllParticipations()
         {
-            return _context.Etudiants.Include("Grade").ToList();
+            return _context.Participations.Include("Cours").Include("Etudiant").ToList();
         }
 
-        public Etudiant GetEtudiantById(int id)
+        public Participation GetParticipationById(int id)
         {
-            return _context.Etudiants.Include("Grade").FirstOrDefault(obj => obj.IdEtudiant == id);
+            return _context.Participations.Include("Cours").Include("Etudiant").FirstOrDefault(obj => obj.IdParticipation == id);
         }
 
-        public void UpdateEtudiant(Etudiant obj)
+        public void UpdateParticipation(Participation obj)
         {
             _context.SaveChanges();
         }

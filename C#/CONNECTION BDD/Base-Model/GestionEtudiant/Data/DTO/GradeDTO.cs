@@ -33,7 +33,7 @@ namespace GestionEtudiant.Data.DTO
             Etudiants = new HashSet<EtudiantDTO>();
         }
 
-        public string GradeName { get; set; }
+        public string NomGrade { get; set; }
 
         public virtual ICollection<EtudiantDTO> Etudiants { get; set; }
     }

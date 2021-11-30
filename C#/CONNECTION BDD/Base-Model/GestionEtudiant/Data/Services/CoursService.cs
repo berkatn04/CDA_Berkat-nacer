@@ -1,8 +1,10 @@
 ﻿using GestionEtudiant.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Test.Data.Models;
 
 namespace GestionEtudiant.Data.Services
 {
@@ -38,12 +40,12 @@ namespace GestionEtudiant.Data.Services
 
         public IEnumerable<Cour> GetAllCours()
         {
-            return _context.Cours.ToList();
+            return _context.Cours.Include("Participations").ToList();
         }
 
         public Cour GetCoursById(int id)
         {
-            return _context.Cours.FirstOrDefault(obj => obj.IdCours == id);
+            return _context.Cours.Include("Participations").FirstOrDefault(obj => obj.IdCours == id);
         }
 
         public void UpdateCours(Cour obj)

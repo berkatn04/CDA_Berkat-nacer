@@ -13,13 +13,21 @@ namespace GestionEtudiant.Data.Profiles
         public ParticipationProfile()
         {
 
-            //CreateMap<StudentCourse, StudentCourseDTOIn>();
-            //CreateMap<StudentCourseDTOIn, StudentCourse>();
+            CreateMap<Participation, ParticipationDTOIN>();
+            CreateMap<ParticipationDTOIN, Participation>();
 
-            //CreateMap<StudentCourse, StudentCourseDTOOut>();
-            CreateMap<Participation, ParticipationAvecEtudiant>();
-            //CreateMap<StudentCourseDTOOut, StudentCourse>();
-            CreateMap<ParticipationAvecEtudiant, Participation>();
+            CreateMap<Participation, PartcipationDTOAvecEtudiantEtCours>();
+            CreateMap<PartcipationDTOAvecEtudiantEtCours, Participation>();
+
+            CreateMap<Participation, PartcipationDTOAvecCours>();
+            CreateMap<PartcipationDTOAvecCours, Participation>();
+
+            CreateMap<Participation, ParticipationDTO>();
+            CreateMap<ParticipationDTO, Participation>();
+
+            CreateMap<Participation, ParticipationDTOAvecEtudiant>();
+            CreateMap<ParticipationDTOAvecEtudiant, Participation>();
+        }
+
         }
     }
-}

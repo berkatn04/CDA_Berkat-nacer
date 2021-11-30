@@ -14,6 +14,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Test.Data.Models;
 
 namespace GestionEtudiant
 {
@@ -33,6 +34,7 @@ namespace GestionEtudiant
             services.AddTransient<EtudiantsService>();
             services.AddTransient<GradesService>();
             services.AddTransient<CoursService>();
+            services.AddTransient<ParticipationsService>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
             services.AddControllers();

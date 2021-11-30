@@ -11,7 +11,7 @@ namespace GestionEtudiant.Data.DTO
         {
 
         }
-        public string NomEtudiant { get; set; }
+        public string Nom { get; set; }
     }
 
 
@@ -23,7 +23,7 @@ namespace GestionEtudiant.Data.DTO
 
         // les données présentes dans la tables uniquement
         public int IdEtudiant { get; set; }
-        public string NomEtudiant { get; set; }
+        public string Nom { get; set; }
         public int IdGrade { get; set; }
     }
 

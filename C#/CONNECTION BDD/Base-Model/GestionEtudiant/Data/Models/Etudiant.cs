@@ -7,11 +7,16 @@ namespace GestionEtudiant.Data.Models
 {
     public partial class Etudiant
     {
+        public Etudiant()
+        {
+            Participations = new HashSet<Participation>();
+        }
+
         public int IdEtudiant { get; set; }
         public string Nom { get; set; }
-        public int IdGrade { get; set; }
+        public int? IdGrade { get; set; }
 
         public virtual Grade Grade { get; set; }
-        public virtual ICollection<Participation> StudentsCourses { get; set; }
+        public virtual ICollection<Participation> Participations { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GestionEtudiant.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,9 +12,9 @@ namespace GestionEtudiant.Data.DTO
         {
         }
 
-        public string NomCour { get; set; }
+        public string NomCours { get; set; }
         public string Description { get; set; }
-
+        
     }
 
     public partial class CourDTOIn
@@ -33,12 +34,12 @@ namespace GestionEtudiant.Data.DTO
     {
         public CourDTOAvecParticipation()
         {
-            Participation = new HashSet<ParticipationAvecEtudiant>();
+            Participation = new HashSet<ParticipationDTOAvecEtudiant>();
         }
 
         public string NomCours { get; set; }
         public string Description { get; set; }
 
-        public virtual ICollection<ParticipationAvecEtudiant> Participation { get; set; }
+        public virtual ICollection<ParticipationDTOAvecEtudiant> Participation { get; set; }
     }
 }

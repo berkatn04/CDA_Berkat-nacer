@@ -19,7 +19,7 @@
 -- Current Database: `etudiant`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `etudiant` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_bin */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `etudiant` /*!40100 DEFAULT CHARACTER SET utf8 */;
 
 USE `etudiant`;
 
@@ -32,10 +32,10 @@ DROP TABLE IF EXISTS `cours`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `cours` (
   `IdCours` int(11) NOT NULL AUTO_INCREMENT,
-  `NomCours` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `Description` varchar(50) COLLATE utf8_bin DEFAULT NULL,
+  `NomCours` varchar(50) DEFAULT NULL,
+  `Description` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`IdCours`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -57,11 +57,12 @@ DROP TABLE IF EXISTS `etudiant`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `etudiant` (
   `IdEtudiant` int(11) NOT NULL AUTO_INCREMENT,
-  `Nom` varchar(50) COLLATE utf8_bin DEFAULT NULL,
-  `IdGrade` int(11) NOT NULL,
+  `Nom` varchar(50) DEFAULT NULL,
+  `IdGrade` int(11) DEFAULT NULL,
   PRIMARY KEY (`IdEtudiant`),
-  KEY `IdGrade` (`IdGrade`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  KEY `IdGrade` (`IdGrade`),
+  CONSTRAINT `Fk_Etudiant_Grade` FOREIGN KEY (`IdGrade`) REFERENCES `grade` (`IdGrade`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -70,6 +71,7 @@ CREATE TABLE `etudiant` (
 
 LOCK TABLES `etudiant` WRITE;
 /*!40000 ALTER TABLE `etudiant` DISABLE KEYS */;
+INSERT INTO `etudiant` VALUES (1,'Berkat',1),(2,'AZERTY',2),(3,'YTREZA',3);
 /*!40000 ALTER TABLE `etudiant` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -82,9 +84,9 @@ DROP TABLE IF EXISTS `grade`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `grade` (
   `IdGrade` int(32) NOT NULL AUTO_INCREMENT,
-  `NomGrade` varchar(250) COLLATE utf8_bin NOT NULL,
+  `NomGrade` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`IdGrade`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,13 +107,15 @@ DROP TABLE IF EXISTS `participation`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `participation` (
-  `IdParticipation` int(11) NOT NULL,
+  `IdParticipation` int(11) NOT NULL AUTO_INCREMENT,
   `IdEtudiant` int(11) DEFAULT NULL,
   `IdCours` int(11) DEFAULT NULL,
   PRIMARY KEY (`IdParticipation`),
-  KEY `IdEtudiant` (`IdEtudiant`),
-  KEY `IdCours` (`IdCours`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+  KEY `FK_participation_Etudiant` (`IdEtudiant`),
+  KEY `FK_participation_Cours` (`IdCours`),
+  CONSTRAINT `FK_participation_Cours` FOREIGN KEY (`IdCours`) REFERENCES `cours` (`IdCours`),
+  CONSTRAINT `FK_participation_Etudiant` FOREIGN KEY (`IdEtudiant`) REFERENCES `etudiant` (`IdEtudiant`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,6 +124,7 @@ CREATE TABLE `participation` (
 
 LOCK TABLES `participation` WRITE;
 /*!40000 ALTER TABLE `participation` DISABLE KEYS */;
+INSERT INTO `participation` VALUES (1,2,1),(2,3,2),(3,1,1);
 /*!40000 ALTER TABLE `participation` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -132,4 +137,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-11-30 12:20:02
+-- Dump completed on 2021-11-30 17:20:02

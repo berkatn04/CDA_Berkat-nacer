@@ -1,10 +1,11 @@
 ﻿using System;
+using GestionEtudiant.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace GestionEtudiant.Data.Models
+namespace Test.Data.Models
 {
     public partial class etudiantContext : DbContext
     {
@@ -60,6 +61,11 @@ namespace GestionEtudiant.Data.Models
                 entity.Property(e => e.IdGrade).HasColumnType("int(11)");
 
                 entity.Property(e => e.Nom).HasMaxLength(50);
+
+                entity.HasOne(d => d.Grade)
+                    .WithMany(p => p.Etudiants)
+                    .HasForeignKey(d => d.IdGrade)
+                    .HasConstraintName("Fk_Etudiant_Grade");
             });
 
             modelBuilder.Entity<Grade>(entity =>
@@ -71,9 +77,7 @@ namespace GestionEtudiant.Data.Models
 
                 entity.Property(e => e.IdGrade).HasColumnType("int(32)");
 
-                entity.Property(e => e.NomGrade)
-                    .IsRequired()
-                    .HasMaxLength(250);
+                entity.Property(e => e.NomGrade).HasMaxLength(250);
             });
 
             modelBuilder.Entity<Participation>(entity =>
@@ -83,15 +87,25 @@ namespace GestionEtudiant.Data.Models
 
                 entity.ToTable("participation");
 
-                entity.HasIndex(e => e.IdCours, "IdCours");
+                entity.HasIndex(e => e.IdCours, "FK_participation_Cours");
 
-                entity.HasIndex(e => e.IdEtudiant, "IdEtudiant");
+                entity.HasIndex(e => e.IdEtudiant, "FK_participation_Etudiant");
 
                 entity.Property(e => e.IdParticipation).HasColumnType("int(11)");
 
                 entity.Property(e => e.IdCours).HasColumnType("int(11)");
 
                 entity.Property(e => e.IdEtudiant).HasColumnType("int(11)");
+
+                entity.HasOne(d => d.Cours)
+                    .WithMany(p => p.Participations)
+                    .HasForeignKey(d => d.IdCours)
+                    .HasConstraintName("FK_participation_Cours");
+
+                entity.HasOne(d => d.Etudiant)
+                    .WithMany(p => p.Participations)
+                    .HasForeignKey(d => d.IdEtudiant)
+                    .HasConstraintName("FK_participation_Etudiant");
             });
 
             OnModelCreatingPartial(modelBuilder);
