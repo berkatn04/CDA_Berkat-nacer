@@ -63,14 +63,14 @@ namespace GestionProduit.Data.Models
 
                 entity.Property(e => e.IdProduit).HasColumnType("int(11)");
 
-                entity.HasOne(d => d.IdCommandeNavigation)
-                    .WithMany(p => p.Preparations)
+                entity.HasOne(d => d.Commande)
+                    .WithMany(p => p.Preparation)
                     .HasForeignKey(d => d.IdCommande)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Preparation_Commandes");
 
-                entity.HasOne(d => d.IdProduitNavigation)
-                    .WithMany(p => p.Preparations)
+                entity.HasOne(d => d.Produit)
+                    .WithMany(p => p.Preparation)
                     .HasForeignKey(d => d.IdProduit)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Preparation_Produit");

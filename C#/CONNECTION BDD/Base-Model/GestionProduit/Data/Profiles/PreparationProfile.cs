@@ -13,6 +13,8 @@ namespace GestionProduit.Data.Profiles
         {
             CreateMap<Preparation, PreparationDTOOUT>();
             CreateMap<PreparationDTOOUT, Preparation>();
+            CreateMap<Preparation, PreparationProduitDTO>();
+            CreateMap<PreparationProduitDTO, Preparation>();
         }
     }
 }

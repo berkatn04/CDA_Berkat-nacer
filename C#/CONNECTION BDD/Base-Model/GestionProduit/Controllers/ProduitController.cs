@@ -1,14 +1,19 @@
 ﻿using AutoMapper;
+using GestionProduit.Data.DTO;
+using GestionProduit.Data.Models;
 using GestionProduit.Data.Services;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Mvc;
+
 
 namespace GestionProduit.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ProduitController : ControllerBase
     {
 
@@ -23,35 +28,35 @@ namespace GestionProduit.Controllers
 
         //GET api/Produits
         [HttpGet]
-        public ActionResult<IEnumerable<ProduitsDTO>> GetAllProduits()
+        public ActionResult<IEnumerable<ProduitDTOOUT>> GetAllProduits()
         {
             IEnumerable<Produit> listeProduits = _service.GetAllProduits();
-            return Ok(_mapper.Map<IEnumerable<ProduitsDTO>>(listeProduits));
+            return Ok(_mapper.Map<IEnumerable<ProduitDTOOUT>>(listeProduits));
         }
 
         //GET api/Produits/{i}
         [HttpGet("{id}", Name = "GetProduitById")]
-        public ActionResult<ProduitsDTO> GetProduitById(int id)
+        public ActionResult<ProduitDTOOUT> GetProduitById(int id)
         {
             Produit commandItem = _service.GetProduitById(id);
             if (commandItem != null)
             {
-                return Ok(_mapper.Map<ProduitsDTO>(commandItem));
+                return Ok(_mapper.Map<ProduitDTOOUT>(commandItem));
             }
             return NotFound();
         }
 
         //POST api/Produits
         [HttpPost]
-        public ActionResult<ProduitsDTO> CreateProduit(Produit obj)
+        public ActionResult<ProduitDTOOUT> CreateProduit(Produit obj)
         {
             _service.AddProduit(obj);
-            return CreatedAtRoute(nameof(GetProduitById), new { Id = obj.Id }, obj);
+            return CreatedAtRoute(nameof(GetProduitById), new { Id = obj.IdProduit }, obj);
         }
 
         //POST api/Produits/{id}
         [HttpPut("{id}")]
-        public ActionResult UpdateProduit(int id, ProduitsDTO obj)
+        public ActionResult UpdateProduit(int id, ProduitDTOOUT obj)
         {
             Produit objFromRepo = _service.GetProduitById(id);
             if (objFromRepo == null)

@@ -1,4 +1,5 @@
 using GestionProduit.Data.Models;
+using GestionProduit.Data.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,9 @@ namespace GestionProduit
         {
             services.AddDbContext<gestionproduitContext>(options => options.UseMySQL(Configuration.GetConnectionString("def")));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddTransient<CommandeService>();
+            services.AddTransient<PreparationService>();
+            services.AddTransient<ProduitService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {

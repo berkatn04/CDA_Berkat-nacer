@@ -10,12 +10,12 @@ namespace GestionProduit.Data.Models
     {
         public Produit()
         {
-            Preparations = new HashSet<Preparation>();
+            Preparation = new HashSet<Preparation>();
         }
 
         public int IdProduit { get; set; }
         public string LibelleProduit { get; set; }
 
-        public virtual ICollection<Preparation> Preparations { get; set; }
+        public virtual ICollection<Preparation> Preparation { get; set; }
     }
 }

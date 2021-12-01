@@ -12,7 +12,7 @@ namespace GestionProduit.Data.DTO
         public int IdCommande { get; set; }
         public int IdProduit { get; set; }
 
-        public virtual Commande IdCommandeNavigation { get; set; }
-        public virtual Produit IdProduitNavigation { get; set; }
+        public virtual Commande Commande { get; set; }
+        public virtual Produit Produit { get; set; }
     }
 }

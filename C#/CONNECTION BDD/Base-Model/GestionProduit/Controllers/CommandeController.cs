@@ -10,6 +10,8 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace GestionProduit.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class CommandeController : ControllerBase
     {
 
@@ -24,10 +26,10 @@ namespace GestionProduit.Controllers
 
         //GET api/Commandes
         [HttpGet]
-        public ActionResult<IEnumerable<CommandeDTOOUT>> GetAllCommandes()
+        public ActionResult<IEnumerable<CommandeAvecProduitDTO>> GetAllCommandes()
         {
             IEnumerable<Commande> listeCommandes = _service.GetAllCommandes();
-            return Ok(_mapper.Map<IEnumerable<CommandeDTOOUT>>(listeCommandes));
+            return Ok(_mapper.Map<IEnumerable<CommandeAvecProduitDTO>>(listeCommandes));
         }
 
         //GET api/Commandes/{i}

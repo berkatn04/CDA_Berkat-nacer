@@ -1,4 +1,5 @@
 ﻿using GestionProduit.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,7 +39,7 @@ namespace GestionProduit.Data.Services
 
         public IEnumerable<Commande> GetAllCommandes()
         {
-            return _context.Commandes.ToList();
+            return _context.Commandes.Include("Preparation.Produit").ToList();
         }
 
         public Commande GetCommandeById(int id)

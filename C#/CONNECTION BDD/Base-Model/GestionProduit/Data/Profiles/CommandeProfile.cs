@@ -13,7 +13,12 @@ namespace GestionProduit.Data.Profiles
         public CommandeProfile()
         {
             CreateMap<Commande, CommandeDTOOUT>();
-            CreateMap<CommandeDTOOUT, Commande>();
-        }
+            CreateMap<CommandeDTOIN, Commande>();
+            CreateMap<Commande, CommandeDTOIN>();
+            CreateMap<CommandeDTOOUT, Commande>();       
+            CreateMap<Commande, CommandeAvecProduitDTO>();
+            CreateMap<CommandeAvecProduitDTO, Commande>();
+        
+}
     }
 }

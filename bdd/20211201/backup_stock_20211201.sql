@@ -38,7 +38,7 @@ CREATE TABLE `articles` (
   PRIMARY KEY (`IdArticle`),
   KEY `FK_Article_Categories` (`IdCategories`),
   CONSTRAINT `FK_Article_Categories` FOREIGN KEY (`IdCategories`) REFERENCES `categories` (`IdCategories`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -47,6 +47,7 @@ CREATE TABLE `articles` (
 
 LOCK TABLES `articles` WRITE;
 /*!40000 ALTER TABLE `articles` DISABLE KEYS */;
+INSERT INTO `articles` VALUES (1,'Pates',30,6),(2,'Jeu enfant +2 ans',5,3),(3,'Cassoulet',46,4),(4,'Antibact\'',94,2),(5,'Frites surgelées',24,5),(6,'Mustela',64,1);
 /*!40000 ALTER TABLE `articles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +65,7 @@ CREATE TABLE `categories` (
   PRIMARY KEY (`IdCategories`),
   KEY `FK_Categories_TypeProduits` (`IdTypeProduits`),
   CONSTRAINT `FK_Categories_TypeProduits` FOREIGN KEY (`IdTypeProduits`) REFERENCES `typeproduits` (`IdTypeProduits`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -73,6 +74,7 @@ CREATE TABLE `categories` (
 
 LOCK TABLES `categories` WRITE;
 /*!40000 ALTER TABLE `categories` DISABLE KEYS */;
+INSERT INTO `categories` VALUES (1,'bébé',3),(2,'détergents',3),(3,'Jouet',2),(4,'Conserve',1),(5,'surgelés',1),(6,'non perissable',1),(7,'bébé',3),(8,'détergents',3),(9,'Jouet',2),(10,'Conserve',1),(11,'surgelés',1),(12,'non perissable',1);
 /*!40000 ALTER TABLE `categories` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -87,7 +89,7 @@ CREATE TABLE `typeproduits` (
   `IdTypeProduits` int(11) NOT NULL AUTO_INCREMENT,
   `LibelleTypeProduit` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`IdTypeProduits`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -96,6 +98,7 @@ CREATE TABLE `typeproduits` (
 
 LOCK TABLES `typeproduits` WRITE;
 /*!40000 ALTER TABLE `typeproduits` DISABLE KEYS */;
+INSERT INTO `typeproduits` VALUES (1,'Alimentaire'),(2,'non Alimentaire'),(3,'Hygiène'),(4,'Alimentaire'),(5,'non Alimentaire'),(6,'Hygiène'),(7,'Alimentaire'),(8,'non Alimentaire'),(9,'Hygiène');
 /*!40000 ALTER TABLE `typeproduits` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -108,4 +111,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-01 12:20:02
+-- Dump completed on 2021-12-01 17:20:03
