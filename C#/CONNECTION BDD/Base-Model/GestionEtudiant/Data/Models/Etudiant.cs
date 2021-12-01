@@ -9,7 +9,7 @@ namespace GestionEtudiant.Data.Models
     {
         public Etudiant()
         {
-            Participations = new HashSet<Participation>();
+            Participation = new HashSet<Participation>();
         }
 
         public int IdEtudiant { get; set; }
@@ -17,6 +17,6 @@ namespace GestionEtudiant.Data.Models
         public int? IdGrade { get; set; }
 
         public virtual Grade Grade { get; set; }
-        public virtual ICollection<Participation> Participations { get; set; }
+        public virtual ICollection<Participation> Participation { get; set; }
     }
 }

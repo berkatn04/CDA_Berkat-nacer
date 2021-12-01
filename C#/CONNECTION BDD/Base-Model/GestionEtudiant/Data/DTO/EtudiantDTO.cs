@@ -9,9 +9,10 @@ namespace GestionEtudiant.Data.DTO
     {
         public EtudiantDTO()
         {
-
+            Participation = new HashSet<PartcipationDTOAvecCours>();
         }
         public string Nom { get; set; }
+        public virtual ICollection<PartcipationDTOAvecCours> Participation { get; set; }
     }
 
 
@@ -28,17 +29,9 @@ namespace GestionEtudiant.Data.DTO
     }
 
     public class EtudiantDTOAvecGrade
-    {
-        public EtudiantDTOAvecGrade()
-        {
-        }
-        // les colonnes de la table sans les id
-        public string NomGrade { get; set; }
-        public int IdGrade { get; set; }
-
-        // ajouter les données attachées
-        // ATTENTION il faut retourner un DTOOut
-        public virtual GradeDTO Grade { get; set; }
+    {           
+        public string Nom { get; set; }
+           
 
     }
 }

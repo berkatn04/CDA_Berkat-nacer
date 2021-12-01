@@ -9,12 +9,12 @@ namespace GestionEtudiant.Data.Models
     {
         public Grade()
         {
-            Etudiants = new HashSet<Etudiant>();
+            Etudiant = new HashSet<Etudiant>();
         }
 
         public int IdGrade { get; set; }
         public string NomGrade { get; set; }
 
-        public virtual ICollection<Etudiant> Etudiants { get; set; }
+        public virtual ICollection<Etudiant> Etudiant { get; set; }
     }
 }

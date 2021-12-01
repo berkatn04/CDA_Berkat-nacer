@@ -9,13 +9,13 @@ namespace GestionEtudiant.Data.Models
     {
         public Cour()
         {
-            Participations = new HashSet<Participation>();
+            Participation = new HashSet<Participation>();
         }
 
         public int IdCours { get; set; }
         public string NomCours { get; set; }
         public string Description { get; set; }
 
-        public virtual ICollection<Participation> Participations { get; set; }
+        public virtual ICollection<Participation> Participation { get; set; }
     }
 }

@@ -21,17 +21,17 @@ namespace GestionEtudiant.Data.DTO
     }
     public partial class ParticipationDTOAvecEtudiant
     {
-        public virtual EtudiantDTO Etudiant { get; set; }
+        public virtual EtudiantDTOAvecGrade Etudiant { get; set; }
     }
 
     public partial class PartcipationDTOAvecEtudiantEtCours
     {
         public virtual CourDTO Cours { get; set; }
-        public virtual EtudiantDTO Etudiant { get; set; }
+        public virtual EtudiantDTOAvecGrade Etudiant { get; set; }
     }
 
     public partial class PartcipationDTOAvecCours
     {
-        public virtual CourDTO Course { get; set; }
+        public virtual CourDTO Cours { get; set; }
     }
 }

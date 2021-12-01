@@ -40,12 +40,12 @@ namespace GestionEtudiant.Data.Services
 
         public IEnumerable<Cour> GetAllCours()
         {
-            return _context.Cours.Include("Participations").ToList();
+            return _context.Cours.Include("Participation.Etudiant").ToList();
         }
 
         public Cour GetCoursById(int id)
         {
-            return _context.Cours.Include("Participations").FirstOrDefault(obj => obj.IdCours == id);
+            return _context.Cours.Include("Participation.Etudiant").FirstOrDefault(obj => obj.IdCours == id);
         }
 
         public void UpdateCours(Cour obj)

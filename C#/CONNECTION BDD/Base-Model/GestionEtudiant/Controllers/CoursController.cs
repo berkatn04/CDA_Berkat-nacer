@@ -28,27 +28,27 @@ namespace GestionEtudiant.Controllers
 
         //GET api/Cours
         [HttpGet]
-        public ActionResult<IEnumerable<CourDTO>> GetAllCours()
+        public ActionResult<IEnumerable<CourDTOAvecParticipation>> GetAllCours()
         {
             IEnumerable<Cour> listeCours = _service.GetAllCours();
-            return Ok(_mapper.Map<IEnumerable<CourDTO>>(listeCours));
+            return Ok(_mapper.Map<IEnumerable<CourDTOAvecParticipation>>(listeCours));
         }
 
         //GET api/Cours/{i}
         [HttpGet("{id}", Name = "GetCourById")]
-        public ActionResult<CourDTO> GetCourById(int id)
+        public ActionResult<CourDTOAvecParticipation> GetCourById(int id)
         {
             Cour commandItem = _service.GetCoursById(id);
             if (commandItem != null)
             {
-                return Ok(_mapper.Map<CourDTO>(commandItem));
+                return Ok(_mapper.Map<CourDTOAvecParticipation>(commandItem));
             }
             return NotFound();
         }
 
         //POST api/Cours
         [HttpPost]
-        public ActionResult<CourDTO> CreateCour(CourDTOIn obj)
+        public ActionResult<CourDTOIn> CreateCour(CourDTOIn obj)
         {
             _service.AddCour(_mapper.Map<Cour>(obj));
             return CreatedAtRoute(nameof(GetCourById), new { Id = obj.IdCours }, obj);
@@ -56,7 +56,7 @@ namespace GestionEtudiant.Controllers
 
         //POST api/Cours/{id}
         [HttpPut("{id}")]
-        public ActionResult UpdateCour(int id, CourDTO obj)
+        public ActionResult UpdateCour(int id, CourDTOIn obj)
         {
             Cour objFromRepo = _service.GetCoursById(id);
             if (objFromRepo == null)

@@ -63,7 +63,7 @@ namespace Test.Data.Models
                 entity.Property(e => e.Nom).HasMaxLength(50);
 
                 entity.HasOne(d => d.Grade)
-                    .WithMany(p => p.Etudiants)
+                    .WithMany(p => p.Etudiant)
                     .HasForeignKey(d => d.IdGrade)
                     .HasConstraintName("Fk_Etudiant_Grade");
             });
@@ -98,12 +98,12 @@ namespace Test.Data.Models
                 entity.Property(e => e.IdEtudiant).HasColumnType("int(11)");
 
                 entity.HasOne(d => d.Cours)
-                    .WithMany(p => p.Participations)
+                    .WithMany(p => p.Participation)
                     .HasForeignKey(d => d.IdCours)
                     .HasConstraintName("FK_participation_Cours");
 
                 entity.HasOne(d => d.Etudiant)
-                    .WithMany(p => p.Participations)
+                    .WithMany(p => p.Participation)
                     .HasForeignKey(d => d.IdEtudiant)
                     .HasConstraintName("FK_participation_Etudiant");
             });
