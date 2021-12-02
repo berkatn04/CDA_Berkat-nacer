@@ -28,9 +28,10 @@ namespace GestionStock.Data.Controllers
         {
             _service = new ArticlesService(ctx);
             _mapper = mapper;
+
         }
 
-        //GET api/Articless
+        //GET api/Articles
         [HttpGet]
         public ActionResult<IEnumerable<ArticlesDTOOUT>> GetAllArticless()
         {
@@ -38,7 +39,7 @@ namespace GestionStock.Data.Controllers
             return Ok(_mapper.Map<IEnumerable<ArticlesDTOOUT>>(listeArticless));
         }
 
-        //GET api/Articless/{i}
+        //GET api/Articles/{i}
         [HttpGet("{id}", Name = "GetArticlesById")]
         public ActionResult<ArticlesDTOOUT> GetArticlesById(int id)
         {
@@ -50,7 +51,7 @@ namespace GestionStock.Data.Controllers
             return NotFound();
         }
 
-        //POST api/Articless
+        //POST api/Articles
         [HttpPost]
         public ActionResult<ArticlesDTOOUT> CreateArticles(Articles obj)
         {
@@ -58,7 +59,7 @@ namespace GestionStock.Data.Controllers
             return CreatedAtRoute(nameof(GetArticlesById), new { Id = obj.IdArticle }, obj);
         }
 
-        //POST api/Articless/{id}
+        //POST api/Articles/{id}
         [HttpPut("{id}")]
         public ActionResult UpdateArticles(int id, ArticlesDTOOUT obj)
         {
@@ -78,7 +79,7 @@ namespace GestionStock.Data.Controllers
         // "path":"",
         // "value":""
         // }]
-        //PATCH api/Articless/{id}
+        //PATCH api/Articles/{id}
         [HttpPatch("{id}")]
         public ActionResult PartialArticlesUpdate(int id, JsonPatchDocument<Articles> patchDoc)
         {
@@ -98,7 +99,7 @@ namespace GestionStock.Data.Controllers
             return NoContent();
         }
 
-        //DELETE api/Articless/{id}
+        //DELETE api/Articles/{id}
         [HttpDelete("{id}")]
         public ActionResult DeleteArticles(int id)
         {
