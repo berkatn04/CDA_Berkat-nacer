@@ -20,14 +20,14 @@ namespace GestionDesStocks
     /// </summary>
     public partial class ListeCategories : Window
     {
-        private Window _window;
-        private CategoriesController _categorieController;
-        public ListeCategories(MainWindow win, MyDbContext ctx)
+          Window _window;
+         CategoriesController _categorieController;
+         ListeCategories(MainWindow win, MyDbContext ctx)
         {
             InitializeComponent();
             this._window = win;
             this._categorieController = new CategoriesController(ctx);
-            dt.ItemsSource = _categorieController.GetAllCategories();
+           // dt.ItemsSource = _categorieController.GetAllCategories();
         }
     }
 }

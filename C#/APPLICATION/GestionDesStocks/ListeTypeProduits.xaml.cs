@@ -28,7 +28,7 @@ namespace GestionDesStocks
             InitializeComponent();
             this._window = win;
             this._TypeProduits = new TypeProduitsController(ctx);
-            dt.ItemsSource = _TypeProduits.GetAllTypeProduits();
+           // dt.ItemsSource = _TypeProduits.GetAllTypeProduits();
         }
 
         private void ButtonRetour(object sender, RoutedEventArgs e)

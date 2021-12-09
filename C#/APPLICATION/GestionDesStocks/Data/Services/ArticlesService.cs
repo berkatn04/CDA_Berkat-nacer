@@ -40,7 +40,7 @@ namespace GestionDesStocks.Data.Services
 
         public IEnumerable<Articles> GetAllArticles()
         {
-            return _context.Articles.Include("Categorie").ToList();
+            return _context.Articles.ToList();
         }
 
         public Articles GetArticleById(int id)

@@ -29,6 +29,7 @@ namespace GestionDesStocks
             this._window = win;
             this._articlesController = new ArticlesController(ctx);
             dt.ItemsSource = _articlesController.GetAllArticles();
+
         }
     }
 }

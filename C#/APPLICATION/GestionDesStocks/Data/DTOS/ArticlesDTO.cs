@@ -13,7 +13,7 @@ namespace GestionDesStocks.Data.DTOS
         public string LibelleArticle { get; set; }
         public int? QuantiteStockee { get; set; }
         public int IdCategories { get; set; }
-
-        public virtual Categories Categorie { get; set; }
+        public string LibelleCategories { get; set; }
+        
     }
 }
