@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bille\\OneDrive\\Documents\\testEXE\\testEXE\\testEXE.csproj": {}
+    "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA_Berkat-nacer\\C#\\APPLICATION\\testEXE\\testEXE\\testEXE.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bille\\OneDrive\\Documents\\testEXE\\testEXE\\testEXE.csproj": {
+    "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA_Berkat-nacer\\C#\\APPLICATION\\testEXE\\testEXE\\testEXE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bille\\OneDrive\\Documents\\testEXE\\testEXE\\testEXE.csproj",
+        "projectUniqueName": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA_Berkat-nacer\\C#\\APPLICATION\\testEXE\\testEXE\\testEXE.csproj",
         "projectName": "testEXE",
-        "projectPath": "C:\\Users\\Bille\\OneDrive\\Documents\\testEXE\\testEXE\\testEXE.csproj",
+        "projectPath": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA_Berkat-nacer\\C#\\APPLICATION\\testEXE\\testEXE\\testEXE.csproj",
         "packagesPath": "C:\\Users\\Bille\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bille\\OneDrive\\Documents\\testEXE\\testEXE\\obj\\",
+        "outputPath": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA_Berkat-nacer\\C#\\APPLICATION\\testEXE\\testEXE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bille\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pn2GuizgQUC9x+qECmh7wtPldYH2Wrui36zWpjCzkl0NIVFy1ubZkcY5NPtM5SOImywKTlEC6+m58pXeMmWuBQ==",
+  "dgSpecHash": "ER7ZuMlHwxE3oxVPtzY0nY9gBer13H1YrOYedFC7rPcixVr+m4PsTjx+wOPaKaApD67Rffd829ieubxrJOhVUw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bille\\OneDrive\\Documents\\testEXE\\testEXE\\testEXE.csproj",
+  "projectFilePath": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA_Berkat-nacer\\C#\\APPLICATION\\testEXE\\testEXE\\testEXE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bille\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Bille\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
