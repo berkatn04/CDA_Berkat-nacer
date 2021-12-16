@@ -1,0 +1,55 @@
+/****  GENERAL ****/
+
+
+div, a, header, footer, nav, article, section, body, html, main {
+    display: flex;
+    flex: 1;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.margeHB{
+    height: 3vh;
+    flex: none;
+}
+
+.margeGD{
+    flex: 0.2;
+}
+
+.section1{
+    border: 5px solid blue;
+    height: 20vh;
+    flex: 30;   
+}
+
+.section{
+    border: 5px solid blue;
+    height: 20vh;
+    flex: 30;   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+    height : 100vh;
+}
+
+.flex{
+    flex: 5;
+}
+
+.flex1{
+    flex: 2;
+}

@@ -1,0 +1,70 @@
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, header, footer, nav, article, section {
+    display: flex;
+    flex: 1;
+}
+
+img, video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}   
+
+
+.margeGD{
+    flex: 0.2;
+}
+
+
+.flex{
+    flex: 5;
+}
+
+.section{
+    border: 5px solid rgb(0, 0, 0);
+    height: 20vh;
+    flex: 30;   
+}
+
+.classheader{
+    height: 20vh;
+    flex: 30;   
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+.flex1{
+    flex: 5;
+}
+
+.flex2{
+    flex: 0.3;
+}
+
+
+
+
+a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+    color: rgb(0, 0, 0);
+    
+}
+
+section{
+    background-image: url(./image/bois.jpg);
+}
