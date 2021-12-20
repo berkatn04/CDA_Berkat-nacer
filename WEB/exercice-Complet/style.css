@@ -1,0 +1,126 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-position: 50% 50%;
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    display: flex;
+    flex: 1;
+}
+img{
+    width: 100%;
+}
+video{
+    width: 100%;
+}
+.espace{
+    flex: 0.2;
+}
+.espaceHor {
+    height: 5vh;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+} 
+
+h1, h2{
+    text-align: center;
+}
+
+.margeGD{
+    flex: 0.1;
+}
+
+p{
+    text-align: center;
+    
+}
+
+.margeHB{
+    height: 3vh;
+    flex: none;
+}
+
+.margeHB2{
+    height: 7vh;
+    flex: none;
+}
+
+header{
+    background-image: url(./image/bois.jpg);
+    height: 10vh ;
+    text-align: center;
+}
+
+.menu{
+    flex: none; /*chaque bouton prend sa taille */
+    background-color: beige;
+    border: solid black 3px;
+    border-radius: 5px;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    padding: 0 0.5vw;
+    position: relative;
+}
+.sousMenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 1.5em;
+    margin-left: -0.5vw;
+    background-color: beige;
+    border: solid beige 3px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    padding: 0 0.5vw;
+    font-size: 0.8em;
+    white-space: nowrap;
+}
+.menu:hover .sousMenu{
+    display: flex;
+}
+.sousItem:hover{
+    color: #ccc;
+    border: 1px solid #ccc;
+}
+
+.page {
+    width: 80vw;
+    flex-direction: column;
+    flex: none;
+    display: block;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-position: left;
+    padding: 0.2vw 0;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+fieldset{
+    font-size: 30px ;
+    color: gold;
+}
+
+p{
+    color: black;
+}
