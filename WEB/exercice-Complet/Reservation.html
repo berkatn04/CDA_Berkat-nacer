@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleReservation.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleMenu.css">
+    <link rel="stylesheet" href="styleReservation.css">
+
+
     <title>NOM DU SITE</title>
 </head>
 
 <body>
+
     <body>
         <div class="page">
             <main class="colonne center">
@@ -17,10 +22,10 @@
                     <h1>La Creperie du Nord</h1>
                 </header>
                 <div class="margeHB"></div>
-                <nav>
+                <nav class="classnav">
                     <div class="menu">
-                        <a href="index.html">Acceuil</a> 
-                        
+                        <a href="index.html">Accueil</a>
+
                     </div>
                     <div class="menu">
                         <a href="Menu.html">Menu</a>
@@ -34,22 +39,91 @@
                         <a href="Reservation.html">Reservation</a>
                     </div>
                     <div class="menu">
-                        <a href="index.html">Contact</a> 
+                        <a href="Contact.html">Contact</a>
                     </div>
                 </nav>
+
                 <div class="margeHB"></div>
-                
+
+                <div class="center">
+                    <h2>Reservation</h2>
+                </div>
+
+                <div class="margeHB"></div>
+
                 <section>
-                        <div class="center">
-                            <form>
-                                <div>
+                    <div class="center">
+                        <form>
+                            <div>
+                                <div class="colonne">
+
+
+                                    <label for="societe">Société</label>
+                                    <input type="text" name="societe" class="mytext" value>
+
+
+
+                                    <div class="margeHB"></div>
+
+                                    <select name="civilité" class="mytext" >
+                                        <option value>Civilité*</option>
+                                        <option value="mme">Mme</option>
+                                        <option value="mr">Mr</option>
+                                    </select>
+
+                                    <div class="margeHB"></div>
+
+                                    <label for="Nom">Nom</label>
+                                    <input type="text" name="Nom" class="mytext" value>
+
+
+                                    <div class="margeHB"></div>
+
+                                    <label for="prenom">Prenom</label>
+                                    <input type="text" name="prenom" class="mytext" value>
+
+
+                                    <div class="margeHB"></div>
+
+                                    <label for="tel">Telephone</label>
+                                    <input type="text" name="tel" class="mytext" pattern="(01|02|03|04|05|06|07|08|09)[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}" value>
+
+
+                                    <div class="margeHB"></div>
+
+                                    <label for="email">Adresse mail</label>
+                                    <input type="email" name="email" class="mytext" value>
+
+
+                                    <div class="margeHB"></div>
+
+                                    <label for="message">Un message a faire parvenir au serveur ?</label>
+                                    <input type="text" name="message" class="mytext" value>
+
 
                                 </div>
-                                <div>
-                                    
+                                <div class="margeHB2 flex"></div>
+                                <div class="colonne">
+                                    <label for="message">Nombre de personnes</label>
+                                    <input type="number" name="message" class="mytext" value="2" min="1" max="20">
+
+                                    <div class="margeHB"></div>
+
+                                    <label for="message">Date de Reservation</label>
+                                    <input type="date" name="message" class="mytext" pattern="(0[1-9]|[12][0-9]|3[01])[\/](0[1-9]|1[012])[\/](19|20)\d\d" value>
+
+
                                 </div>
-                            </form>
-                        </div>
+
+                            </div>
+                            <div class="margeHB"></div>
+                            <div class="center">
+                                <input type="submit" value="Valider!">
+                            </div>
+                    </div>
+
+                    </form>
+        </div>
 
 
 
@@ -59,12 +133,12 @@
 
 
 
-                </section>
+        </section>
 
-    </main>
-    <footer>
-    </footer>
-    <script src="./js/script.js"></script>
-</body>
+        </main>
+        <footer>
+        </footer>
+        <script src="./js/script.js"></script>
+    </body>
 
 </html>
