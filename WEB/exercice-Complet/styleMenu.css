@@ -1,0 +1,32 @@
+fieldset{
+    color: black;
+    font-size: 25px;
+    width: 70%;
+ 
+}
+
+
+h2{
+ font-size: 40px;
+ color: gold;
+}
+
+
+.plat{
+    color: gold;
+    
+
+}
+div p{
+    font-size: 20px;
+   color: grey;
+
+}
+
+.prix{
+    color: rgb(184, 159, 20);
+    font-size: 25px;
+}
+ legend{
+     
+ }
