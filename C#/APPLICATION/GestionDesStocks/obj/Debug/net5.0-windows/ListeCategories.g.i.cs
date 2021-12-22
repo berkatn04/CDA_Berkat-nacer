@@ -61,7 +61,7 @@ namespace GestionDesStocks {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/GestionDesStocks;component/listecategories.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/GestionDesStocks;V1.0.0.0;component/listecategories.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\ListeCategories.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

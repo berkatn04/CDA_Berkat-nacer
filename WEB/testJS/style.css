@@ -1,0 +1,29 @@
+a{
+   
+    text-decoration: none;
+    background-color: red;
+    font-size: 30px
+}
+
+.menu{
+    flex: none;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    position: relative;
+}
+.sousMenu{
+    display: none;
+    margin-left: 1em;
+    
+}
+
+.sousMenu a{
+    background-color: yellow;
+}
+
+.page {
+    width: 80vw;
+    flex-direction: column;
+    flex: none;
+    display: block;
+}

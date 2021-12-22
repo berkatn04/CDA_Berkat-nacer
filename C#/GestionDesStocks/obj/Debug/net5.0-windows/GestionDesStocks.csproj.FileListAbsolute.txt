@@ -43,3 +43,12 @@ U:\59011-07-03\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.dll
 U:\59011-07-03\C#\GestionDesStocks\obj\Debug\net5.0-windows\ref\GestionDesStocks.dll
 U:\59011-07-03\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.pdb
 U:\59011-07-03\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.genruntimeconfig.cache
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.csproj.AssemblyReference.cache
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\ListeArticles.g.cs
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\MainWindow.g.cs
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\App.g.cs
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks_MarkupCompile.cache
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks_MarkupCompile.lref
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.dll
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\ref\GestionDesStocks.dll
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.pdb

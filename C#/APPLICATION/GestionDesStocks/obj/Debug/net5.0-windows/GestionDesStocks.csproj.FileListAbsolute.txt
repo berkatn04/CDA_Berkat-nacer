@@ -95,3 +95,6 @@ C:\Users\Bille\OneDrive\Bureau\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\
 C:\Users\Bille\OneDrive\Bureau\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.csproj.CoreCompileInputs.cache
 C:\Users\Bille\OneDrive\Bureau\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.genruntimeconfig.cache
 C:\Users\Bille\OneDrive\Bureau\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.csproj.CopyComplete
+U:\59011-07-03\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.dll
+U:\59011-07-03\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\obj\Debug\net5.0-windows\ref\GestionDesStocks.dll
+U:\59011-07-03\CDA_Berkat-nacer\C#\APPLICATION\GestionDesStocks\obj\Debug\net5.0-windows\GestionDesStocks.pdb

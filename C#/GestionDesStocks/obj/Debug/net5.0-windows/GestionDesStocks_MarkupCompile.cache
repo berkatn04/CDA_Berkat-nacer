@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-U:\59011-07-03\C#\GestionDesStocks\obj\Debug\net5.0-windows\
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\obj\Debug\net5.0-windows\
 GestionDesStocks
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-U:\59011-07-03\C#\GestionDesStocks\App.xaml
+U:\59011-07-03\CDA_Berkat-nacer\C#\GestionDesStocks\App.xaml
 2-1677958081
 
 20719554651
 3341032868578
 ListeArticles.xaml;MainWindow.xaml;
 
-False
+True
 
