@@ -1,0 +1,47 @@
+.rouge {
+    background-color: red;
+}
+.vert{
+    background-color: green;
+}
+
+/****  GENERAL ****/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+div, a, header, footer, nav, article, section, body {
+    display: flex;
+    flex: 1;
+}
+
+img, video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1em, auto);
+}
+
+.decalage{
+    flex: none;
+    height: 20vh;
+}
+
+.border{
+    
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>NOM DU SITE</title>
+</head>
+
+<body class="colonne center">
+<header> </header>
+    <div class="colonne center border">
+           <H2>Formulaire</H2>
+   
+    <main>
+        <form action="" method="GET">
+
+            <!------------------------------------------------------------------ REGEX ------------------------------------------------------------------>
+
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+            <!-- REGEX NOM -->
+            <label for="nom">Nom : </label>
+            <input placeholder="Dupound" type="text" id="nom" name="nom" pattern="^[\w]{3,}$" required>
+
+            <div></div>
+            <div></div>
+
+            <!-- REGEX PRENOM -->
+            <label for="prenom">Prenom : </label>
+            <input placeholder="bernard" type="text" id="prenom" name="prenom" pattern="^[\w]{4,}$">
+
+            <div></div>
+            <div></div>
+
+            <!-- REGEX DATE DE NAISSANCE -->
+            <label for="Date de naissance">Date de naissance : </label>
+            <input placeholder="jj/mm/aaaa" type="text" id="Date de naissance" name="Date de naissance"
+                pattern="[0-3]?[0-9](\/|-)(0|1)?[0-9](\/|-)[0-9]{4}" required>
+
+                <div></div>
+                <div></div>
+
+            <!-- REGEX ADRESSE MAIL -->
+            <label for="AdresseMail">Adresse Mail : </label>
+            <input placeholder="jsp@hotmail.com" type="email" id="AdresseMail" name="AdresseMail"
+                pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" required>
+
+                <div></div>
+                <div></div>
+
+            <!-- REGEX TELEPHONE -->
+            <label for="telephone">Telephone : </label>
+            <input placeholder="06-98-45-62-15" type="tel" id="telephone" name="Telephone"
+                pattern="0[1-9]([-\/][0-9]{2}){4}" required>
+
+                <div></div>
+                <div></div>
+
+            <!-- REGEX IDENTIFIANT -->
+            <label for="id">Identifiant : </label>
+            <input placeholder="dupondbernard" type="text" id="id" name="id" pattern="^[a-zA-Z\d*]{8,20}$" required>
+
+            <div></div>
+            <div></div>
+
+            <!-- REGEX MOT DE PASSE  -->
+            <label for="mdp">Mot de passe : </label>
+            <input placeholder="********" type="password" id="mdp" name="mdp"
+                pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}$" required>
+
+                <div></div>
+                <div></div>
+
+            <!-- REGEX ADRESSE -->
+            <label for="Adresse">Adresse Postale : </label>
+            <input placeholder="115 rue de moulinel" type="text" id="Adresse" name="Adresse"
+                pattern="^[a-zA-Z0-9\s,'-]*$" required>
+
+                <div></div>
+                <div></div>
+
+            <!-- REGEX CODE POSTALE -->
+            <label for="Postale">Code Postale : </label>
+            <input placeholder="62300" type="text" id="Postale" name="Postale" pattern="[0-9]{5}" required>
+           
+            <div></div>
+            <div></div>
+
+            <label for="tentacles">Nombre:</label>
+            <input type="number" id="tentacles" name="tentacles" min="1" max="100">
+
+            <div></div>
+            <div></div>
+
+            <div></div>
+            <div>
+                <input type="range" id="volume" name="volume" min="0" max="11">
+            </div>
+
+            <div></div>
+            <div></div>
+
+            <div></div>
+            <button type="submit" disabled>Valider</button>
+
+            
+        </form>
+    </div>
+        
+        <div class="center">
+            <H2>Types Input</H2>
+        </div>
+        <form action="" method="GET">
+
+            <!-- -------------------------------------------------------------- TYPES INPUT ------------------------------------------------------------------ -->
+
+
+
+             <!-- TEXTE -->
+            <label for="text">Texte : </label>
+            <input placeholder="Dupound" type="text" id="text" name="text" pattern="^[\w]{3,}$" > 
+
+
+             <!-- BOUTON  -->
+            <label for="btn">Bouton : </label>
+            <input placeholder="Dupound" value="Boutton" type="buton" id="btn" name="btn" pattern="^[\w]{3,}$" >
+
+
+             <!-- CHECKBOX  -->
+            <label for="checkox">CheckBox : </label>
+            <div class="center">
+                <input type="checkbox" id="scales" name="scales" checked>
+                <label for="scales">Scales</label>
+                <input type="checkbox" id="horns" name="horns">
+                <label for="horns">Horns</label>
+            </div>
+
+
+             <!-- COULEUR  -->
+            <p>Couleur :</p>
+            <div class="center">
+                <input type="color" id="head" name="head" value="#e66465">
+                <label for="head">Head</label>
+                <input type="color" id="body" name="body" value="#f6b73c">
+                <label for="body">Body</label>
+            </div>
+
+
+             <!-- DATE  -->
+            <label for="start">Date :</label>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+
+
+             <!-- DATETIME  -->
+            <label for="meeting-time">DateTime :</label>
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+
+             <!-- MAIL  -->
+            <label for="email">email :</label>
+            <input type="email" id="email" pattern="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" size="30" >
+
+
+             <!-- FICHIER  -->
+            <label for="avatar">Fichier :</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+
+            <!-- BOUTON IMAGE  -->
+            <p>Button Image : </p>
+            <input type="image" id="image" alt="Login" src="login-button.png">
+
+
+             <!-- NOMBRE  -->
+            <label for="tentacles">Nombre:</label>
+            <input type="number" id="tentacles" name="tentacles" min="1" max="100">
+
+
+            <!-- RADIO BOUTON  -->
+            <p>Radio Button :</p>
+            <div class="center">
+                <input type="radio" id="huey" name="drone" value="huey" checked>
+                <label for="huey">Huey</label>
+                <input type="radio" id="dewey" name="drone" value="dewey">
+                <label for="dewey">Dewey</label>
+            </div>
+
+             <!-- RANGE  -->
+            <p>Range :</p>
+            <div>
+                <input type="range" id="volume" name="volume" min="0" max="11">
+            </div>
+
+
+            <!-- RESET  -->
+            <label for="id">Bouton Reset:</label>
+            <input type="reset" value="Reset">
+
+
+             <!-- SEARCH  -->
+            <label for="site-search">Search the site:</label>
+            <div>
+                <input type="search" id="site-search" name="q" aria-label="Search through site content">
+                <button>Search</button>
+            </div>
+                  
+
+             <!-- TEL  -->
+            <label for="telephone">Telephone : </label>
+            <input type="tel" id="telephone" name="Telephone"
+                pattern="0[1-9]([-\/][0-9]{2}){4}" >
+
+        </form>
+    <!-- -->
+    </main>
+    <footer >
+        <div class="decalage"></div>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
