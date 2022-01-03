@@ -8,24 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\59011-07-03\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Bille\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "U:\\59011-07-03\\C#\\exercice\\exercice.csproj",
+      "projectUniqueName": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA\\CDA_Berkat-nacer\\C#\\INITATION C#\\exercice.csproj",
       "projectName": "exercice",
-      "projectPath": "U:\\59011-07-03\\C#\\exercice\\exercice.csproj",
-      "packagesPath": "C:\\Users\\59011-07-03\\.nuget\\packages\\",
-      "outputPath": "U:\\59011-07-03\\C#\\exercice\\obj\\",
+      "projectPath": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA\\CDA_Berkat-nacer\\C#\\INITATION C#\\exercice.csproj",
+      "packagesPath": "C:\\Users\\Bille\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Bille\\OneDrive\\Bureau\\CDA\\CDA_Berkat-nacer\\C#\\INITATION C#\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\59011-07-03\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Bille\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

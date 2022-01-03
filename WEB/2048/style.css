@@ -1,0 +1,14 @@
+.grille{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue ;
+    width: 800px;
+    height: 800px;
+}
+
+.grille div{
+    width: 200px;
+    height: 200px;
+    font-size: 120px;   
+    text-align: center;
+}
