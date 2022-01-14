@@ -16,35 +16,18 @@ echo '  <h5>'.$mode.' une catégorie</h5></div>
 
 if (isset($_GET['id'])) {
     $categ = CategoriesManager::findById($_GET['id']);
-    $idType = $categ->getIdTypeProduits();
 }
 else{
     $categ = new Categories();
-    $idType = null;
 }
-
-$listeType = TypeProduitsManager::getList();
 
 echo '  <input type="hidden" name="idCategorie" value="' . $categ->getIdCategories() . '">';
 echo '  <label> Libelle :</label>
         <input type="text" name="libelleCategorie" value="' . $categ->getLibelleCategorie() . '"' .$disabled.'>';
-echo '  <label> TypeProduits :</label>
-        <select name="idCategorie" '.$disabled.'>';
+// echo '  <label> Libelle :</label>
+//         <input type="text" name="libelleCategorie" value="' . $categ->getId() . '"' .$disabled.'>';
 
-        foreach ($listeType as $unType) {
-    $sel = "";
-    if ($uneCategorie->getIdTypeProduits() == $idCateg) {
-        $sel = "selected";
-    }
-
-    echo '<option value="' . $unType->getIdTypeProduits() . '" ' . $sel . ' >' . $unType->getLibelleTypeProduits() . '</option>';
-}
-
-echo '
-    </select>
-    </div>';
-
-    echo '<div class="ligneDetail"><input type="submit" value="' . $mode . '" class=" crudBtn crudBtn' . $mode . '"/>';
+echo '<input type="submit" value="'.$mode.'" class=" crudBtn crudBtn'.$mode.'"/>';
 
 echo '<a href="index.php?page=listeCategorie" class=" crudBtn crudBtnRetour">Annuler</a>
 </form>';

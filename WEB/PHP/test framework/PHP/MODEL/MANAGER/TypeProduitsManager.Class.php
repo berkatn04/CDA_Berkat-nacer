@@ -23,13 +23,13 @@ class TypeProduitsManager
 	{
  		$db=DbConnect::getDb();
 		$id = (int) $obj->getIdTypeProduits(); // permet de bloquer les injections SQL
-		$db->exec("DELETE FROM TypeProduits WHERE idTypeProduits=" .$id);
+		$db->exec("DELETE FROM TypeProduits WHERE IdTypeProduits=" .$id);
 	}
 	public static function findById($id)
 	{
  		$db=DbConnect::getDb();
 		$id = (int) $id;
-		$q=$db->query("SELECT * FROM TypeProduits WHERE idTypeProduits =".$id);
+		$q=$db->query("SELECT * FROM TypeProduits WHERE IdTypeProduits =".$id);
 		$results = $q->fetch(PDO::FETCH_ASSOC);
 		if($results != false)
 		{

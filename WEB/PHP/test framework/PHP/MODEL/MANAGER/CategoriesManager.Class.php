@@ -5,10 +5,10 @@ class CategoriesManager
 	public static function add(Categories $obj)
 	{
  		$db=DbConnect::getDb();
-		$q=$db->prepare("INSERT INTO Categories (LibelleCategorie) VALUES (:LibelleCategorie,:idTypesProduits)");
+		$q=$db->prepare("INSERT INTO Categories (LibelleCategorie) VALUES (:LibelleCategorie,:idTypeProduits)");
 		// vérifier qu'il ne contient pas de ;
 		$q->bindValue(":LibelleCategorie", $obj->getLibelleCategorie(), PDO::PARAM_STR);
-        $q->bindValue(":idTypesProduits", $obj->getidTypesProduits(), PDO::PARAM_INT);
+        //$q->bindValue(":IdTypeProduits", $obj->getIdTypeProduits(), PDO::PARAM_INT);
 
 		$q->execute();
 	}
@@ -19,13 +19,13 @@ class CategoriesManager
 		$q=$db->prepare("UPDATE Categories SET LibelleCategorie=:LibelleCategorie, idTypesProduits=:idTypesProduits WHERE idCategorie=:idCategories");
 		$q->bindValue(":idCategories", $obj->getIdCategories(), PDO::PARAM_INT);
 		$q->bindValue(":LibelleCategorie", $obj->getLibelleCategorie(),PDO::PARAM_STR);
-        $q->bindValue(":idTypesProduits", $obj->getidTypesProduits(), PDO::PARAM_INT);
+       // $q->bindValue(":idTypesProduits", $obj->getIdTypeProduits(), PDO::PARAM_INT);
 		$q->execute();
 	}
 	public static function delete(Categories $obj)
 	{
  		$db=DbConnect::getDb();
-		$id = (int) $obj->getIdCategorie(); // permet de bloquer les injections SQL
+		$id = (int) $obj->getIdCategories(); // permet de bloquer les injections SQL
 		$db->exec("DELETE FROM Categories WHERE idCategories=" .$id);
 	}
 	public static function findById($id)
