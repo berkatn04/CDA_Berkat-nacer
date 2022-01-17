@@ -26,9 +26,9 @@ $listeCateg = CategoriesManager::getList();
 // on crée les inputs du formulaire
 // il faut que les name des input correspondent aux attributs de la class
 // si on a les informations (cas Editer, Modifier, supp) on les mets à jour
-echo '  <input type="hidden" name="idArticles" value="' . $prod->getIdArticles() . '">';
+echo '  <input type="hidden" name="idArticles" value="' . $prod->getIdArticle() . '">';
 echo '  <label> Libelle :</label>
-        <input type="text" name="libelleArticles" value="' . $prod->getLibelleArticles() . '"' . $disabled . '>';
+        <input type="text" name="libelleArticles" value="' . $prod->getLibelleArticle() . '"' . $disabled . '>';
 echo '  <label>QuantiteStockee :</label>
         <input type="date" name="QuantiteStockee" value="' . $prod->getQuantiteStockee() . '"' . $disabled . '>';
 echo '  <label>Categories :</label>
@@ -39,7 +39,7 @@ foreach ($listeCateg as $uneCategories) {
         $sel = "selected";
     }
 
-    echo '<option value="' . $uneCategories->getIdCategories() . '" ' . $sel . ' >' . $uneCategories->getLibelleCategories() . '</option>';
+    echo '<option value="' . $uneCategories->getIdCategories() . '" ' . $sel . ' >' . $uneCategories->getLibelleCategorie() . '</option>';
 }
 
 echo '

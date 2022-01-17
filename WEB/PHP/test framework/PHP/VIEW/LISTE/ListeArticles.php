@@ -1,5 +1,5 @@
 <?php
-$liste = ArticlessManager::getList();
+$liste = ArticlesManager::getList();
 ?>
 <div class="demiPage colonne">
     <div id="crudBarreOutil">
@@ -13,11 +13,11 @@ $liste = ArticlessManager::getList();
         <div></div>
         <div></div>
         <?php foreach ($liste as $elt) {
-            echo '<div class="crudColonne">' . $elt->getLibelleArticles() . '</div>
+            echo '<div class="crudColonne">' . $elt->getLibelleArticle() . '</div>
             <div></div>    
-            <a class=" crudBtn crudBtnEditer" href="index.php?page=formArticles&mode=Editer&id='. $elt->getIdArticles().'">Afficher </a>
-                <a class=" crudBtn crudBtnModifier" href="index.php?page=formArticles&mode=Modifier&id='.$elt->getIdArticles().'">Modifier</a>
-                <a class=" crudBtn crudBtnSupprimer" href="index.php?page=formArticles&mode=Supprimer&id='. $elt->getIdArticles().'">Supprimer</a>
+            <a class=" crudBtn crudBtnEditer" href="index.php?page=formArticles&mode=Editer&id='. $elt->getIdArticle().'">Afficher </a>
+                <a class=" crudBtn crudBtnModifier" href="index.php?page=formArticles&mode=Modifier&id='.$elt->getIdArticle().'">Modifier</a>
+                <a class=" crudBtn crudBtnSupprimer" href="index.php?page=formArticles&mode=Supprimer&id='. $elt->getIdArticle().'">Supprimer</a>
             ';
         } ?>
 

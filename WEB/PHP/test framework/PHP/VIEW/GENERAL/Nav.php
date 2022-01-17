@@ -9,7 +9,8 @@ if (isset($_SESSION['utilisateur'])) {
     }
 
     echo '<nav>
-    <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeProduit">Produits</a></button>
+    <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeProduit">Articles</a></button>
     <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeCategorie">Categories</a></button>
+    <button class="crudBtn crudBtnRetour ' . $classeCouleur . '"><a href="index.php?page=listeTypeProduits">TypeProduits</a></button>
         </nav>';
 }

@@ -17,9 +17,9 @@ $liste = CategoriesManager::getList();
 
             echo '<div class="crudColonne">' . $elt->getLibelleCategorie() . '</div>
                 <div></div>
-                <a class=" crudBtn crudBtnEditer" href="index.php?page=formCategorie&mode=Editer&id=' . $elt->getIdCategories() . '">'. texte('Editer') .'</a>
-                <a class=" crudBtn crudBtnModifier" href="index.php?page=formCategorie&mode=Modifier&id=' . $elt->getIdCategories() . '">'. texte('Modifier') .'</a>
-                <a class=" crudBtn crudBtnSupprimer" href="index.php?page=formCategorie&mode=Supprimer&id=' . $elt->getIdCategories() . '">'. texte('Supprimer') .'</a>
+                <a class=" crudBtn crudBtnEditer" href="index.php?page=formCategorie&mode=Editer&id=' . $elt->getIdCategorie() . '">'. texte('Editer') .'</a>
+                <a class=" crudBtn crudBtnModifier" href="index.php?page=formCategorie&mode=Modifier&id=' . $elt->getIdCategorie() . '">'. texte('Modifier') .'</a>
+                <a class=" crudBtn crudBtnSupprimer" href="index.php?page=formCategorie&mode=Supprimer&id=' . $elt->getIdCategorie() . '">'. texte('Supprimer') .'</a>
              ';
         } ?>
 
