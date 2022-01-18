@@ -1,0 +1,85 @@
+:root {
+    --color: #ecc4ff;
+    --inputCorrect: #04724d;
+    --inputIncorrect: #e94f37;
+    --inputVide: #ffffff4d;
+    --bgc1:#9ee0a9;
+    --bgc2:#9ee0e0;
+}
+
+
+.fa-green {
+    color: var(--inputCorrect);
+}
+
+.fa-red {
+    color: var(--inputIncorrect);
+}
+
+.inputCorrect {
+    background-color: var(--inputCorrect);
+    color:wheat;
+}
+
+.inputIncorrect {
+    background-color: var(--inputIncorrect);
+}
+
+.inputVide {
+    background-color: var(--inputVide);
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 0.5em;
+    grid-auto-rows: minmax(1em, auto);
+    width: 60%;
+}
+
+html, main, body, div, a, header, footer, nav, article, section, aside, fieldset, label, input, select {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+img, video {
+    width: 100%;
+}
+
+.colonne {
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.hauteur1{
+    height: 150%;
+}
+
+.hauteur2{
+    height: 200%;
+}
+
+input{
+    box-shadow: 2px 2px 3px black;
+    padding: 0.3em;
+    
+}
+
+div{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+body{
+    background-image: url(./fond.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
