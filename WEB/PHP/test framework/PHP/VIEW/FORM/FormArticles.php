@@ -12,7 +12,7 @@ switch ($mode) {
 }
 
 echo '<h5>' . $mode . ' un nouveau Article</h5></div>
-<form id="formulaire" method="post" action="index.php?page=actionArticles&mode=' . $mode . '">';
+<form id="formulaire" method="post" action="index.php?page=actionArticle&mode=' . $mode . '">';
 if (isset($_GET['id'])) {
     $prod = ArticlesManager::findById($_GET['id']);
     $idCateg = $prod->getIdCategories();
@@ -47,8 +47,6 @@ echo '
     </div>';
 
 echo '<div class="ligneDetail"><input type="submit" value="' . $mode . '" class=" crudBtn crudBtn' . $mode . '"/>';
-echo '
-<a href="index.php?page=listeArticles" class=" crudBtn crudBtnRetour">Annuler</a>
-</div>
-</div>
+echo '<a href="index.php?page=listeArticles" class=" crudBtn crudBtnRetour">Annuler</a>
+
 </form>';

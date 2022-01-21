@@ -19,4 +19,8 @@ switch ($_GET['mode']) {
         }
 }
 
-header("location:index.php?page=listeArticle");
+if (!$erreur) {  // si pas d'erreur
+    header("location:index.php?page=listeCategorie");   //redirection directe
+} else {
+    header("refresh:3;url=index.php?page=listeArticles");    // on attend 3 secondes avant la redirection
+}
