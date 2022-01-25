@@ -64,7 +64,7 @@ img {
 #divSousTitre{
 	text-align: center;
 }
- .date ,.periode  {
+.nom , .commune ,.etat  {
 	flex: 1;
 }
 .nbVeloDispo, .adresse, .nbPlaces{
@@ -73,8 +73,6 @@ img {
 }
 .titreLigne{
 	font-weight: bold;
-	display: flex;
-	justify-content: space-between;
 }
 .detail{
 	display: flex;
@@ -82,10 +80,3 @@ img {
 	background-color: darkgrey;
 }
 
-.plat , .dessert {
-	flex: 2;
-}
-
-.hidden{
-	visibility: hidden;
-}

@@ -24,6 +24,10 @@ img {
 	background-color: wheat;
 	justify-content: center;
 }
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
 .ligne{
 	display: flex;
 	justify-content: space-between;
@@ -64,28 +68,18 @@ img {
 #divSousTitre{
 	text-align: center;
 }
- .date ,.periode  {
+.ville , .libelle ,.etat  {
 	flex: 1;
 }
-.nbVeloDispo, .adresse, .nbPlaces{
+.dispo, .adresse, .nbMax{
 	flex: 1;
 	padding-left: 2vw;
 }
 .titreLigne{
 	font-weight: bold;
-	display: flex;
-	justify-content: space-between;
 }
 .detail{
 	display: flex;
 	justify-content: space-between;
 	background-color: darkgrey;
-}
-
-.plat , .dessert {
-	flex: 2;
-}
-
-.hidden{
-	visibility: hidden;
 }

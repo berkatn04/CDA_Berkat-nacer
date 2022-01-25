@@ -14,8 +14,9 @@
 		<div class="dessert">dessert</div>
 		<div class="periode">periode</div>
 	</div>
-	<div class="espaceHorizon"></div>
-	<template id="ligne">
+	<div class="espaceHorizon"></div>	
+
+<template id="ligne">
 		<div class="ligne" id="">
 		<div class="plat"></div>
 		<div class="date"></div>
@@ -26,4 +27,6 @@
 	<template id="espace">
 		<div class="espaceHorizon"></div>
 	</template>
-</div>
+	
+	</div>
+	

@@ -1,0 +1,1004 @@
+{
+    "nhits": 103,
+    "parameters": {
+        "dataset": [
+            "menu-cantine"
+        ],
+        "rows": 20,
+        "start": 0,
+        "facet": [
+            "date",
+            "periode",
+            "plat_1",
+            "desserts_1"
+        ],
+        "format": "json",
+        "timezone": "UTC"
+    },
+    "records": [
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "ec9d26e41dc3ad3025303739e7a9d93a7fbaaa9b",
+            "fields": {
+                "plat_1": "Dos de colin sauce petits l\u00e9gumes",
+                "date": "2021-11-17",
+                "desserts_1": "Cr\u00e8me dessert chocolat",
+                "acm_et_ferie": "acm_et_ouverture",
+                "periode": "ACM",
+                "fromages_laitages_1_marqueur_1": "PR",
+                "accompagnement_marqueur_1": "AB",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "accompagnement": "Pur\u00e9e de Brocolis",
+                "fromages_laitages_1": "Pav\u00e9 du nord",
+                "entree_1": "Mac\u00e9doine mayonnaise"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "391b3a0d8b72db9d288dfbde02bc5237ec7fd1bd",
+            "fields": {
+                "plat_1": "Tortis aux pois chiche et curcuma",
+                "entree_1_marqueur_1": "RVG",
+                "date": "2021-11-18",
+                "desserts_1": "Fruit frais",
+                "theme": "Repas v\u00e9g\u00e9tarien",
+                "periode": "Scolaire",
+                "plat_1_marqueur_1": "RVG",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "fromages_laitages_1": "Mimolette rap\u00e9e",
+                "desserts_1_marqueur_1": "AB",
+                "entree_1": "Potage tomate"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "6b7111782d255050fba84cc97030590e3b72db59",
+            "fields": {
+                "plat_1": "Filet de lieu sauce picarde",
+                "date": "2021-11-22",
+                "desserts_1": "Compote de fruits",
+                "periode": "Scolaire",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "accompagnement": "Fondue de poireaux et pommes de terre",
+                "fromages_laitages_1": "Pont l'\u00e9v\u00eaque",
+                "entree_1": "Potage carottes"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "c5e18de2ecc54c9f1b2af3d593278e6df874d1b9",
+            "fields": {
+                "plat_1": "Lasagne v\u00e9g\u00e9tarienne",
+                "entree_1_marqueur_1": "RVG",
+                "date": "2021-11-26",
+                "desserts_1": "Cr\u00e8me pralin\u00e9e",
+                "theme": "Repas v\u00e9g\u00e9tarien",
+                "periode": "Scolaire",
+                "plat_1_marqueur_1": "RVG",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "fromages_laitages_1": "Comt\u00e9",
+                "entree_1": "Salade verte"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "d7326b2b340f76ac018b945b376d6fdb8e7b9191",
+            "fields": {
+                "date": "2021-11-28",
+                "periode": "Scolaire",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "51153f3b750f98d73c3a97370b4c9271d1ef8a8b",
+            "fields": {
+                "plat_1": "Filet de lieu sauce aurore",
+                "date": "2021-11-30",
+                "desserts_1": "Li\u00e9geois chocolat",
+                "desserts_2_marqueur_1": "RVG",
+                "periode": "Scolaire",
+                "accompagnement_marqueur_1": "PR",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "accompagnement": "Gratin de carottes et panais",
+                "desserts_2": "Cr\u00e8me dessert chocolat",
+                "fromages_laitages_1": "Fromage frais",
+                "entree_1": "Salade avocat et surimi"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "58b4c129efcc314354f431e5c51a08ca4ad36c91",
+            "fields": {
+                "plat_1": "Carbonara de saumon sauvage",
+                "entree_1_marqueur_1": "AB",
+                "date": "2021-12-10",
+                "desserts_1": "Fruit frais",
+                "periode": "Scolaire",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "accompagnement": "Macaronis",
+                "fromages_laitages_1": "Emmental r\u00e2p\u00e9",
+                "entree_1": "Velout\u00e9 d'\u00e9pinard",
+                "desserts_1_marqueur_1": "AB"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "1bf4d3adafe46b21874bebac0ae8a87befa70c11",
+            "fields": {
+                "plat_1": "Filet de poisson meuni\u00e8re",
+                "date": "2021-12-15",
+                "desserts_1": "Fruit frais",
+                "acm_et_ferie": "acm_et_ouverture",
+                "periode": "ACM",
+                "accompagnement_marqueur_1": "AB",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "accompagnement": "Epinards Bio et riz pilaf",
+                "fromages_laitages_1": "Brie",
+                "entree_1": "Salade verte aux croutons",
+                "desserts_1_marqueur_1": "AB"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "9024d1b93bb784d1ba6c1cba1d9acc23002f2f3e",
+            "fields": {
+                "date": "2021-12-19",
+                "periode": "Scolaire",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "173679b082c0d8c0da5b22205cdc7d35267c3fcb",
+            "fields": {
+                "date": "2021-12-23",
+                "acm_et_ferie": "acm_et_ouverture",
+                "periode": "ACM",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "c3bcda2a77a35122fade6ce219e4eecd33bf282a",
+            "fields": {
+                "date": "2021-12-25",
+                "acm_et_ferie": "acm_et_ouverture",
+                "periode": "ACM",
+                "ouverture": "FERIE"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "59b92c55501d93ed084b9028ddb1bf08bec1d9f8",
+            "fields": {
+                "plat_1": "Saut\u00e9 de veau BIO sauce marengo",
+                "date": "2022-01-11",
+                "desserts_1": "Fruit de saison BIO",
+                "periode": "Scolaire",
+                "accompagnement_marqueur_1": "PR",
+                "plat_2_bis": "Palet maraicher",
+                "plat_2": "Palet maraicher",
+                "ouverture": "NR",
+                "accompagnement": "Carottes persill\u00e9es locale",
+                "fromages_laitages_1": "Fromage blanc nature BIO et Cassonade",
+                "entree_1": "Salade de pates",
+                "desserts_1_marqueur_1": "AB"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "5feb78f808a1cb0d920e5320bebe5c13e89ea0c5",
+            "fields": {
+                "plat_2": "Filet de hoki MSC sauce champignons",
+                "plat_2_marqueur_1": "MSC",
+                "fromages_laitages_1": "Brie",
+                "desserts_1_marqueur_1": "AB",
+                "entree_1": "Betteraves rouges vinaigrette",
+                "plat_1": "Saut\u00e9 de boeuf sauce champignons",
+                "date": "2022-01-19",
+                "desserts_1": "Fruit de saison BIO",
+                "acm_et_ferie": "acm_et_ouverture",
+                "periode": "ACM",
+                "plat_1_marqueur_1": "VFR",
+                "plat_2_bis": "Filet de hoki MSC sauce champignons",
+                "ouverture": "NR",
+                "accompagnement": "Coeurs de bl\u00e9"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "14b5b9aedb2b46649bf070a6a007e05b1f504da7",
+            "fields": {
+                "plat_1": "Roti de dinde sauce tomate",
+                "entree_1_marqueur_1": "AB",
+                "date": "2022-01-21",
+                "desserts_1": "Pudding chocolat du chef",
+                "periode": "Scolaire",
+                "plat_1_marqueur_1": "VFR",
+                "plat_2_bis": "Filet de merlu sauce Tomate",
+                "plat_2": "Filet de merlu sauce Tomate",
+                "ouverture": "NR",
+                "accompagnement": "Duo de carottes et panais",
+                "fromages_laitages_1": "St moret BIO",
+                "entree_1": "Potage Dubarry BIO"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "85a50accfaf0b2d7541ea528964bd75afe1d7f06",
+            "fields": {
+                "date": "2022-01-23",
+                "periode": "Scolaire",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "43beb9fd91f36d73f2e4f9e6bedac828362225f2",
+            "fields": {
+                "plat_2": "Filet de hoki MSC sauce cr\u00e8me",
+                "plat_2_marqueur_1": "MSC",
+                "fromages_laitages_1": "Fromage blanc aromatis\u00e9 BIO",
+                "entree_1": "Pizza garni maison",
+                "plat_1": "R\u00f4ti de dinde sauce cr\u00e8me",
+                "date": "2022-01-26",
+                "desserts_1": "Fruit de saison HVE",
+                "acm_et_ferie": "acm_et_ouverture",
+                "periode": "ACM",
+                "accompagnement_marqueur_1": "AB",
+                "plat_2_bis": "Filet de hoki MSC sauce cr\u00e8me",
+                "ouverture": "NR",
+                "accompagnement": "Brocolis BIO"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "6a15d80d75afa2ec2cdeebbdde64ee82a29b7950",
+            "fields": {
+                "date": "2022-01-29",
+                "periode": "Scolaire",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "005ac2782d8f347cc333f59191c85efe7ec6bc4e",
+            "fields": {
+                "plat_1": "Lasagne aux l\u00e9gumes",
+                "date": "2022-02-03",
+                "desserts_1": "cr\u00e8pe  au chocolat",
+                "theme": "Chandeleur",
+                "periode": "Scolaire",
+                "accompagnement_marqueur_1": "PR",
+                "plat_1_marqueur_1": "RVG",
+                "plat_2": "Menu unique",
+                "ouverture": "NR",
+                "accompagnement": "Fondue de poireaux BIO et Pommes de terre vapeur local",
+                "fromages_laitages_1": "Reblochon AOP",
+                "entree_1": "Salade verte"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "a951fbb61849e3b79c045a1227e60f955f7de9e5",
+            "fields": {
+                "date": "2022-02-05",
+                "periode": "Scolaire",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        },
+        {
+            "datasetid": "menu-cantine",
+            "recordid": "cfc290c67cffd9331fe29bfb1e5d734cade0f391",
+            "fields": {
+                "date": "2022-02-06",
+                "periode": "Scolaire",
+                "ouverture": "FERME"
+            },
+            "record_timestamp": "2021-12-10T11:46:23.260000+00:00"
+        }
+    ],
+    "facet_groups": [
+        {
+            "name": "date",
+            "facets": [
+                {
+                    "name": "2021",
+                    "count": 54,
+                    "state": "displayed",
+                    "path": "2021"
+                },
+                {
+                    "name": "2022",
+                    "count": 49,
+                    "state": "displayed",
+                    "path": "2022"
+                }
+            ]
+        },
+        {
+            "name": "periode",
+            "facets": [
+                {
+                    "name": "Scolaire",
+                    "count": 68,
+                    "state": "displayed",
+                    "path": "Scolaire"
+                },
+                {
+                    "name": "ACM",
+                    "count": 35,
+                    "state": "displayed",
+                    "path": "ACM"
+                }
+            ]
+        },
+        {
+            "name": "plat_1",
+            "facets": [
+                {
+                    "name": "Pan\u00e9 moelleux",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Pan\u00e9 moelleux"
+                },
+                {
+                    "name": "Blanquette de veau BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Blanquette de veau BIO"
+                },
+                {
+                    "name": "Boeuf mode",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Boeuf mode"
+                },
+                {
+                    "name": "Bolognaise de boeuf",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Bolognaise de boeuf"
+                },
+                {
+                    "name": "Bolognaise de lentilles BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Bolognaise de lentilles BIO"
+                },
+                {
+                    "name": "Carbonara de saumon sauvage",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Carbonara de saumon sauvage"
+                },
+                {
+                    "name": "Carbonnade de boeuf",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Carbonnade de boeuf"
+                },
+                {
+                    "name": "Cassoulet",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cassoulet"
+                },
+                {
+                    "name": "Ch'tiflette",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Ch'tiflette"
+                },
+                {
+                    "name": "Chili con v\u00e9g\u00e9tarien",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Chili con v\u00e9g\u00e9tarien"
+                },
+                {
+                    "name": "Chili v\u00e9g\u00e9tarienne BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Chili v\u00e9g\u00e9tarienne BIO"
+                },
+                {
+                    "name": "Dos de colin MSC sauce crevette",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Dos de colin MSC sauce crevette"
+                },
+                {
+                    "name": "Dos de colin sauce petits l\u00e9gumes",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Dos de colin sauce petits l\u00e9gumes"
+                },
+                {
+                    "name": "Eminc\u00e9 de poulet sauce shoyu",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Eminc\u00e9 de poulet sauce shoyu"
+                },
+                {
+                    "name": "Eminc\u00e9 de volaille LABEL ROUGE sauce poutine",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Eminc\u00e9 de volaille LABEL ROUGE sauce poutine"
+                },
+                {
+                    "name": "Escalope de volaille aux maroilles",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Escalope de volaille aux maroilles"
+                },
+                {
+                    "name": "Escalope de volaille sauce basquaise",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Escalope de volaille sauce basquaise"
+                },
+                {
+                    "name": "Escalope de volaille sauce chasseur",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Escalope de volaille sauce chasseur"
+                },
+                {
+                    "name": "Filet de colin MSC meuni\u00e8re et citron",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de colin MSC meuni\u00e8re et citron"
+                },
+                {
+                    "name": "Filet de colin MSC sauce aurore",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de colin MSC sauce aurore"
+                },
+                {
+                    "name": "Filet de lieu sauce aurore",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de lieu sauce aurore"
+                },
+                {
+                    "name": "Filet de lieu sauce picarde",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de lieu sauce picarde"
+                },
+                {
+                    "name": "Filet de merlu sauce aneth",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de merlu sauce aneth"
+                },
+                {
+                    "name": "Filet de poisson meuni\u00e8re",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de poisson meuni\u00e8re"
+                },
+                {
+                    "name": "Filet de poisson pan\u00e9 MSC sauce tartare",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de poisson pan\u00e9 MSC sauce tartare"
+                },
+                {
+                    "name": "Filet de volaille sauce estragon",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Filet de volaille sauce estragon"
+                },
+                {
+                    "name": "Goulash de boeuf",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Goulash de boeuf"
+                },
+                {
+                    "name": "Gratin de brocolis BIO et thon MSC",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Gratin de brocolis BIO et thon MSC"
+                },
+                {
+                    "name": "Gratin du Boulonnais",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Gratin du Boulonnais"
+                },
+                {
+                    "name": "Jambon sauce charcuti\u00e8re",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Jambon sauce charcuti\u00e8re"
+                },
+                {
+                    "name": "Jambon sauce tomate",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Jambon sauce tomate"
+                },
+                {
+                    "name": "Lasagne aux l\u00e9gumes",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Lasagne aux l\u00e9gumes"
+                },
+                {
+                    "name": "Lasagne v\u00e9g\u00e9tarienne",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Lasagne v\u00e9g\u00e9tarienne"
+                },
+                {
+                    "name": "Longe de porc sauce barbecue",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Longe de porc sauce barbecue"
+                },
+                {
+                    "name": "Longe de porc sauce moutarde \u00e0 l'ancienne",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Longe de porc sauce moutarde \u00e0 l'ancienne"
+                },
+                {
+                    "name": "Navarin d'agneau aux navets",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Navarin d'agneau aux navets"
+                },
+                {
+                    "name": "Omelette",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Omelette"
+                },
+                {
+                    "name": "Omelette BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Omelette BIO"
+                },
+                {
+                    "name": "Repas de no\u00ebl viande",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Repas de no\u00ebl viande"
+                },
+                {
+                    "name": "Roti de dinde sauce tomate",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Roti de dinde sauce tomate"
+                },
+                {
+                    "name": "Roti de porc sauce cr\u00e8me",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Roti de porc sauce cr\u00e8me"
+                },
+                {
+                    "name": "R\u00f4ti de boeuf sauce poivre",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "R\u00f4ti de boeuf sauce poivre"
+                },
+                {
+                    "name": "R\u00f4ti de boeuf sauce tomate",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "R\u00f4ti de boeuf sauce tomate"
+                },
+                {
+                    "name": "R\u00f4ti de boeuf sauce \u00e9chalote",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "R\u00f4ti de boeuf sauce \u00e9chalote"
+                },
+                {
+                    "name": "R\u00f4ti de dinde sauce champignons",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "R\u00f4ti de dinde sauce champignons"
+                },
+                {
+                    "name": "R\u00f4ti de dinde sauce cr\u00e8me",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "R\u00f4ti de dinde sauce cr\u00e8me"
+                },
+                {
+                    "name": "R\u00f4ti de porc sauce cr\u00e8me",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "R\u00f4ti de porc sauce cr\u00e8me"
+                },
+                {
+                    "name": "Saucisse de toulouse",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saucisse de toulouse"
+                },
+                {
+                    "name": "Saucisse de volaille sauce thym",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saucisse de volaille sauce thym"
+                },
+                {
+                    "name": "Saumon MSC sauce picarde",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saumon MSC sauce picarde"
+                },
+                {
+                    "name": "Saumon sauvage sauce cr\u00e8me",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saumon sauvage sauce cr\u00e8me"
+                },
+                {
+                    "name": "Saut\u00e9 d'agneau sauce curry",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 d'agneau sauce curry"
+                },
+                {
+                    "name": "Saut\u00e9 d'agneau sauce orientale",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 d'agneau sauce orientale"
+                },
+                {
+                    "name": "Saut\u00e9 de Porc \u00e0 la dijonnaise",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de Porc \u00e0 la dijonnaise"
+                },
+                {
+                    "name": "Saut\u00e9 de boeuf sauce champignons",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de boeuf sauce champignons"
+                },
+                {
+                    "name": "Saut\u00e9 de boeuf sauce strogonoff",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de boeuf sauce strogonoff"
+                },
+                {
+                    "name": "Saut\u00e9 de porc BBC sauce cr\u00e8me",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de porc BBC sauce cr\u00e8me"
+                },
+                {
+                    "name": "Saut\u00e9 de veau BIO sauce marengo",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de veau BIO sauce marengo"
+                },
+                {
+                    "name": "Saut\u00e9 de veau marengo",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de veau marengo"
+                },
+                {
+                    "name": "Saut\u00e9 de volaille LABEL ROUGE sauce fromag\u00e8re",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Saut\u00e9 de volaille LABEL ROUGE sauce fromag\u00e8re"
+                },
+                {
+                    "name": "Tarte au fromage",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tarte au fromage"
+                },
+                {
+                    "name": "Tarte ch\u00e8vre \u00e9pinards",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tarte ch\u00e8vre \u00e9pinards"
+                },
+                {
+                    "name": "Tarte v\u00e9g\u00e9tarienne",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tarte v\u00e9g\u00e9tarienne"
+                },
+                {
+                    "name": "Tartiflette aux deux fromages",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tartiflette aux deux fromages"
+                },
+                {
+                    "name": "Tortellini ricotta \u00e9pinard",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tortellini ricotta \u00e9pinard"
+                },
+                {
+                    "name": "Tortis aux pois chiche et curcuma",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tortis aux pois chiche et curcuma"
+                },
+                {
+                    "name": "Waterzo\u00ef de poisson MSC",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Waterzo\u00ef de poisson MSC"
+                },
+                {
+                    "name": "Waterzo\u00ef de poulet",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Waterzo\u00ef de poulet"
+                }
+            ]
+        },
+        {
+            "name": "desserts_1",
+            "facets": [
+                {
+                    "name": "Fruit de saison",
+                    "count": 12,
+                    "state": "displayed",
+                    "path": "Fruit de saison"
+                },
+                {
+                    "name": "Fruit frais",
+                    "count": 9,
+                    "state": "displayed",
+                    "path": "Fruit frais"
+                },
+                {
+                    "name": "Fruit de saison BIO",
+                    "count": 5,
+                    "state": "displayed",
+                    "path": "Fruit de saison BIO"
+                },
+                {
+                    "name": "Compote de fruits",
+                    "count": 4,
+                    "state": "displayed",
+                    "path": "Compote de fruits"
+                },
+                {
+                    "name": "Cr\u00e8me vanille",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me vanille"
+                },
+                {
+                    "name": "Fruit de saison HVE",
+                    "count": 3,
+                    "state": "displayed",
+                    "path": "Fruit de saison HVE"
+                },
+                {
+                    "name": "Compote de fruits BIO",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Compote de fruits BIO"
+                },
+                {
+                    "name": "Flan vanille",
+                    "count": 2,
+                    "state": "displayed",
+                    "path": "Flan vanille"
+                },
+                {
+                    "name": "Assortiment de compote de BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Assortiment de compote de BIO"
+                },
+                {
+                    "name": "Banane au chocolat maison",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Banane au chocolat maison"
+                },
+                {
+                    "name": "B\u00fbche",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "B\u00fbche"
+                },
+                {
+                    "name": "Clafoutis aux abricots",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Clafoutis aux abricots"
+                },
+                {
+                    "name": "Compote de fruit BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Compote de fruit BIO"
+                },
+                {
+                    "name": "Compote de fruits et biscuit",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Compote de fruits et biscuit"
+                },
+                {
+                    "name": "Cookie du chef",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cookie du chef"
+                },
+                {
+                    "name": "Coupe viennoise vanille",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Coupe viennoise vanille"
+                },
+                {
+                    "name": "Crumble canadien",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Crumble canadien"
+                },
+                {
+                    "name": "Cr\u00e8me caramel",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me caramel"
+                },
+                {
+                    "name": "Cr\u00e8me dessert Pralin\u00e9e",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me dessert Pralin\u00e9e"
+                },
+                {
+                    "name": "Cr\u00e8me dessert caramel",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me dessert caramel"
+                },
+                {
+                    "name": "Cr\u00e8me dessert chocolat",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me dessert chocolat"
+                },
+                {
+                    "name": "Cr\u00e8me dessert vanille",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me dessert vanille"
+                },
+                {
+                    "name": "Cr\u00e8me pralin\u00e9",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me pralin\u00e9"
+                },
+                {
+                    "name": "Cr\u00e8me pralin\u00e9e",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Cr\u00e8me pralin\u00e9e"
+                },
+                {
+                    "name": "Eclair au chocolat",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Eclair au chocolat"
+                },
+                {
+                    "name": "Flan caramel",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Flan caramel"
+                },
+                {
+                    "name": "Fruit BIO",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Fruit BIO"
+                },
+                {
+                    "name": "Fruit sirop",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Fruit sirop"
+                },
+                {
+                    "name": "Galette des rois aux pommes",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Galette des rois aux pommes"
+                },
+                {
+                    "name": "G\u00e2teau noix de coco banane",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "G\u00e2teau noix de coco banane"
+                },
+                {
+                    "name": "Li\u00e9geois chocolat",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Li\u00e9geois chocolat"
+                },
+                {
+                    "name": "Mosa\u00efque",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Mosa\u00efque"
+                },
+                {
+                    "name": "Mosa\u00efque de fruits",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Mosa\u00efque de fruits"
+                },
+                {
+                    "name": "Pudding chocolat du chef",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Pudding chocolat du chef"
+                },
+                {
+                    "name": "P\u00e2tisserie de No\u00ebl",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "P\u00e2tisserie de No\u00ebl"
+                },
+                {
+                    "name": "Tarte au flanc",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "Tarte au flanc"
+                },
+                {
+                    "name": "cr\u00e8pe  au chocolat",
+                    "count": 1,
+                    "state": "displayed",
+                    "path": "cr\u00e8pe  au chocolat"
+                }
+            ]
+        }
+    ]
+}

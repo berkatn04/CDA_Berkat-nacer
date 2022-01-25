@@ -3,9 +3,11 @@ var contenu = document.getElementById("contenu");
 var enregs; // contient la reponse de l'API
 // on définit une requete
 const req = new XMLHttpRequest();
+const req2 = new XMLHttpRequest();
 
-//on envoi la requête
-req.open('GET', 'https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=menu-cantine&q=&facet=date&facet=periode&facet=plat_1&facet=desserts_1', true);
+reqText2 = "https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=menu-cantine&rows=1&facet=date&facet=periode&facet=plat_1&facet=desserts_1&q="
+reqText = "https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=menu-cantine&rows=20&facet=date&facet=periode&facet=plat_1&facet=desserts_1&q="
+req.open('GET', reqText, true);
 req.send(null);
 
 //on vérifie les changements d'états de la requête
@@ -15,8 +17,6 @@ req.onreadystatechange = function (event) {
             // la requete a abouti et a fournit une reponse
             //on décode la réponse, pour obtenir un objet
             reponse = JSON.parse(this.responseText);
-            console.log(this.responseText);
-            console.log(reponse);
             enregs = reponse.records;
             for (let i = 0; i < enregs.length; i++) {
                 // on crée la ligne et les div internes
@@ -40,14 +40,22 @@ req.onreadystatechange = function (event) {
                 dessert.innerHTML = enregs[i].fields.desserts_1;
                 periode.innerHTML = enregs[i].fields.periode;
 
-                var selection = contenu.getElementById("selection");
+                var selection = document.getElementById("selection");
                 var option = document.createElement("option");
                 selection.appendChild(option);
-                option.setAttribute("value", enregs[i].date );
-                option.innerText(enregs[i].date);
+                option.setAttribute("value", enregs[i].fields.date );
+                option.innerText = enregs[i].fields.date;
             
             }
-            
+            selection.addEventListener("change",function(){
+                texte = selection.value ;
+                req.open('GET', reqText+texte, true);
+                req.send(null);
+                for (let i=1; i<enregs.length;i++){
+                    ligne.setAttribute("class", "hidden");
+                }
+
+            })
 
             console.log("Réponse reçue: %s", this.responseText);
         } else {
@@ -56,10 +64,5 @@ req.onreadystatechange = function (event) {
     }
 };
 
-var actu=document.getElementById("actu");
 
-actu.addEventListener("click",function(){
-    req.open('GET', 'https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=menu-cantine&q=&facet=date&facet=periode&facet=plat_1&facet=desserts_1', true);
-    req.send(null);
-});
 
