@@ -1,0 +1,108 @@
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\appsettings.json
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.exe
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.deps.json
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.runtimeconfig.json
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.runtimeconfig.dev.json
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\ref\VillesMultiCouche.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.pdb
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\MySql.Data.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\ZstdNet.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.csproj.AssemblyReference.cache
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.AssemblyInfoInputs.cache
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.AssemblyInfo.cs
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.csproj.CoreCompileInputs.cache
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\staticwebassets\VillesMultiCouche.StaticWebAssets.Manifest.cache
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\staticwebassets\VillesMultiCouche.StaticWebAssets.xml
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\scopedcss\bundle\VillesMultiCouche.styles.css
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.RazorTargetAssemblyInfo.cache
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\ref\VillesMultiCouche.dll
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.pdb
+C:\Users\Bille\OneDrive\Documents\reference\CDA2021\03 - Appli Web\03 - Multicouche\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.genruntimeconfig.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\appsettings.Development.json
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\appsettings.json
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.exe
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.deps.json
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.runtimeconfig.json
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.runtimeconfig.dev.json
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\ref\VillesMultiCouche.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\VillesMultiCouche.pdb
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\AutoMapper.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Google.Protobuf.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Humanizer.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\MySql.Data.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\ZstdNet.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\MySql.EntityFrameworkCore.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.csproj.AssemblyReference.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.AssemblyInfoInputs.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.AssemblyInfo.cs
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.csproj.CoreCompileInputs.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.MvcApplicationPartsAssemblyInfo.cs
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.MvcApplicationPartsAssemblyInfo.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\staticwebassets\VillesMultiCouche.StaticWebAssets.Manifest.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\staticwebassets\VillesMultiCouche.StaticWebAssets.xml
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\scopedcss\bundle\VillesMultiCouche.styles.css
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.RazorTargetAssemblyInfo.cache
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\ref\VillesMultiCouche.dll
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.pdb
+C:\workspace\Multicouches\1 - VillesMulticouche\VillesMultiCouche\obj\Debug\net5.0\VillesMultiCouche.genruntimeconfig.cache
