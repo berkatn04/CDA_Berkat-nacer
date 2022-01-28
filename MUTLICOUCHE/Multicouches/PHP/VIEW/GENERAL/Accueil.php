@@ -1,4 +1,8 @@
 <div class="contenu">
-<select id="selection"></select>
-<select id="ville"></select>
+<select id="selection">
+    <option value="Choississez une valeur">Choississez une valeur</option>
+</select>
+<select id="ville">
+    <option value="Choississez une valeur">Choississez une valeur</option>
+</select>
 </div>

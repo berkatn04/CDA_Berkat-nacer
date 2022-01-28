@@ -12,6 +12,7 @@ selection.addEventListener("change", function(){
 requ2.open('GET', 'https://localhost:5001/api/Villes/' + selection.selectedIndex, true);
 requ2.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
 requ2.send();
+console.log(requ2);
 });
 
 /**** GET by ID  */
@@ -51,17 +52,13 @@ requ.onreadystatechange = function(event) {
             console.log("Réponse reçue: %s", this.responseText);;
             console.log(this.responseText);
             reponse=JSON.parse(this.responseText);
-            var option = document.createElement("option");
-            option.setAttribute("value" , "Choississez une valeur");
-            option.innerText = "Choississez une valeur";
-            selection.appendChild(option);
             for(let i=0 ; i< reponse.length; i++){
                 var option2 = document.createElement("option"); 
                 option2.setAttribute("value", reponse[i].libelle );
                 option2.innerText = reponse[i].libelle;
                 selection.appendChild(option2);
             }
-            
+           
         } else {
             console.log("Status de la réponse: %d (%s)", this.status, this.statusText);
         }
@@ -75,15 +72,12 @@ requ2.onreadystatechange = function(event) {
             console.log("Réponse reçue: %s", this.responseText);;
             console.log(this.responseText);
             reponse=JSON.parse(this.responseText);
-            var option = document.createElement("option");
-            option.setAttribute("value" , "Choississez une valeur");
-            option.innerText = "Choississez une valeur";
-            select.appendChild(option);
             for(let i=0 ; i< reponse.length; i++){
-                var option2 = document.createElement("option"); 
-                option2.setAttribute("value", reponse[i].nomVille );
-                option2.innerText = reponse[i].nomVille;
-                select.appendChild(option2);
+                var option = document.createElement("option"); 
+                option.setAttribute("value", reponse[i].nomVille);           
+                option.innerText = reponse.nomVille;
+                select.appendChild(option);
+               
             }   
             
         } else {
@@ -91,3 +85,9 @@ requ2.onreadystatechange = function(event) {
         }
     }
 };
+var doc = document.createElement("div");
+doc.innerText = "Vous avez selectionner le departement :"+ selection.value + "  d'id :" + selection.selectedIndex;
+selection.addEventListener("change", function(){
+    contenu.appendChild(doc);
+    console.log(contenu);
+});
