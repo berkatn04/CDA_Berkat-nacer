@@ -27,14 +27,17 @@ setcookie("lang", $_SESSION['lang'], time()+36000, '/');
 $routes=[
 	"Default"=>["PHP/VIEW/GENERAL/","Accueil","Connexion & Inscription",0,false],
 	"Accueil"=>["PHP/VIEW/GENERAL/","Accueil","Accueil",0,false],
-	"API"=>["PHP/MODEL/API/","Api","Accueil",0,true],
+	"CategoriesAPI"=>["PHP/MODEL/API/","CategoriesAPI","Accueil",0,true],
+	"ProduitsAPI"=>["PHP/MODEL/API/","ProduitsAPI","Accueil",0,true],
+	"DetailsAPI"=>["PHP/MODEL/API/","DetailsAPI","Accueil",0,true],
+
 
 	"ActionConnexion"=>["PHP/CONTROLLER/ACTION/","ActionConnexion","Action de la connexion",0,false],
 	"ActionInscription"=>["PHP/CONTROLLER/ACTION/","ActionInscription","Action de l'inscription",0,false],
 	"ActionDeconnexion"=>["PHP/CONTROLLER/ACTION/","ActionDeconnexion","Action de deconnexion",0,false],
 
 	"ListeMailAPI"=>["PHP/MODEL/API/","ListeMailAPI", "ListeMailAPI",0,true],
-	"API"=>["PHP/MODEL/API/","Api", "Api",0,true],
+	
 
 	"ListeCategories"=>["PHP/VIEW/LISTE/","ListeCategories","Liste Categories",0,false],
 	"FormCategories"=>["PHP/VIEW/FORM/","FormCategories","Formulaire Categories",0,false],

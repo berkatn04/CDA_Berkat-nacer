@@ -1,2 +1,3 @@
 
-<!-- <div id="select"></div> -->
+<div id="Categorie"></div>
+<div  id="Produit"></div>
